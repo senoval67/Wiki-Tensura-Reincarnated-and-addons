@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensura Wiki - Расы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div id="races-list-view">
+            <h2 style="color: var(--accent); margin-bottom: 20px; font-size: 28px; text-align: center;">Список Рас</h2>
+            <div id="race-tier-tabs" class="tier-tabs hidden"></div>
+            <div class="skills-grid" id="races-container"></div>
+        </div>
+
+        <div id="race-detail-view" class="hidden">
+            <a href="#" class="back-btn" onclick="showRaceListView(); return false;">← Назад к расам</a>
+            <div class="skill-detail" id="race-detail-content"></div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Порядок подключения скриптов -->
+    <script src="data/Data skills.js"></script>
+    <script src="data/Data races.js"></script>
+    <script src="data/Data bosses.js"></script>
+    
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/races.js"></script>
+</body>
+</html>

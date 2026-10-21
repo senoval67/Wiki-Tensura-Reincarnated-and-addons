@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensura Wiki - Навыки</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- ИЗМЕНЕНО -->
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div id="skills-list-view">
+            <h2 style="color: var(--accent); margin-bottom: 20px; font-size: 28px; text-align: center;">Список Навыков</h2>
+            <div id="tier-tabs" class="tier-tabs"></div>
+            <div id="skills-container"></div>
+        </div>
+
+        <div id="skill-detail-view" class="hidden">
+            <a href="#" class="back-btn" onclick="showListView(); return false;">← Назад к навыкам</a>
+            <div class="skill-detail" id="skill-detail-content"></div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="data/Data skills.js"></script>
+    <script src="data/Data races.js"></script>
+    <script src="data/Data bosses.js"></script>
+    
+    <script src="js/components.js"></script> <!-- Теперь он первый -->
+    <script src="js/main.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+</html>

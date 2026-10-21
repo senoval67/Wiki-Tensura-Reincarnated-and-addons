@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensura Wiki - Боссы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div id="bosses-list-view">
+            <h2 style="color: var(--accent); margin-bottom: 20px; font-size: 28px; text-align: center;">Список Боссов</h2>
+            <div class="skills-grid" id="bosses-container"></div>
+        </div>
+
+        <div id="boss-detail-view" class="hidden">
+            <a href="#" class="back-btn" onclick="showBossListView(); return false;">← Назад к боссам</a>
+            <div class="skill-detail" id="boss-detail-content"></div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Порядок скриптов -->
+    <script src="data/Data skills.js"></script>
+    <script src="data/Data races.js"></script>
+    <script src="data/Data bosses.js"></script>
+    
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bosses.js"></script> <!-- Только bosses.js на этой странице -->
+</body>
+</html>
