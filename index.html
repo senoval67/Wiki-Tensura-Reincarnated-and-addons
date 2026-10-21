@@ -3,129 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tensura Wiki - Гайд</title>
+    <title>Tensura Wiki - Главная</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Стили для главной страницы */
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, rgba(157, 0, 255, 0.1) 0%, rgba(15, 15, 19, 1) 100%);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+        .hero-title {
+            font-size: 48px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(157, 0, 255, 0.6);
+            font-weight: bold;
+        }
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .hero-desc {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .link-card {
+            background-color: var(--panel-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px rgba(157, 0, 255, 0.2);
+        }
+        .link-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        .link-title {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .link-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .link-btn:hover {
+            background-color: var(--accent);
+            color: #fff;
+            box-shadow: 0 0 15px var(--accent);
+        }
+        .disclaimer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <main class="guide-content">
-        <h1 data-ru="Tensura: Начало пути" data-en="Tensura: Beginning of the Path">Tensura: Начало пути</h1>
-        
-        <h2 data-ru="1. СТАРТ: Сложность и первые шаги" data-en="1. START: Difficulty and first steps">1. СТАРТ: Сложность и первые шаги</h2>
-        <table>
-            <tr>
-                <th data-ru="Сложность" data-en="Difficulty">Сложность</th>
-                <th data-ru="Описание" data-en="Description">Описание</th>
-            </tr>
-            <tr>
-                <td data-ru="Реальность" data-en="Reality">Реальность</td>
-                <td data-ru="Это реально экстрим. Тебя будут убивать пачками." data-en="This is real extreme. You will be killed in droves.">Это реально экстрим. Тебя будут убивать пачками.</td>
-            </tr>
-            <tr>
-                <td data-ru="Легко" data-en="Easy">Легко</td>
-                <td data-ru="На самом деле легко." data-en="Actually easy.">На самом деле легко.</td>
-            </tr>
-            <tr>
-                <td data-ru="Хард" data-en="Hard">Хард</td>
-                <td data-ru="Идеальная середина. Бери её." data-en="The perfect middle ground. Take it.">Идеальная середина. Бери её.</td>
-            </tr>
-        </table>
-        
-        <h3 data-ru="Первые действия:" data-en="First actions:">Первые действия:</h3>
-        <ol>
-            <li data-ru="<strong>Шкериться по нычкам</strong> — прячься и не лезь в открытый бой." data-en="<strong>Hide in corners</strong> — hide and don't get into open combat."><strong>Шкериться по нычкам</strong> — прячься и не лезь в открытый бой.</li>
-            <li data-ru="<strong>Фармиться потихоньку</strong> — убивай слабых мобов, копи ресурсы." data-en="<strong>Farm slowly</strong> — kill weak mobs, save resources."><strong>Фармиться потихоньку</strong> — убивай слабых мобов, копи ресурсы.</li>
-            <li data-ru="<strong>Цель №1:</strong> добыть фулл алмазку (броня + оружие)." data-en="<strong>Goal #1:</strong> get full diamond gear (armor + weapons)."><strong>Цель №1:</strong> добыть фулл алмазку (броня + оружие).</li>
-        </ol>
+    <main>
+        <div class="hero-section">
+            <div class="hero-subtitle" data-ru="Фанатская Вики" data-en="Fan Wiki">Фанатская Вики</div>
+            <h1 class="hero-title" data-ru="Tensura: Reincarnated" data-en="Tensura: Reincarnated">Tensura: Reincarnated</h1>
+            <p class="hero-desc" data-ru="Добро пожаловать на неофициальную базу знаний по моду Tensura: Reincarnated и сборке Tensura Neo: Otherworld. Здесь вы найдете подробные описания навыков, рас, боссов и схемы их эволюции." data-en="Welcome to the unofficial knowledge base for the Tensura: Reincarnated mod and the Tensura Neo: Otherworld modpack. Here you will find detailed descriptions of skills, races, bosses, and their evolution schemes.">
+                Добро пожаловать на неофициальную базу знаний по моду Tensura: Reincarnated и сборке Tensura Neo: Otherworld. Здесь вы найдете подробные описания навыков, рас, боссов и схемы их эволюции.
+            </p>
+        </div>
 
-        <h2 data-ru="2. НАВЫКИ: Топ уникальных и важных" data-en="2. SKILLS: Top unique and important">2. НАВЫКИ: Топ уникальных и важных</h2>
-        <ul>
-            <li data-ru="<strong>Навыки на воровство (Хищник, Обжорство и т.д.)</strong> — это топ. Они позволяют красть чужие способности." data-en="<strong>Stealing skills (Predator, Gluttony, etc.)</strong> — these are top tier. They allow you to steal other's abilities."><strong>Навыки на воровство (Хищник, Обжорство и т.д.)</strong> — это топ. Они позволяют красть чужие способности.</li>
-            <li data-ru="<strong>Резисты</strong> качаются двумя способами: со временем, получая урон от этого типа (например, стоять в огне) или украсть Хищником у моба, у которого этот резист есть." data-en="<strong>Resistances</strong> are leveled in two ways: over time, taking damage of that type (e.g., standing in fire) or stealing with Predator from a mob that has this resistance."><strong>Резисты</strong> качаются двумя способами: со временем, получая урон от этого типа (например, стоять в огне) или украсть Хищником у моба, у которого этот резист есть.</li>
-            <li data-ru="<strong>Управление:</strong> На кнопку мыши можно менять страницы навыков и их режимы." data-en="<strong>Controls:</strong> You can change skill pages and their modes with a mouse button."><strong>Управление:</strong> На кнопку мыши можно менять страницы навыков и их режимы.</li>
-            <li data-ru="<strong>Сменить режим навыка:</strong> Shift + клавиша навыка, который ты забиндил." data-en="<strong>Change skill mode:</strong> Shift + the key of the skill you bound."><strong>Сменить режим навыка:</strong> Shift + клавиша навыка, который ты забиндил.</li>
-            <li data-ru="<strong>Прогресс:</strong> Навыки надо качать! Особенно манипуляции." data-en="<strong>Progress:</strong> Skills need to be leveled! Especially manipulations."><strong>Прогресс:</strong> Навыки надо качать! Особенно манипуляции.</li>
-        </ul>
+        <div class="links-grid">
+            <!-- Официальная Вики -->
+            <div class="link-card">
+                <div class="link-icon">📖</div>
+                <div class="link-title" data-ru="Официальная Вики" data-en="Official Wiki">Официальная Вики</div>
+                <div class="link-subtitle" data-ru="База знаний от разработчиков" data-en="Knowledge base from developers">База знаний от разработчиков</div>
+                <a href="https://tensura.wiki.gg/" target="_blank" class="link-btn" data-ru="Перейти" data-en="Go">Перейти</a>
+            </div>
 
-        <h3 data-ru="Обязательные навыки для фарма" data-en="Essential skills for farming">Обязательные навыки для фарма</h3>
-        <table>
-            <tr>
-                <th data-ru="Навык" data-en="Skill">Навык</th>
-                <th data-ru="Как получить" data-en="How to get">Как получить</th>
-            </tr>
-            <tr>
-                <td data-ru="Коррозия" data-en="Corrosion">Коррозия</td>
-                <td data-ru="Съесть 100 гнилой плоти." data-en="Eat 100 rotten flesh.">Съесть 100 гнилой плоти.</td>
-            </tr>
-            <tr>
-                <td data-ru="Яд" data-en="Poison">Яд</td>
-                <td data-ru="Съесть 100 паучьих глаз и убить 100 пауков." data-en="Eat 100 spider eyes and kill 100 spiders.">Съесть 100 паучьих глаз и убить 100 пауков.</td>
-            </tr>
-            <tr>
-                <td data-ru="Саморегенерация" data-en="Self-Regeneration">Саморегенерация</td>
-                <td data-ru="Убить 500 слаймов." data-en="Kill 500 slimes.">Убить 500 слаймов.</td>
-            </tr>
-            <tr>
-                <td data-ru="Сила стали" data-en="Steel Strength">Сила стали</td>
-                <td data-ru="Качать обязательно." data-en="Must be leveled.">Качать обязательно.</td>
-            </tr>
-            <tr>
-                <td data-ru="Магическая пуля" data-en="Magic Bullet">Магическая пуля</td>
-                <td data-ru="Эволюционирует в Высшую магическую пулю — наносит сильный урон." data-en="Evolves into Greater Magic Bullet — deals high damage.">Эволюционирует в Высшую магическую пулю — наносит сильный урон.</td>
-            </tr>
-        </table>
+            <!-- Мод -->
+            <div class="link-card">
+                <div class="link-icon">⚙️</div>
+                <div class="link-title" data-ru="Мод Tensura" data-en="Tensura Mod">Мод Tensura</div>
+                <div class="link-subtitle" data-ru="Автор: ManasMods" data-en="Author: ManasMods">Автор: ManasMods</div>
+                <a href="https://www.curseforge.com/members/manasmods/projects" target="_blank" class="link-btn" data-ru="Скачать" data-en="Download">Скачать</a>
+            </div>
 
-        <h2 data-ru="3. СЕРЕДИНА ИГРЫ: Эволюция и прогресс" data-en="3. MIDGAME: Evolution and progress">3. СЕРЕДИНА ИГРЫ: Эволюция и прогресс</h2>
-        <ol>
-            <li data-ru="Первая эволюция — сделай её как можно быстрее." data-en="First evolution — do it as fast as possible.">Первая эволюция — сделай её как можно быстрее.</li>
-            <li data-ru="<strong>Оружие и броня:</strong> К этому моменту нужна фулл алмазка." data-en="<strong>Weapons and armor:</strong> By this time, you need full diamond gear."><strong>Оружие и броня:</strong> К этому моменту нужна фулл алмазка.</li>
-            <li data-ru="<strong>Душа оружия:</strong> У оружия есть душа! Убивая монстров, ты получаешь ЕР, прокачивая оружие." data-en="<strong>Weapon soul:</strong> Weapons have souls! Killing monsters gives EP, leveling the weapon."><strong>Душа оружия:</strong> У оружия есть душа! Убивая монстров, ты получаешь ЕР, прокачивая оружие.</li>
-            <li data-ru="<strong>Магическая руда:</strong> Добывать её вообще не обязательно. Можно стоять на ферме, и оружие прокачается само." data-en="<strong>Magic ore:</strong> Mining it is not necessary at all. You can stand on a farm, and the weapon will level up itself."><strong>Магическая руда:</strong> Добывать её вообще не обязательно. Можно стоять на ферме, и оружие прокачается само.</li>
-            <li data-ru="<strong>Броня:</strong> Не обязательна. Убив SHOGO, ты получаешь навыки Выживший и Берсерк. Это имба: чем больше у тебя ЕР, тем больше брони и урона." data-en="<strong>Armor:</strong> Not required. Killing SHOGO gives you Survivor and Berserker skills. It's imba: the more EP you have, the more armor and damage you get."><strong>Броня:</strong> Не обязательна. Убив SHOGO, ты получаешь навыки Выживший и Берсерк. Это имба: чем больше у тебя ЕР, тем больше брони и урона.</li>
-            <li data-ru="<strong>Смерть:</strong> При смерти ты теряешь ЕР, магилы и ауру. Будь осторожен!" data-en="<strong>Death:</strong> Upon death, you lose EP, magicules, and aura. Be careful!"><strong>Смерть:</strong> При смерти ты теряешь ЕР, магилы и ауру. Будь осторожен!</li>
-        </ol>
+            <!-- Сборка -->
+            <div class="link-card">
+                <div class="link-icon">📦</div>
+                <div class="link-title" data-ru="Сборка Neo: Otherworld" data-en="Neo: Otherworld Pack">Сборка Neo: Otherworld</div>
+                <div class="link-subtitle" data-ru="Автор: Ablazeaqzl" data-en="Author: Ablazeaqzl">Автор: Ablazeaqzl</div>
+                <a href="https://www.curseforge.com/minecraft/modpacks/tensura-neo-otherworld" target="_blank" class="link-btn" data-ru="Скачать" data-en="Download">Скачать</a>
+            </div>
+        </div>
 
-        <h2 data-ru="4. БОССЫ: Кого и когда валить" data-en="4. BOSSES: Who and when to kill">4. БОССЫ: Кого и когда валить</h2>
-        <table>
-            <tr>
-                <th data-ru="Босс" data-en="Boss">Босс</th>
-                <th data-ru="Когда бить" data-en="When to kill">Когда бить</th>
-            </tr>
-            <tr>
-                <td data-ru="Шизу" data-en="Shizu">Шизу</td>
-                <td data-ru="Рано." data-en="Early.">Рано.</td>
-            </tr>
-            <tr>
-                <td data-ru="Орк-Катастрофа" data-en="Orc Disaster">Орк-Катастрофа</td>
-                <td data-ru="Рано." data-en="Early.">Рано.</td>
-            </tr>
-            <tr>
-                <td data-ru="Харибда" data-en="Charybdis">Харибда</td>
-                <td data-ru="Нужно быть уже сильным. Обязательно прокачай Манипуляцию пространством, потом эволюционируй в Господство над манипуляцией." data-en="You need to be strong already. Be sure to level Spatial Manipulation, then evolve into Spatial Domination.">Нужно быть уже сильным. Обязательно прокачай Манипуляцию пространством, потом эволюционируй в Господство над манипуляцией.</td>
-            </tr>
-        </table>
-
-        <h2 data-ru="5. ГРАВИРОВКИ: Система улучшения оружия" data-en="5. ENGRAVINGS: Weapon upgrade system">5. ГРАВИРОВКИ: Система улучшения оружия</h2>
-        <p data-ru="Когда твоё оружие прокачается до Чистой магстали (Pure Magisteel), на нём появится Синее зачарование — это и есть гравировка." data-en="When your weapon levels up to Pure Magisteel, a blue enchantment will appear on it — that's an engraving.">Когда твоё оружие прокачается до Чистой магстали (Pure Magisteel), на нём появится Синее зачарование — это и есть гравировка.</p>
-        <ul>
-            <li data-ru="<strong>Особенность:</strong> На одном оружии может быть максимум 3 гравировки." data-en="<strong>Feature:</strong> A single weapon can have a maximum of 3 engravings."><strong>Особенность:</strong> На одном оружии может быть максимум 3 гравировки.</li>
-            <li data-ru="<strong>Пороги открытия слотов:</strong> 50 000 EP (шанс на 1-ю), 250 000 EP (шанс на 2-ю), 1 000 000 EP (шанс на 3-ю)." data-en="<strong>Slot unlock thresholds:</strong> 50,000 EP (chance for 1st), 250,000 EP (chance for 2nd), 1,000,000 EP (chance for 3rd)."><strong>Пороги открытия слотов:</strong> 50 000 EP (шанс на 1-ю), 250 000 EP (шанс на 2-ю), 1 000 000 EP (шанс на 3-ю).</li>
-            <li data-ru="С помощью отдельного мода их можно снять в зачарованные книги." data-en="With a separate mod, they can be removed into enchanted books.">С помощью отдельного мода их можно снять в зачарованные книги.</li>
-            <li data-ru="<strong>Совет:</strong> Для фарма делай алмазные мечи и фармись на эндерменах." data-en="<strong>Tip:</strong> For farming, make diamond swords and farm endermen."><strong>Совет:</strong> Для фарма делай алмазные мечи и фармись на эндерменах.</li>
-            <li data-ru="Tsukumogami — это обязательная гравировка на оружии из Хихи'Ироканэ." data-en="Tsukumogami is a mandatory engraving on Hihiirokane weapons.">Tsukumogami — это обязательная гравировка на оружии из Хихи'Ироканэ.</li>
-        </ul>
-
-        <h2 data-ru="6. ПОЛЕЗНЫЕ ССЫЛКИ" data-en="6. USEFUL LINKS">6. ПОЛЕЗНЫЕ ССЫЛКИ</h2>
-        <ul>
-            <li><strong data-ru="Вики:" data-en="Wiki:">Вики:</strong> <a href="https://tensura.wiki.gg/" target="_blank">tensura.wiki.gg</a></li>
-            <li><strong data-ru="YouTube-канал автора:" data-en="Author's YouTube channel:">YouTube-канал автора:</strong> <a href="https://www.youtube.com/@ManasMods" target="_blank">ManasMods</a></li>
-        </ul>
+        <div class="disclaimer" data-ru="Этот сайт является фанатским проектом и не связан с разработчиками модов или сборок. Все права на Tensura принадлежат их авторам." data-en="This site is a fan project and is not affiliated with mod or modpack developers. All rights to Tensura belong to their respective authors.">
+            Этот сайт является фанатским проектом и не связан с разработчиками модов или сборок. Все права на Tensura принадлежат их авторам.
+        </div>
     </main>
 
     <div id="footer-placeholder"></div>
 
-    <!-- Порядок скриптов -->
+    <!-- Подключение скриптов -->
     <script src="data/Data skills.js"></script>
     <script src="data/Data races.js"></script>
     <script src="data/Data bosses.js"></script>
@@ -133,10 +153,9 @@
     <script src="js/components.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Скрипт для перевода гайда -->
-        <script>
-        function translateGuide() {
-            // Берем язык из URL или localStorage
+    <!-- Скрипт перевода для главной -->
+    <script>
+        function translateHome() {
             const urlParams = new URLSearchParams(window.location.search);
             const lang = urlParams.get('lang') || localStorage.getItem('tensura_lang') || 'ru';
             
@@ -147,7 +166,8 @@
                 }
             });
         }
-        document.addEventListener('DOMContentLoaded', translateGuide);
+        document.addEventListener('DOMContentLoaded', translateHome);
+        window.addEventListener('languageChanged', translateHome);
     </script>
 </body>
 </html>

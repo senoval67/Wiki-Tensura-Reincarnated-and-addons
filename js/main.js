@@ -46,26 +46,30 @@ function getIconHTMLSearch(item) {
     return iconString; 
 }
 
-// НОВАЯ ФУНКЦИЯ: Подсветка совпадений в поиске
 function highlightMatch(text, query) {
     if (!query || !text) return text;
-    // Экранируем спецсимволы, чтобы не сломать регулярку
     const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const regex = new RegExp(`(${safeQuery})`, 'gi');
     return text.replace(regex, '<mark style="background-color: var(--accent); color: white; padding: 0 2px; border-radius: 3px;">$1</mark>');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-
-    if (!searchInput || !searchResults) return;
-
-    searchInput.addEventListener('input', (e) => {
+// ДЕЛЕГИРОВАНИЕ СОБЫТИЙ: Работает даже если шапка загрузилась позже
+document.addEventListener('input', (e) => {
+    if (e.target && e.target.id === 'searchInput') {
         const query = e.target.value.trim();
+        const searchResults = document.getElementById('searchResults');
         
+        if (!searchResults) return;
+
         if (query.length === 0) {
             searchResults.classList.add('hidden');
+            return;
+        }
+
+        // Проверяем, загрузились ли данные вообще
+        if (typeof skillsData === 'undefined' && typeof racesData === 'undefined' && typeof bossesData === 'undefined') {
+            searchResults.innerHTML = `<div class="search-result-item" style="color: red;">Ошибка: Данные не загружены. Проверьте консоль (F12).</div>`;
+            searchResults.classList.remove('hidden');
             return;
         }
 
@@ -107,14 +111,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             window.location.href = `races.html?race=${match.id}${langParam}`;
                         }
                     }
-                    searchInput.value = ''; 
+                    e.target.value = ''; 
                     searchResults.classList.add('hidden');
                 };
                 
                 const displayName = currentLang === 'en' ? match.en : match.ru;
                 const displayEn = match.en;
 
-                // Применяем подсветку
                 const highlightedRu = highlightMatch(displayName, query);
                 const highlightedEn = currentLang === 'ru' ? highlightMatch(displayEn, query) : '';
 
@@ -131,11 +134,17 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             searchResults.classList.add('hidden');
         }
-    });
+    }
+});
 
-    document.addEventListener('click', (e) => {
+// Скрываем поиск при клике вне его области
+document.addEventListener('click', (e) => {
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    
+    if (searchInput && searchResults) {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.classList.add('hidden');
         }
-    });
+    }
 });

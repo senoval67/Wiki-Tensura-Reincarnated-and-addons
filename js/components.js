@@ -1,7 +1,11 @@
 // js/components.js
 const translations = {
     ru: {
-        nav_guide: "ГАЙД", nav_skills: "НАВЫКИ", nav_races: "РАСЫ", nav_bosses: "БОССЫ",
+        nav_home: "ГЛАВНАЯ",
+        nav_guide: "ГАЙД", 
+        nav_skills: "НАВЫКИ", 
+        nav_races: "РАСЫ", 
+        nav_bosses: "БОССЫ",
         search_placeholder: "Поиск (RU/EN)...",
         info: "Информация", type: "Тип", cost: "Стоимость", points: "Очки Мастерства", passive: "Пассивный",
         obtaining: "Получение", method: "Способ", summon: "Призыв / Появление", drops: "Дроп", items: "Предметы", location: "Где найти",
@@ -11,7 +15,6 @@ const translations = {
         wiki_btn: "НА ВИКИ ↗",
         no_skills: "В этой категории пока нет навыков.", choose_tier: "Выберите тип навыка выше, чтобы просмотреть список.",
         lang_btn: "EN", skill_list_title: "Список Навыков", boss_list_title: "Список Боссов", race_list_title: "Список Рас",
-        // Новые ключи для рас:
         stats_title: "Характеристики",
         intrinsics_title: "Врождённые навыки",
         evo_details_title: "Пути эволюции",
@@ -26,7 +29,11 @@ const translations = {
         val_yes: "Да", val_no: "Нет", all_races: "Все"
     },
     en: {
-        nav_guide: "GUIDE", nav_skills: "SKILLS", nav_races: "RACES", nav_bosses: "BOSSES",
+        nav_home: "HOME",
+        nav_guide: "GUIDE", 
+        nav_skills: "SKILLS", 
+        nav_races: "RACES", 
+        nav_bosses: "BOSSES",
         search_placeholder: "Search (RU/EN)...",
         info: "Information", type: "Type", cost: "Cost", points: "Points to Master", passive: "Passive",
         obtaining: "Obtaining", method: "Method", summon: "Summon / Spawn", drops: "Drops", items: "Items", location: "Location",
@@ -36,7 +43,6 @@ const translations = {
         wiki_btn: "TO WIKI ↗",
         no_skills: "There are no skills in this category yet.", choose_tier: "Select a skill type above to view the list.",
         lang_btn: "RU", skill_list_title: "Skill List", boss_list_title: "Boss List", race_list_title: "Race List",
-        // New keys for races:
         stats_title: "Base Stats",
         intrinsics_title: "Intrinsic Skills",
         evo_details_title: "Evolution Details",
@@ -63,7 +69,7 @@ function toggleLanguage() {
     currentLang = currentLang === 'ru' ? 'en' : 'ru';
     localStorage.setItem('tensura_lang', currentLang);
     
-    // Меняем URL без перезагрузки страницы (чтобы при F5 язык сохранялся)
+    // Меняем URL без перезагрузки страницы
     const newUrl = new URL(window.location.href);
     newUrl.searchParams.set('lang', currentLang);
     window.history.pushState({}, '', newUrl);
@@ -85,7 +91,8 @@ function renderLayout() {
         <header>
             <div class="nav-container">
                 <div class="nav-links">
-                    <a href="index.html${langParam}" id="nav-guide">${t('nav_guide')}</a>
+                    <a href="index.html${langParam}" id="nav-home">${t('nav_home')}</a>
+                    <a href="guide.html${langParam}" id="nav-guide">${t('nav_guide')}</a>
                     <a href="skills.html${langParam}" id="nav-skills">${t('nav_skills')}</a>
                     <a href="races.html${langParam}" id="nav-races">${t('nav_races')}</a>
                     <a href="bosses.html${langParam}" id="nav-bosses">${t('nav_bosses')}</a>
@@ -117,10 +124,26 @@ function renderLayout() {
 
 function highlightActiveNav() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    if (currentPage === 'index.html') document.getElementById('nav-guide')?.classList.add('active');
-    if (currentPage === 'skills.html') document.getElementById('nav-skills')?.classList.add('active');
-    if (currentPage === 'races.html') document.getElementById('nav-races')?.classList.add('active');
-    if (currentPage === 'bosses.html') document.getElementById('nav-bosses')?.classList.add('active');
+    
+    // Снимаем активный класс со всех ссылок (на всякий случай)
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+
+    // Включаем нужную кнопку
+    if (currentPage === 'index.html' || currentPage === '') {
+        document.getElementById('nav-home')?.classList.add('active');
+    }
+    if (currentPage === 'guide.html') {
+        document.getElementById('nav-guide')?.classList.add('active');
+    }
+    if (currentPage === 'skills.html') {
+        document.getElementById('nav-skills')?.classList.add('active');
+    }
+    if (currentPage === 'races.html') {
+        document.getElementById('nav-races')?.classList.add('active');
+    }
+    if (currentPage === 'bosses.html') {
+        document.getElementById('nav-bosses')?.classList.add('active');
+    }
 }
 
 document.addEventListener('DOMContentLoaded', renderLayout);
