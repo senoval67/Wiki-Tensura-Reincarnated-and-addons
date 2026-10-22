@@ -1,4 +1,4 @@
-const racesData = [
+const racesDataTensura  = [
     {
         "id": "ancient_giant",
         "ru": "Древний гигант",
@@ -2223,4 +2223,4 @@ const racesData = [
         "desc_en": "<h2>Information</h2>\n<ul>\n  <li><strong>HP:</strong> 120</li>\n  <li><strong>SHP:</strong> 575</li>\n  <li><strong>EP:</strong> 300,000 MP / 100,000 AP</li>\n  <li><strong>Size:</strong> 2 Meters</li>\n  <li><strong>Speed:</strong> 0.1 (0.2 Sprint)</li>\n</ul>\n<h2>Abilities</h2>\n<ul>\n  <li><a href=\"#\" onclick=\"handleRaceSkillLink(event, 'Create Lesser Undead')\">Create Lesser Undead</a></li>\n</ul>\n<h2>Evolution</h2>\n<ul>\n  <li><strong>Previous:</strong> Named: Spirit Skeleton / Awakening: Spirit Skeleton</li>\n</ul>\n",
         "icon_path": ""
     }
-]
+];

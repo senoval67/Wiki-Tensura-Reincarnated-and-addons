@@ -1,6 +1,6 @@
 // js/bosses.js
 
-let currentBossId = null; // <--- ЗАПОМИНАЕМ ОТКРЫТОГО БОССА
+let currentBossId = null;
 let evoDirection = 'horizontal';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const bossParam = urlParams.get('boss');
     if (bossParam) {
-        showBossDetail(bossParam);
+        showBossDetail(bossParam, true);
     }
 });
 
@@ -25,11 +25,21 @@ window.addEventListener('languageChanged', () => {
         if (pageTitle) pageTitle.textContent = t('boss_list_title');
 
         renderBosses();
-        
-        // Если открыт босс, перерисовываем его на месте
         if (currentBossId) {
             showBossDetail(currentBossId, true); 
         }
+    }
+});
+
+// Обработка кнопок "Назад/Вперед" в браузере
+window.addEventListener('popstate', () => {
+    if (!document.getElementById('bosses-container')) return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const bossParam = urlParams.get('boss');
+    if (bossParam) {
+        showBossDetail(bossParam, true);
+    } else {
+        showBossListView(true);
     }
 });
 
@@ -64,7 +74,7 @@ function handleBossSkillLink(event, skillName) {
         s.id.toLowerCase() === skillName.toLowerCase()
     );
     if (skill) {
-        window.location.href = `skills.html?skill=${skill.id}`;
+        window.location.href = `skills.html?skill=${skill.id}&lang=${currentLang}`;
     } else {
         const wikiUrl = `https://tensura.wiki.gg/wiki/Abilities/Skills/${encodeURIComponent(skillName.replace(/ /g, '_'))}`;
         window.open(wikiUrl, '_blank');
@@ -136,7 +146,7 @@ function renderEvolutionGraph(currentBoss) {
         html += `</div>`;
     }
     html += `</div></div>`;
-    setTimeout(() => drawBossSVGLines(currentBoss.id), 10);
+    setTimeout(() => drawBossSVGLines(currentBoss.id), 100);
     return html;
 }
 
@@ -149,12 +159,12 @@ function setEvoDir(dir, btn) {
     wrapper.classList.remove('horizontal', 'vertical');
     wrapper.classList.add(dir);
     const currentId = wrapper.id.replace('evo-graph-', '');
-    setTimeout(() => drawBossSVGLines(currentId), 10);
+    setTimeout(() => drawBossSVGLines(currentId), 100);
 }
 
 function drawBossSVGLines(currentId) {
     const wrapper = document.getElementById(`evo-graph-${currentId}`);
-    if (!wrapper) return;
+    if (!wrapper || wrapper.scrollWidth === 0) return;
     const oldSvg = wrapper.querySelector('svg');
     if (oldSvg) oldSvg.remove();
 
@@ -207,12 +217,11 @@ function drawBossSVGLines(currentId) {
     wrapper.insertBefore(svg, wrapper.firstChild);
 }
 
-// ФУНКЦИЯ ОТОБРАЖЕНИЯ БОССА
 function showBossDetail(bossId, keepScroll = false) {
     const boss = bossesData.find(b => b.id === bossId);
     if (!boss) return;
 
-    currentBossId = bossId; // Запоминаем
+    currentBossId = bossId;
     const listView = document.getElementById('bosses-list-view');
     const detailView = document.getElementById('boss-detail-view');
     const detailContent = document.getElementById('boss-detail-content');
@@ -221,18 +230,19 @@ function showBossDetail(bossId, keepScroll = false) {
     if (backBtn) backBtn.textContent = t('back_bosses');
 
     const color = "#ff0055"; 
-    let externalWikiUrl = `https://tensura.wiki.gg/wiki/Mobs/${boss.en.replace(/ /g, '_')}`;
-    const displayRu = currentLang === 'en' ? boss.en : boss.ru;
+    let externalWikiUrl = `https://tensura.wiki.gg/wiki/Mobs/${(boss.en || boss.id).replace(/ /g, '_')}`;
+    const displayRu = currentLang === 'en' ? (boss.en || boss.id) : (boss.ru || boss.en || boss.id);
 
     let infoboxHTML = '';
     if (boss.infobox) {
+        const bossIcon = boss.icon || '👹';
         infoboxHTML = `
             <div class="skill-infobox" style="border-color: ${color};">
-                <div class="infobox-header" style="background-color: ${color}22; border-color: ${color};">${boss.en}</div>
+                <div class="infobox-header" style="background-color: ${color}22; border-color: ${color};">${boss.en || boss.ru || boss.id}</div>
                 <div class="infobox-image-container" style="border-color: ${color};">
-                    ${boss.icon.includes('.') || boss.icon.includes('/') 
-                        ? `<img src="${boss.icon}" alt="${displayRu}">` 
-                        : `<span class="emoji-fallback">${boss.icon}</span>`}
+                    ${bossIcon.includes('.') || bossIcon.includes('/') 
+                        ? `<img src="${bossIcon}" alt="${displayRu}">` 
+                        : `<span class="emoji-fallback">${bossIcon}</span>`}
                 </div>
                 
                 <div class="infobox-section-title" style="background-color: ${color}44; border-color: ${color};">${t('info')}</div>
@@ -254,7 +264,7 @@ function showBossDetail(bossId, keepScroll = false) {
         `;
     }
 
-    const displayDesc = currentLang === 'en' ? (boss.desc_en || boss.desc) : boss.desc;
+    const displayDesc = currentLang === 'en' ? (boss.desc_en || boss.desc || '') : (boss.desc || '');
 
     detailContent.innerHTML = `
         <div class="skill-detail-layout">
@@ -263,7 +273,7 @@ function showBossDetail(bossId, keepScroll = false) {
                     <h1>${displayRu}</h1>
                     <a href="${externalWikiUrl}" target="_blank" class="wiki-btn">${t('wiki_btn')}</a>
                 </div>
-                ${currentLang === 'ru' ? `<p style="color: var(--text-muted); margin-bottom: 20px;"><em>${boss.en}</em></p>` : ''}
+                ${currentLang === 'ru' && boss.en ? `<p style="color: var(--text-muted); margin-bottom: 20px;"><em>${boss.en}</em></p>` : ''}
                 <div class="skill-detail-description">
                     ${displayDesc}
                 </div>
@@ -276,17 +286,23 @@ function showBossDetail(bossId, keepScroll = false) {
     listView.classList.add('hidden');
     detailView.classList.remove('hidden');
     
-    if (!keepScroll && !document.querySelector('.evo-graph-wrapper')) {
+    if (!keepScroll) {
+        window.history.pushState({}, document.title, `bosses.html?boss=${bossId}&lang=${currentLang}`);
         window.scrollTo(0, 0);
     }
 }
 
-function showBossListView() {
-    currentBossId = null; // Сбрасываем при возврате к списку
+function showBossListView(keepHistory = false) {
+    currentBossId = null;
     const listView = document.getElementById('bosses-list-view');
     const detailView = document.getElementById('boss-detail-view');
+    if (!listView || !detailView) return;
+    
     detailView.classList.add('hidden');
     listView.classList.remove('hidden');
-    window.history.pushState({}, document.title, window.location.pathname);
-    window.scrollTo(0, 0);
+    
+    if (!keepHistory) {
+        window.history.pushState({}, document.title, `bosses.html?lang=${currentLang}`);
+        window.scrollTo(0, 0);
+    }
 }

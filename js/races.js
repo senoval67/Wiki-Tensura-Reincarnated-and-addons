@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const raceParam = urlParams.get('race');
     if (raceParam) {
-        showRaceDetail(raceParam);
+        showRaceDetail(raceParam, true);
     }
 });
 
@@ -35,6 +35,18 @@ window.addEventListener('languageChanged', () => {
         if (currentRaceId) {
             showRaceDetail(currentRaceId, true);
         }
+    }
+});
+
+// Обработка кнопок "Назад/Вперед" в браузере
+window.addEventListener('popstate', () => {
+    if (!document.getElementById('races-container')) return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const raceParam = urlParams.get('race');
+    if (raceParam) {
+        showRaceDetail(raceParam, true);
+    } else {
+        showRaceListView(true);
     }
 });
 
@@ -592,7 +604,10 @@ function showRaceDetail(raceId, keepScroll = false) {
     listView.classList.add('hidden');
     detailView.classList.remove('hidden');
 
-    if (!keepScroll) window.scrollTo(0, 0);
+    if (!keepScroll) {
+        window.history.pushState({}, document.title, `races.html?race=${raceId}&lang=${currentLang}`);
+        window.scrollTo(0, 0);
+    }
 }
 
 function goToRace(event, raceId) {
@@ -600,10 +615,13 @@ function goToRace(event, raceId) {
     showRaceDetail(raceId);
 }
 
-function showRaceListView() {
+function showRaceListView(keepHistory = false) {
     currentRaceId = null;
     document.getElementById('race-detail-view')?.classList.add('hidden');
     document.getElementById('races-list-view')?.classList.remove('hidden');
-    window.history.pushState({}, document.title, window.location.pathname);
-    window.scrollTo(0, 0);
+    
+    if (!keepHistory) {
+        window.history.pushState({}, document.title, `races.html?lang=${currentLang}`);
+        window.scrollTo(0, 0);
+    }
 }

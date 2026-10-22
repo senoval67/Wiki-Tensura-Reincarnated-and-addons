@@ -181,8 +181,8 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
 .evo-toggle button:hover { color: #fff; }
 .evo-toggle button.active { background-color: var(--accent); color: #fff; }
 
-.evo-graph-wrapper { position: relative; display: flex; gap: 40px; padding: 20px; min-height: 200px; overflow: auto; }
-.evo-graph-wrapper.horizontal { flex-direction: row; align-items: center; justify-content: center; }
+.evo-graph-wrapper { position: relative; display: flex; gap: 40px; padding: 40px; min-height: 200px; overflow: auto; }
+.evo-graph-wrapper.horizontal { flex-direction: row; align-items: center; justify-content: flex-start; }
 .evo-graph-wrapper.vertical { flex-direction: column; align-items: center; justify-content: center; gap: 30px; }
 .evo-level { display: flex; gap: 20px; justify-content: center; align-items: center; flex-shrink: 0; }
 .evo-graph-wrapper.horizontal .evo-level { flex-direction: column; }
@@ -202,14 +202,12 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
 .evo-node.mid { background-color: #ffd700; border-color: #b8860b; color: #000; }
 .evo-node.late { background-color: #ff8c00; border-color: #cc7000; color: #000; }
 .evo-node.boss { background-color: #ff0055; border-color: #990033; color: #fff; }
+.evo-node.other { background-color: #1e90ff; border-color: #0055cc; color: #fff; }
 
 .evo-current { transform: scale(1.05); box-shadow: 0 0 20px currentColor; border: 3px solid #fff !important; z-index: 3; cursor: default; }
 .evo-current:hover { transform: scale(1.05); box-shadow: 0 0 20px currentColor; }
 
 /* --- СТИЛИ ДЛЯ РАС --- */
-.skill-card.other { border-left: 5px solid #1e90ff; }
-.evo-node.other { background-color: #1e90ff; border-color: #0055cc; color: #fff; }
-
 .race-quote {
     font-style: italic;
     color: var(--text-main);
@@ -220,285 +218,6 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
     border-radius: 0 6px 6px 0;
 }
 
-.race-skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 12px;
-    margin-bottom: 25px;
-}
-
-.race-skill-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 14px;
-    border-radius: 6px;
-    background-color: #141b2d;
-    border: 1px solid #1e90ff;
-    color: #fff !important;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none !important;
-    transition: all 0.2s ease;
-}
-
-.race-skill-tag:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.35);
-    background-color: #1e90ff;
-}
-
-.race-evo-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.race-evo-table th,
-.race-evo-table td {
-    border: 1px solid var(--border-color);
-    padding: 10px 15px;
-    text-align: left;
-}
-
-.race-evo-table th {
-    width: 35%;
-    background-color: #252535;
-    color: #fff;
-}
-
-
-/* --- ТАБЛИЦА ПУТЕЙ И ДЕРЕВО ЭВОЛЮЦИИ РАС (СТИЛЬ WIKI) --- */
-.wiki-Path-table,
-.wiki-path-table {
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto 30px auto;
-    border-collapse: collapse;
-    background-color: rgba(15, 18, 28, 0.9);
-    border: 1px solid #0088ff;
-    font-size: 15px;
-}
-
-.wiki-path-table th {
-    background-color: #1c2230;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 15px;
-    border: 1px solid #0088ff;
-}
-
-.wiki-path-table td {
-    padding: 10px 15px;
-    border: 1px solid #0088ff;
-    color: #e0e0e0;
-}
-
-.wiki-path-table td.path-cell {
-    text-align: center;
-    font-weight: 600;
-}
-
-.wiki-path-table td.path-cell a {
-    color: #58a6ff;
-    text-decoration: none;
-}
-
-.wiki-path-table td.path-cell a:hover {
-    text-decoration: underline;
-}
-
-/* Контейнер дерева */
-.wiki-tree-scroll {
-    width: 100%;
-    overflow-x: auto;
-    padding: 15px 10px 25px 10px;
-}
-
-.wiki-tree-root,
-.wiki-tree-node-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: max-content;
-}
-
-/* Узел расы (скругленная плашка) */
-.wiki-race-node {
-    min-width: 210px;
-    padding: 10px 22px;
-    background-color: rgba(20, 24, 34, 0.95);
-    border: 1.5px solid #d0d7de;
-    border-radius: 10px;
-    color: #58a6ff;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-}
-
-.wiki-race-node:hover {
-    border-color: #58a6ff;
-    transform: translateY(-2px);
-    box-shadow: 0 0 12px rgba(88, 166, 255, 0.4);
-}
-
-/* Текущая открытая раса */
-.wiki-race-node.is-current {
-    color: #ffffff;
-    font-weight: bold;
-    border-color: #ffffff;
-    background-color: rgba(157, 0, 255, 0.2);
-    box-shadow: 0 0 15px rgba(157, 0, 255, 0.45);
-    cursor: default;
-}
-
-/* Пунктирный блок с условием эволюции (100K EP и т.д.) */
-.wiki-req-box {
-    min-width: 175px;
-    max-width: 230px;
-    padding: 12px 16px;
-    background-color: rgba(15, 18, 26, 0.9);
-    border: 1.5px dashed #c0c8d0;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-/* Вертикальная соединительная линия */
-.wiki-line-down {
-    width: 2px;
-    height: 22px;
-    background-color: #c0c8d0;
-}
-
-/* Развилка на несколько веток */
-.wiki-tree-children {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.wiki-tree-branch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 22px 24px 0 24px;
-}
-
-/* Если ветка всего одна — убираем лишний отступ и рисуем прямую линию */
-.wiki-tree-children.single-branch > .wiki-tree-branch {
-    padding-top: 0;
-}
-
-/* Горизонтальные и вертикальные скобки для развилки (┌───┴───┐) */
-.wiki-tree-children.multi-branch > .wiki-tree-branch::before,
-.wiki-tree-children.multi-branch > .wiki-tree-branch::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 22px;
-    border-top: 2px solid #c0c8d0;
-}
-
-.wiki-tree-children.multi-branch > .wiki-tree-branch::before {
-    right: 50%;
-}
-
-.wiki-tree-children.multi-branch > .wiki-tree-branch::after {
-    left: 50%;
-    border-left: 2px solid #c0c8d0;
-}
-
-.wiki-tree-children.multi-branch > .wiki-tree-branch:first-child::before {
-    border-top: none;
-}
-
-.wiki-tree-children.multi-branch > .wiki-tree-branch:last-child::after {
-    border-top: none;
-}
-
-/* --- ДОПОЛНЕНИЯ ДЛЯ РАС --- */
-.skill-card.other { border-left: 5px solid #1e90ff; }
-.evo-node.other { background-color: #1e90ff; border-color: #0055cc; color: #fff; }
-
-/* Пунктирный блок условия эволюции внутри графа (между расами) */
-.evo-node.evo-req {
-    height: auto;
-    min-height: 45px;
-    min-width: 150px;
-    max-width: 220px;
-    padding: 10px 14px;
-    background-color: rgba(15, 18, 26, 0.95);
-    border: 1.5px dashed #c0c8d0;
-    color: #fff;
-    font-size: 13px;
-    line-height: 1.4;
-    cursor: default;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.evo-node.evo-req:hover {
-    transform: none;
-    box-shadow: none;
-}
-
-.evo-node img,
-.evo-req-table img {
-    width: 22px;
-    height: 22px;
-    object-fit: cover;
-    image-rendering: pixelated;
-    vertical-align: middle;
-    margin-right: 6px;
-    border-radius: 3px;
-}
-
-/* Таблица Путь | Требования над графом */
-.evo-req-table {
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto 25px auto;
-    border-collapse: collapse;
-    background-color: var(--panel-bg);
-    border: 1px solid #1e90ff;
-    font-size: 14px;
-}
-
-.evo-req-table th,
-.evo-req-table td {
-    border: 1px solid #1e90ff;
-    padding: 10px 15px;
-    text-align: left;
-}
-
-.evo-req-table th {
-    background-color: #141b2d;
-    color: #fff;
-    text-align: center;
-}
-
-.evo-req-table td:first-child {
-    text-align: center;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-/* Врождённые навыки с иконками */
 .race-skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -532,10 +251,74 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
 .race-skill-tag:hover {
     background-color: #1e90ff;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.35);
 }
 
+/* --- ТАБЛИЦА ПУТЕЙ И ДЕРЕВО ЭВОЛЮЦИИ РАС (СТИЛЬ WIKI) --- */
+.evo-req-table {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 25px auto;
+    border-collapse: collapse;
+    background-color: var(--panel-bg);
+    border: 1px solid #1e90ff;
+    font-size: 14px;
+}
 
-/* --- TOOLTIPS --- */
+.evo-req-table th,
+.evo-req-table td {
+    border: 1px solid #1e90ff;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.evo-req-table th {
+    background-color: #141b2d;
+    color: #fff;
+    text-align: center;
+}
+
+.evo-req-table td:first-child {
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Пунктирный блок условия эволюции внутри графа */
+.evo-node.evo-req {
+    height: auto;
+    min-height: 45px;
+    min-width: 150px;
+    max-width: 220px;
+    padding: 10px 14px;
+    background-color: rgba(15, 18, 26, 0.95);
+    border: 1.5px dashed #c0c8d0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.evo-node.evo-req:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.evo-node img,
+.evo-req-table img {
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    vertical-align: middle;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+
+/* --- TOOLTIPS (Всплывающие карточки) --- */
 .tooltip-container {
     position: relative;
     display: inline-block;
@@ -557,11 +340,10 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
     z-index: 1000;
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
     transition: opacity 0.2s ease, visibility 0.2s ease;
-    pointer-events: none; /* Чтобы не мешало кликать */
+    pointer-events: none;
     text-align: left;
 }
 
-/* Мостик, чтобы тултип не исчезал при наведении на него */
 .tooltip-container:hover .tooltip-card {
     visibility: visible;
     opacity: 1;
@@ -589,7 +371,10 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
 }
 
 .tooltip-title img {
-    width: 20px; height: 20px; border-radius: 4px; border: 1px solid var(--border-color);
+    width: 20px; 
+    height: 20px; 
+    border-radius: 4px; 
+    border: 1px solid var(--border-color);
 }
 
 .tooltip-type {
@@ -606,7 +391,6 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
     line-height: 1.4;
     margin: 0;
 }
-
 
 /* --- КНОПКИ И ПОДВАЛ --- */
 .back-btn { display: inline-block; margin-bottom: 20px; background-color: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: all 0.3s; text-decoration: none; }

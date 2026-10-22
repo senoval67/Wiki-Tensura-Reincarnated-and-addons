@@ -13,6 +13,49 @@ let currentTier = null;
 let currentSkillId = null;
 let evoDirection = 'horizontal';
 
+// --- УМНЫЙ РЕЗОЛВЕР СВЯЗЕЙ ---
+function resolveSkillLinks() {
+    if (typeof skillsData === 'undefined') return;
+    
+    skillsData.forEach(skill => {
+        if (!skill.infobox) skill.infobox = {};
+        
+        if (skill.infobox.next) {
+            skill.infobox.next.forEach(nextRef => {
+                const target = skillsData.find(s => s.id === nextRef.id);
+                if (target) {
+                    if (!target.infobox) target.infobox = {};
+                    if (!target.infobox.prev) target.infobox.prev = [];
+                    if (!target.infobox.prev.some(p => p.id === skill.id)) {
+                        target.infobox.prev.push({ 
+                            id: skill.id, 
+                            ru: skill.ru || skill.id, 
+                            tier: skill.tier || 'other' 
+                        });
+                    }
+                }
+            });
+        }
+        
+        if (skill.infobox.prev) {
+            skill.infobox.prev.forEach(prevRef => {
+                const target = skillsData.find(s => s.id === prevRef.id);
+                if (target) {
+                    if (!target.infobox) target.infobox = {};
+                    if (!target.infobox.next) target.infobox.next = [];
+                    if (!target.infobox.next.some(n => n.id === skill.id)) {
+                        target.infobox.next.push({ 
+                            id: skill.id, 
+                            ru: skill.ru || skill.id, 
+                            tier: skill.tier || 'other' 
+                        });
+                    }
+                }
+            });
+        }
+    });
+}
+
 function initTabs() {
     const tabsContainer = document.getElementById('tier-tabs');
     if (!tabsContainer) return;
@@ -33,6 +76,8 @@ function initTabs() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (!document.getElementById('skills-container')) return;
+    
+    resolveSkillLinks();
 
     const pageTitle = document.querySelector('#skills-list-view h2');
     if (pageTitle) pageTitle.textContent = t('skill_list_title');
@@ -48,13 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
             currentTier = skill.tier; 
             updateTabs();
             renderSkills();
-            showDetail(skillParam);
+            showDetail(skillParam, true);
         }
     }
 });
 
 window.addEventListener('languageChanged', () => {
     if (document.getElementById('skills-container')) {
+        resolveSkillLinks();
+
         const pageTitle = document.querySelector('#skills-list-view h2');
         if (pageTitle) pageTitle.textContent = t('skill_list_title');
 
@@ -67,6 +114,17 @@ window.addEventListener('languageChanged', () => {
     }
 });
 
+window.addEventListener('popstate', () => {
+    if (!document.getElementById('skills-container')) return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const skillParam = urlParams.get('skill');
+    if (skillParam) {
+        showDetail(skillParam, true);
+    } else {
+        showListView(true);
+    }
+});
+
 function updateTabs() {
     const buttons = document.querySelectorAll('.tab-btn');
     buttons.forEach((btn, index) => {
@@ -76,6 +134,7 @@ function updateTabs() {
 }
 
 function getIconHTML(iconString) {
+    if (!iconString) return '✨';
     if (iconString.includes('.') || iconString.includes('/')) return `<img src="${iconString}" alt="icon">`;
     return iconString;
 }
@@ -123,13 +182,13 @@ function renderSkills() {
             card.className = `skill-card ${skill.tier}`;
             card.onclick = () => showDetail(skill.id);
             
-            const displayName = currentLang === 'en' ? skill.en : skill.ru; 
+            const displayName = currentLang === 'en' ? (skill.en || skill.id) : (skill.ru || skill.en || skill.id); 
 
             card.innerHTML = `
                 <div class="skill-icon">${getIconHTML(skill.icon)}</div>
                 <div class="skill-info">
                     <span class="skill-ru">${displayName}</span>
-                    ${currentLang === 'ru' ? `<span class="skill-en">${skill.en}</span>` : ''}
+                    ${currentLang === 'ru' && skill.en ? `<span class="skill-en">${skill.en}</span>` : ''}
                 </div>
             `;
             grid.appendChild(card);
@@ -142,22 +201,27 @@ function buildSkillGraph(currentSkill) {
     let levelsMap = new Map();
     let processedNodes = new Map();
     
-    levelsMap.set(0, [{ ...currentSkill, level: 0 }]);
-    processedNodes.set(currentSkill.id, { ...currentSkill, level: 0 });
+    let rootNode = { ...currentSkill, level: 0 };
+    levelsMap.set(0, [rootNode]);
+    processedNodes.set(currentSkill.id, rootNode);
     
-    let queue = [{ node: processedNodes.get(currentSkill.id), dir: 2 }, { node: processedNodes.get(currentSkill.id), dir: -2 }];
+    let queue = [{ node: rootNode, dir: 2 }, { node: rootNode, dir: -2 }];
     
     while (queue.length > 0) {
         let { node, dir } = queue.shift();
         let links = dir > 0 ? (node.infobox?.next || []) : (node.infobox?.prev || []);
         
         for (let link of links) {
-            let fullNode = skillsData.find(s => s.id === link.id) || link;
+            if (!link || !link.id) continue;
+            
+            let fullNode = skillsData.find(s => s.id === link.id);
+            if (!fullNode) fullNode = link; 
+            
             let targetNode = processedNodes.get(fullNode.id);
             
             if (!targetNode) {
                 let newLevel = node.level + dir;
-                targetNode = { ...fullNode, level: newLevel };
+                targetNode = { ...fullNode, ...link, level: newLevel };
                 processedNodes.set(fullNode.id, targetNode);
                 if (!levelsMap.has(newLevel)) levelsMap.set(newLevel, []);
                 levelsMap.get(newLevel).push(targetNode);
@@ -166,15 +230,28 @@ function buildSkillGraph(currentSkill) {
         }
     }
     
-    levelsMap.forEach(nodes => {
-        nodes.forEach(node => {
-            node.targets = [];
-            if (node.infobox && node.infobox.next) {
-                node.infobox.next.forEach(n => {
-                    if (processedNodes.has(n.id)) node.targets.push(`node-${n.id}`);
-                });
-            }
-        });
+    processedNodes.forEach(node => { node.targets = []; });
+
+    processedNodes.forEach(node => {
+        if (node.infobox && node.infobox.next) {
+            node.infobox.next.forEach(n => {
+                if (n && n.id && processedNodes.has(n.id)) {
+                    let targetId = `node-${n.id}`;
+                    if (!node.targets.includes(targetId)) node.targets.push(targetId);
+                }
+            });
+        }
+        if (node.infobox && node.infobox.prev) {
+            node.infobox.prev.forEach(n => {
+                if (n && n.id) {
+                    let prevNode = processedNodes.get(n.id);
+                    if (prevNode) {
+                        let targetId = `node-${node.id}`;
+                        if (!prevNode.targets.includes(targetId)) prevNode.targets.push(targetId);
+                    }
+                }
+            });
+        }
     });
     
     return levelsMap;
@@ -205,7 +282,7 @@ function renderEvolutionGraph(currentSkill) {
             const cls = isCurrent ? 'evo-current' : '';
             const targetsAttr = node.targets.length > 0 ? `data-target="${node.targets.join(',')}"` : '';
             
-            const displayName = currentLang === 'en' ? (node.en || node.id) : (node.ru || node.id);
+            const displayName = currentLang === 'en' ? (node.en || node.id) : (node.ru || node.en || node.id);
             
             let iconHTML = '';
             if (node.icon && (node.icon.includes('.') || node.icon.includes('/'))) {
@@ -276,21 +353,33 @@ function drawSVGLines(currentId) {
                 const startRect = wrapperNode.getBoundingClientRect();
                 const endRect = targetEl.getBoundingClientRect();
                 let x1, y1, x2, y2;
+                let pathD = '';
+
                 if (evoDirection === 'horizontal') {
                     x1 = startRect.right - wrapperRect.left + scrollLeft;
                     y1 = startRect.top + startRect.height / 2 - wrapperRect.top + scrollTop;
                     x2 = endRect.left - wrapperRect.left + scrollLeft;
                     y2 = endRect.top + endRect.height / 2 - wrapperRect.top + scrollTop;
+                    
+                    let midX = (x1 + x2) / 2;
+                    pathD = `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`;
                 } else {
                     x1 = startRect.left + startRect.width / 2 - wrapperRect.left + scrollLeft;
                     y1 = startRect.bottom - wrapperRect.top + scrollTop;
                     x2 = endRect.left + endRect.width / 2 - wrapperRect.left + scrollLeft;
                     y2 = endRect.top - wrapperRect.top + scrollTop;
+                    
+                    let midY = (y1 + y2) / 2;
+                    pathD = `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}`;
                 }
-                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                line.setAttribute('x1', x1); line.setAttribute('y1', y1); line.setAttribute('x2', x2); line.setAttribute('y2', y2);
-                line.setAttribute('stroke', '#888'); line.setAttribute('stroke-width', '2'); line.setAttribute('marker-end', 'url(#arrowhead)');
-                svg.appendChild(line);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', pathD);
+                path.setAttribute('fill', 'none');
+                path.setAttribute('stroke', '#888');
+                path.setAttribute('stroke-width', '2');
+                path.setAttribute('marker-end', 'url(#arrowhead)');
+                svg.appendChild(path);
             }
         });
     });
@@ -342,7 +431,7 @@ function replaceWikiLinks(html) {
         if (foundSkill) {
             targetId = foundSkill.id;
             targetType = 'skill';
-            if (!finalText) finalText = currentLang === 'en' ? foundSkill.en : foundSkill.ru;
+            if (!finalText) finalText = currentLang === 'en' ? (foundSkill.en || foundSkill.id) : (foundSkill.ru || foundSkill.id);
             
             let iconPath = foundSkill.icon;
             if (iconPath && (iconPath.includes('.') || iconPath.includes('/'))) {
@@ -357,7 +446,7 @@ function replaceWikiLinks(html) {
             
             tooltipHTML = `
                 <div class="tooltip-card">
-                    <div class="tooltip-title">${tooltipIcon} ${currentLang === 'en' ? foundSkill.en : foundSkill.ru}</div>
+                    <div class="tooltip-title">${tooltipIcon} ${currentLang === 'en' ? (foundSkill.en || foundSkill.id) : (foundSkill.ru || foundSkill.id)}</div>
                     <span class="tooltip-type">${foundSkill.tier || 'Skill'}</span>
                     <p class="tooltip-desc">${shortDesc}</p>
                 </div>
@@ -366,7 +455,7 @@ function replaceWikiLinks(html) {
         } else if (foundRace) {
             targetId = foundRace.id;
             targetType = 'race';
-            if (!finalText) finalText = currentLang === 'en' ? foundRace.en : foundRace.ru;
+            if (!finalText) finalText = currentLang === 'en' ? (foundRace.en || foundRace.id) : (foundRace.ru || foundRace.id);
             
             let iconPath = foundRace.icon || foundRace.icon_path;
             if (iconPath && (iconPath.includes('.') || iconPath.includes('/'))) {
@@ -378,7 +467,7 @@ function replaceWikiLinks(html) {
             let tooltipIcon = iconPath && (iconPath.includes('.') || iconPath.includes('/')) ? `<img src="${iconPath}">` : `<span>${iconPath || '🧬'}</span>`;
             tooltipHTML = `
                 <div class="tooltip-card">
-                    <div class="tooltip-title">${tooltipIcon} ${currentLang === 'en' ? foundRace.en : foundRace.ru}</div>
+                    <div class="tooltip-title">${tooltipIcon} ${currentLang === 'en' ? (foundRace.en || foundRace.id) : (foundRace.ru || foundRace.id)}</div>
                     <span class="tooltip-type">Раса</span>
                     <p class="tooltip-desc">HP: ${foundRace.infobox?.hp || '?'} | EP: ${foundRace.infobox?.ep || '?'}</p>
                 </div>
@@ -430,11 +519,12 @@ function showDetail(skillId, keepScroll = false) {
     if (backBtn) backBtn.textContent = t('back_skills');
 
     const color = getTierColor(skill.tier);
-    const displayDesc = currentLang === 'en' ? (skill.desc_en || skill.desc) : skill.desc;
+    const displayDesc = currentLang === 'en' ? (skill.desc_en || skill.desc || '') : (skill.desc || '');
     let processedDesc = replaceWikiLinks(displayDesc);
     
-    let externalWikiUrl = `https://tensura.wiki.gg/wiki/${skill.en.replace(/ /g, '_')}`;
-    const displayRu = currentLang === 'en' ? skill.en : skill.ru; 
+    // ИСПРАВЛЕНИЕ: Сначала ищем ссылку в данных (wiki_url), иначе ведем на тенсура вики
+    let externalWikiUrl = skill.wiki_url || `https://tensura.wiki.gg/wiki/${(skill.en || skill.ru || skill.id).replace(/ /g, '_')}`;
+    const displayRu = currentLang === 'en' ? (skill.en || skill.id) : (skill.ru || skill.en || skill.id); 
 
     let mainHTML = `
         <div class="skill-main-content">
@@ -442,7 +532,7 @@ function showDetail(skillId, keepScroll = false) {
                 <h1>${displayRu}</h1>
                 <a href="${externalWikiUrl}" target="_blank" class="wiki-btn">${t('wiki_btn')}</a>
             </div>
-            ${currentLang === 'ru' ? `<p style="color: var(--text-muted); margin-bottom: 20px;"><em>${skill.en}</em></p>` : ''}
+            ${currentLang === 'ru' && skill.en ? `<p style="color: var(--text-muted); margin-bottom: 20px;"><em>${skill.en}</em></p>` : ''}
             <div class="skill-detail-description">
                 ${processedDesc}
             </div>
@@ -452,13 +542,15 @@ function showDetail(skillId, keepScroll = false) {
 
     let infoboxHTML = '';
     if (skill.infobox) {
+        const skillIcon = skill.icon || '✨';
+        
         infoboxHTML = `
             <div class="skill-infobox" style="border-color: ${color};">
-                <div class="infobox-header" style="background-color: ${color}22; border-color: ${color};">${skill.en}</div>
+                <div class="infobox-header" style="background-color: ${color}22; border-color: ${color};">${skill.en || skill.ru || skill.id}</div>
                 <div class="infobox-image-container" style="border-color: ${color};">
-                    ${skill.icon.includes('.') || skill.icon.includes('/') 
-                        ? `<img src="${skill.icon}" alt="${displayRu}">` 
-                        : `<span class="emoji-fallback">${skill.icon}</span>`}
+                    ${skillIcon.includes('.') || skillIcon.includes('/') 
+                        ? `<img src="${skillIcon}" alt="${displayRu}">` 
+                        : `<span class="emoji-fallback">${skillIcon}</span>`}
                 </div>
                 
                 <div class="infobox-section-title" style="background-color: ${color}44; border-color: ${color};">${t('info')}</div>
@@ -485,7 +577,8 @@ function showDetail(skillId, keepScroll = false) {
     listView.classList.add('hidden');
     detailView.classList.remove('hidden');
     
-    if (!keepScroll && !document.querySelector('.evo-graph-wrapper')) {
+    if (!keepScroll) {
+        window.history.pushState({}, document.title, `skills.html?skill=${skillId}&lang=${currentLang}`);
         window.scrollTo(0, 0);
     }
 }
@@ -495,15 +588,19 @@ function goToSkill(event, skillId) {
     showDetail(skillId);
 }
 
-function showListView() {
+function showListView(keepHistory = false) {
     currentSkillId = null;
     const listView = document.getElementById('skills-list-view');
     const detailView = document.getElementById('skill-detail-view');
     if (!listView || !detailView) return;
+    
     detailView.classList.add('hidden');
     listView.classList.remove('hidden');
-    window.history.pushState({}, document.title, window.location.pathname);
-    window.scrollTo(0, 0);
+    
+    if (!keepHistory) {
+        window.history.pushState({}, document.title, `skills.html?lang=${currentLang}`);
+        window.scrollTo(0, 0);
+    }
 }
 
 function getTierColor(tierId) {

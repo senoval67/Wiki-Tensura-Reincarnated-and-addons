@@ -1,4 +1,4 @@
-const bossesData = [
+const bossesDataTensura  = [
   {
     "id": "orc_lord",
     "ru": "Повелитель орков",

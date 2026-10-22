@@ -1,11 +1,11 @@
-const skillsData = [
+const skillsDataTensura = [
     {
         "id": "abnormal_condition_nullification",
         "ru": "Невосприимчивость к аномальным состояниям",
         "en": "Abnormal Condition Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Abnormal_Condition_Nullification.png",
+        "icon": "img/skills/tensura/Abnormal_Condition_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -33,7 +33,7 @@ const skillsData = [
         "en": "Abnormal Condition Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Abnormal_Condition_Resistance.png",
+        "icon": "img/skills/tensura/Abnormal_Condition_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -61,7 +61,7 @@ const skillsData = [
         "en": "Cold Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Cold_Nullification.png",
+        "icon": "img/skills/tensura/Cold_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -89,7 +89,7 @@ const skillsData = [
         "en": "Cold Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Cold_Resistance.png",
+        "icon": "img/skills/tensura/Cold_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -117,7 +117,7 @@ const skillsData = [
         "en": "Corrosion Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Corrosion_Nullification.png",
+        "icon": "img/skills/tensura/Corrosion_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -145,7 +145,7 @@ const skillsData = [
         "en": "Corrosion Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Corrosion_Resistance.png",
+        "icon": "img/skills/tensura/Corrosion_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -173,7 +173,7 @@ const skillsData = [
         "en": "Darkness Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Darkness_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Darkness_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -201,7 +201,7 @@ const skillsData = [
         "en": "Darkness Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Darkness_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Darkness_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -229,7 +229,7 @@ const skillsData = [
         "en": "Earth Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Earth_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Earth_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -257,7 +257,7 @@ const skillsData = [
         "en": "Earth Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Earth_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Earth_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -285,7 +285,7 @@ const skillsData = [
         "en": "Electricity Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Electricity_Nullification.png",
+        "icon": "img/skills/tensura/Electricity_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -313,7 +313,7 @@ const skillsData = [
         "en": "Electricity Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Electricity_Resistance.png",
+        "icon": "img/skills/tensura/Electricity_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -341,7 +341,7 @@ const skillsData = [
         "en": "Flame Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Flame_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Flame_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -369,7 +369,7 @@ const skillsData = [
         "en": "Flame Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Flame_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Flame_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -397,7 +397,7 @@ const skillsData = [
         "en": "Gravity Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Gravity_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Gravity_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -425,7 +425,7 @@ const skillsData = [
         "en": "Gravity Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Gravity_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Gravity_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -453,7 +453,7 @@ const skillsData = [
         "en": "Heat Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Heat_Nullification.png",
+        "icon": "img/skills/tensura/Heat_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -481,7 +481,7 @@ const skillsData = [
         "en": "Heat Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Heat_Resistance.png",
+        "icon": "img/skills/tensura/Heat_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -509,7 +509,7 @@ const skillsData = [
         "en": "Holy Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Holy_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Holy_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -530,7 +530,7 @@ const skillsData = [
         "en": "Holy Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Holy_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Holy_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -551,7 +551,7 @@ const skillsData = [
         "en": "Light Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Light_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Light_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -579,7 +579,7 @@ const skillsData = [
         "en": "Light Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Light_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Light_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -607,7 +607,7 @@ const skillsData = [
         "en": "Magic Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Magic_Nullification.png",
+        "icon": "img/skills/tensura/Magic_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -628,7 +628,7 @@ const skillsData = [
         "en": "Magic Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Magic_Resistance.png",
+        "icon": "img/skills/tensura/Magic_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -649,7 +649,7 @@ const skillsData = [
         "en": "Pain Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Pain_Nullification.png",
+        "icon": "img/skills/tensura/Pain_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -677,7 +677,7 @@ const skillsData = [
         "en": "Pain Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Pain_Resistance.png",
+        "icon": "img/skills/tensura/Pain_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -705,7 +705,7 @@ const skillsData = [
         "en": "Paralysis Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Paralysis_Nullification.png",
+        "icon": "img/skills/tensura/Paralysis_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -733,7 +733,7 @@ const skillsData = [
         "en": "Paralysis Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Paralysis_Resistance.png",
+        "icon": "img/skills/tensura/Paralysis_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -753,7 +753,7 @@ const skillsData = [
             "cost_en": null
         },
         "desc": "<h2><span class=\"mw-headline\" id=\"Obtainment\">Получение</span></h2>\n<p>Можно получить, если на вас действует эффект <a href=\"https://tensura.wiki.gg/wiki/Effects/Paralysis\" title=\"Effects/Paralysis\">Паралич</a> и вы несколько раз получаете не менее 5 единиц физического урона (пока навык не будет изучен).\n</p>\n<h2><span class=\"mw-headline\" id=\"Effect\">Эффект</span></h2>\n<p>При включении предотвращает урон от паралича, если он снижает ваше здоровье ниже 50% от максимума. Также предотвращает эффекты паралича, замедления и усталости при добыче.\nЕсли атака не снижает здоровье ниже 50% от максимума, полученный урон уменьшается вдвое. \n</p>\n<h2><span class=\"mw-headline\" id=\"Tips\">Советы</span></h2>\n<ul><li>Попросите кого-нибудь применить на вас Парализующее дыхание</li>\n<li>Если вы играете в одиночку, дождитесь, пока одна или несколько Злых многоножек применят на вас своё Парализующее дыхание</li></ul>\n<p><br/>\n</p>\n<p><br/>\n</p>",
-        "desc_en": "<h2><span class=\"mw-headline\" id=\"Obtainment\">Obtainment</span></h2>\n<p>Can be obtained by having the <a href=\"https://tensura.wiki.gg/wiki/Effects/Paralysis\" title=\"Effects/Paralysis\">Paralysis effect</a> and taking (5+) physical damage multiple times. (until you learned it)\n</p>\n<h2><span class=\"mw-headline\" id=\"Effect\">Effect</span></h2>\n<p>When toggled, prevents Paralysis damage if it falls below 50% of your Max HP. Also prevents paralysis, slowness and minimg/skills fatigue effects\nIf the attack is not below 50% of your Max HP the damage will be halved. \n</p>\n<h2><span class=\"mw-headline\" id=\"Tips\">Tips</span></h2>\n<ul><li>Get someone to use Paralysing Breath on you</li>\n<li>If you are playing alone just get one or multiple Evil Centipede to use their Paralysing Breath on you</li></ul>\n<p><br/>\n</p>\n<p><br/>\n</p>"
+        "desc_en": "<h2><span class=\"mw-headline\" id=\"Obtainment\">Obtainment</span></h2>\n<p>Can be obtained by having the <a href=\"https://tensura.wiki.gg/wiki/Effects/Paralysis\" title=\"Effects/Paralysis\">Paralysis effect</a> and taking (5+) physical damage multiple times. (until you learned it)\n</p>\n<h2><span class=\"mw-headline\" id=\"Effect\">Effect</span></h2>\n<p>When toggled, prevents Paralysis damage if it falls below 50% of your Max HP. Also prevents paralysis, slowness and minimg/skills/tensura fatigue effects\nIf the attack is not below 50% of your Max HP the damage will be halved. \n</p>\n<h2><span class=\"mw-headline\" id=\"Tips\">Tips</span></h2>\n<ul><li>Get someone to use Paralysing Breath on you</li>\n<li>If you are playing alone just get one or multiple Evil Centipede to use their Paralysing Breath on you</li></ul>\n<p><br/>\n</p>\n<p><br/>\n</p>"
     },
     {
         "id": "physical_attack_nullification",
@@ -761,7 +761,7 @@ const skillsData = [
         "en": "Physical Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Physical_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Physical_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -789,7 +789,7 @@ const skillsData = [
         "en": "Physical Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Physical_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Physical_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -817,7 +817,7 @@ const skillsData = [
         "en": "Pierce Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Pierce_Nullification.png",
+        "icon": "img/skills/tensura/Pierce_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -845,7 +845,7 @@ const skillsData = [
         "en": "Pierce Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Pierce_Resistance.png",
+        "icon": "img/skills/tensura/Pierce_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -873,7 +873,7 @@ const skillsData = [
         "en": "Poison Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Poison_Nullification.png",
+        "icon": "img/skills/tensura/Poison_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -901,7 +901,7 @@ const skillsData = [
         "en": "Poison Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Poison_Resistance.png",
+        "icon": "img/skills/tensura/Poison_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -929,7 +929,7 @@ const skillsData = [
         "en": "Spatial Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Spatial_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Spatial_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -957,7 +957,7 @@ const skillsData = [
         "en": "Spatial Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Spatial_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Spatial_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -985,7 +985,7 @@ const skillsData = [
         "en": "Spiritual Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Spiritual_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Spiritual_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1013,7 +1013,7 @@ const skillsData = [
         "en": "Spiritual Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Spiritual_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Spiritual_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1041,7 +1041,7 @@ const skillsData = [
         "en": "Thermal Fluctuation Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Thermal_Fluctuation_Nullification.png",
+        "icon": "img/skills/tensura/Thermal_Fluctuation_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1069,7 +1069,7 @@ const skillsData = [
         "en": "Thermal Fluctuation Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Thermal_Fluctuation_Resistance.png",
+        "icon": "img/skills/tensura/Thermal_Fluctuation_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1097,7 +1097,7 @@ const skillsData = [
         "en": "Water Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Water_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Water_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1125,7 +1125,7 @@ const skillsData = [
         "en": "Water Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Water_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Water_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1153,7 +1153,7 @@ const skillsData = [
         "en": "Wind Attack Nullification",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Wind_Attack_Nullification.png",
+        "icon": "img/skills/tensura/Wind_Attack_Nullification.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1181,7 +1181,7 @@ const skillsData = [
         "en": "Wind Attack Resistance",
         "mod": "Tensura: Reincarnated",
         "tier": "resistances",
-        "icon": "img/skills/Wind_Attack_Resistance.png",
+        "icon": "img/skills/tensura/Wind_Attack_Resistance.png",
         "infobox": {
             "type": "Resistance Skill",
             "cost": null,
@@ -1209,7 +1209,7 @@ const skillsData = [
         "en": "Absorb & Dissolve",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Absorb_&_Dissolve.png",
+        "icon": "img/skills/tensura/Absorb_&_Dissolve.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1221,8 +1221,8 @@ const skillsData = [
             "passive_en": null,
             "cost_en": "100 MP"
         },
-        "desc": "<p>Растворяйте определённые предметы, чтобы мгновенно поглощать их.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<h3><span class=\"mw-headline\" id=\"Active\">Активный</span></h3>\n<ul><li>[Активный — нажатие] — Поглощает предмет в руке, если он отмечен как допустимая цель навыка, причём без задержки. Восстанавливает HP и MP. (См. список ниже)\n<ul><li>Поглощение <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><img/skills alt=\"Slime Core.png: Sprite image for Slime Cores in Minecraft linking to Slime Core\" class=\"pixel-image\" data-file-height=\"512\" data-file-width=\"512\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/thumb/Slime_Core.png/16px-Slime_Core.png?db591f\" srcset=\"/images/thumb/Slime_Core.png/24px-Slime_Core.png?db591f 1.5x, /images/thumb/Slime_Core.png/32px-Slime_Core.png?db591f 2x\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><span class=\"sprite-text\">ядер слизи</span></a></span> в качестве <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">слизня</a>позволяет изменять размер. Зажмите Shift, чтобы уменьшиться; без Shift — чтобы вырасти. Увеличение размера повышает максимальное HP на 5</li>\n<li>Поглощение 100 единиц <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">магической руды</span></a></span> в качестве <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">слизня</a> необходимо, чтобы эволюционировать в <a href=\"https://tensura.wiki.gg/wiki/Races/Metal_Slime\" title=\"Races/Metal Slime\">металлического слизня</a></li>\n<li>Получает статусные эффекты от съеденной пищи (без бонуса мастерства)</li></ul></li></ul>\n<h2><span class=\"mw-headline\" id=\"Consumable_Stuff\">Расходуемые предметы</span></h2>",
-        "desc_en": "<p>Dissolve specific items to instantly consume them.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<h3><span class=\"mw-headline\" id=\"Active\">Active</span></h3>\n<ul><li>[Active - Press] - Consumes the held item if it's flagged as a valid target for the skill, instantly consuming the item without any delay. Restores HP and MP. (See List Below)\n<ul><li>Consuming <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><img/skills alt=\"Slime Core.png: Sprite image for Slime Cores in Minecraft linking to Slime Core\" class=\"pixel-image\" data-file-height=\"512\" data-file-width=\"512\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/thumb/Slime_Core.png/16px-Slime_Core.png?db591f\" srcset=\"/images/thumb/Slime_Core.png/24px-Slime_Core.png?db591f 1.5x, /images/thumb/Slime_Core.png/32px-Slime_Core.png?db591f 2x\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><span class=\"sprite-text\">Slime Cores</span></a></span> as a <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">Slime</a>, You are able to change your size. Shift to Shrink - Non Shift to Grow. Growing increases your maximum HP by 5</li>\n<li>Consuming 100 <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">Magic Ore</span></a></span> as a <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">Slime</a> is needed to evolve into a <a href=\"https://tensura.wiki.gg/wiki/Races/Metal_Slime\" title=\"Races/Metal Slime\">Metal Slime</a></li>\n<li>Gain status effects from consumed food(No mastery bonus)</li></ul></li></ul>\n<h2><span class=\"mw-headline\" id=\"Consumable_Stuff\">Consumable Stuff</span></h2>"
+        "desc": "<p>Растворяйте определённые предметы, чтобы мгновенно поглощать их.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<h3><span class=\"mw-headline\" id=\"Active\">Активный</span></h3>\n<ul><li>[Активный — нажатие] — Поглощает предмет в руке, если он отмечен как допустимая цель навыка, причём без задержки. Восстанавливает HP и MP. (См. список ниже)\n<ul><li>Поглощение <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><img/skills/tensura alt=\"Slime Core.png: Sprite image for Slime Cores in Minecraft linking to Slime Core\" class=\"pixel-image\" data-file-height=\"512\" data-file-width=\"512\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/thumb/Slime_Core.png/16px-Slime_Core.png?db591f\" srcset=\"/images/thumb/Slime_Core.png/24px-Slime_Core.png?db591f 1.5x, /images/thumb/Slime_Core.png/32px-Slime_Core.png?db591f 2x\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><span class=\"sprite-text\">ядер слизи</span></a></span> в качестве <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">слизня</a>позволяет изменять размер. Зажмите Shift, чтобы уменьшиться; без Shift — чтобы вырасти. Увеличение размера повышает максимальное HP на 5</li>\n<li>Поглощение 100 единиц <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills/tensura alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">магической руды</span></a></span> в качестве <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">слизня</a> необходимо, чтобы эволюционировать в <a href=\"https://tensura.wiki.gg/wiki/Races/Metal_Slime\" title=\"Races/Metal Slime\">металлического слизня</a></li>\n<li>Получает статусные эффекты от съеденной пищи (без бонуса мастерства)</li></ul></li></ul>\n<h2><span class=\"mw-headline\" id=\"Consumable_Stuff\">Расходуемые предметы</span></h2>",
+        "desc_en": "<p>Dissolve specific items to instantly consume them.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<h3><span class=\"mw-headline\" id=\"Active\">Active</span></h3>\n<ul><li>[Active - Press] - Consumes the held item if it's flagged as a valid target for the skill, instantly consuming the item without any delay. Restores HP and MP. (See List Below)\n<ul><li>Consuming <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><img/skills/tensura alt=\"Slime Core.png: Sprite image for Slime Cores in Minecraft linking to Slime Core\" class=\"pixel-image\" data-file-height=\"512\" data-file-width=\"512\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/thumb/Slime_Core.png/16px-Slime_Core.png?db591f\" srcset=\"/images/thumb/Slime_Core.png/24px-Slime_Core.png?db591f 1.5x, /images/thumb/Slime_Core.png/32px-Slime_Core.png?db591f 2x\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Slime_Core\" title=\"Slime Core\"><span class=\"sprite-text\">Slime Cores</span></a></span> as a <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">Slime</a>, You are able to change your size. Shift to Shrink - Non Shift to Grow. Growing increases your maximum HP by 5</li>\n<li>Consuming 100 <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills/tensura alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">Magic Ore</span></a></span> as a <a href=\"https://tensura.wiki.gg/wiki/Races/Slime\" title=\"Races/Slime\">Slime</a> is needed to evolve into a <a href=\"https://tensura.wiki.gg/wiki/Races/Metal_Slime\" title=\"Races/Metal Slime\">Metal Slime</a></li>\n<li>Gain status effects from consumed food(No mastery bonus)</li></ul></li></ul>\n<h2><span class=\"mw-headline\" id=\"Consumable_Stuff\">Consumable Stuff</span></h2>"
     },
     {
         "id": "beast_transformation",
@@ -1230,7 +1230,7 @@ const skillsData = [
         "en": "Beast Transformation",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Beast_Transformation.png",
+        "icon": "img/skills/tensura/Beast_Transformation.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1251,7 +1251,7 @@ const skillsData = [
         "en": "Blood Mist",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Blood_Mist.png",
+        "icon": "img/skills/tensura/Blood_Mist.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1272,7 +1272,7 @@ const skillsData = [
         "en": "Body Armor",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Body_Armor.png",
+        "icon": "img/skills/tensura/Body_Armor.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1293,7 +1293,7 @@ const skillsData = [
         "en": "Charm",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Charm.png",
+        "icon": "img/skills/tensura/Charm.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1314,7 +1314,7 @@ const skillsData = [
         "en": "Darkness Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Darkness_Transform.png",
+        "icon": "img/skills/tensura/Darkness_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1342,7 +1342,7 @@ const skillsData = [
         "en": "Divine Ki Release",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Divine_Ki_Release.png",
+        "icon": "img/skills/tensura/Divine_Ki_Release.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1363,7 +1363,7 @@ const skillsData = [
         "en": "Dragon Ear",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Dragon_Ear.png",
+        "icon": "img/skills/tensura/Dragon_Ear.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1384,7 +1384,7 @@ const skillsData = [
         "en": "Dragon Eye",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Dragon_Eye.png",
+        "icon": "img/skills/tensura/Dragon_Eye.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1405,7 +1405,7 @@ const skillsData = [
         "en": "Dragon Mode",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Dragon_Mode.png",
+        "icon": "img/skills/tensura/Dragon_Mode.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1426,7 +1426,7 @@ const skillsData = [
         "en": "Dragon Skin",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Dragon_Skin.png",
+        "icon": "img/skills/tensura/Dragon_Skin.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1447,7 +1447,7 @@ const skillsData = [
         "en": "Drain",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Drain.png",
+        "icon": "img/skills/tensura/Drain.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1468,7 +1468,7 @@ const skillsData = [
         "en": "Earth Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Earth_Transform.png",
+        "icon": "img/skills/tensura/Earth_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1496,7 +1496,7 @@ const skillsData = [
         "en": "Eye Of Truth",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Eye_Of_Truth.png",
+        "icon": "img/skills/tensura/Eye_Of_Truth.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1517,7 +1517,7 @@ const skillsData = [
         "en": "Flame Breath",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Flame_Breath.png",
+        "icon": "img/skills/tensura/Flame_Breath.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1538,7 +1538,7 @@ const skillsData = [
         "en": "Flame Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Flame_Transform.png",
+        "icon": "img/skills/tensura/Flame_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1566,7 +1566,7 @@ const skillsData = [
         "en": "Giantification",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Giantification.png",
+        "icon": "img/skills/tensura/Giantification.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1587,7 +1587,7 @@ const skillsData = [
         "en": "Light Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Light_Transform.png",
+        "icon": "img/skills/tensura/Light_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1615,7 +1615,7 @@ const skillsData = [
         "en": "Ogre Berserker",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Ogre_Berserker.png",
+        "icon": "img/skills/tensura/Ogre_Berserker.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1636,7 +1636,7 @@ const skillsData = [
         "en": "Paralysing Breath",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Paralysing_Breath.png",
+        "icon": "img/skills/tensura/Paralysing_Breath.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1657,7 +1657,7 @@ const skillsData = [
         "en": "Poisonous Breath",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Poisonous_Breath.png",
+        "icon": "img/skills/tensura/Poisonous_Breath.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1678,7 +1678,7 @@ const skillsData = [
         "en": "Possession",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Possession.png",
+        "icon": "img/skills/tensura/Possession.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1699,7 +1699,7 @@ const skillsData = [
         "en": "Scale Armor",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Scale_Armor.png",
+        "icon": "img/skills/tensura/Scale_Armor.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1720,7 +1720,7 @@ const skillsData = [
         "en": "Space Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Space_Transform.png",
+        "icon": "img/skills/tensura/Space_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1748,7 +1748,7 @@ const skillsData = [
         "en": "Thunder Breath",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Thunder_Breath.png",
+        "icon": "img/skills/tensura/Thunder_Breath.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1769,7 +1769,7 @@ const skillsData = [
         "en": "Titanification",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Titanification.png",
+        "icon": "img/skills/tensura/Titanification.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1790,7 +1790,7 @@ const skillsData = [
         "en": "Ultrasonic Waves",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Ultrasonic_Waves.png",
+        "icon": "img/skills/tensura/Ultrasonic_Waves.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1811,7 +1811,7 @@ const skillsData = [
         "en": "Unpredictability",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Unpredictability.png",
+        "icon": "img/skills/tensura/Unpredictability.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1832,7 +1832,7 @@ const skillsData = [
         "en": "Water Breathing",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Water_Breathing.png",
+        "icon": "img/skills/tensura/Water_Breathing.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1853,7 +1853,7 @@ const skillsData = [
         "en": "Water Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Water_Transform.png",
+        "icon": "img/skills/tensura/Water_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1881,7 +1881,7 @@ const skillsData = [
         "en": "Wind Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "intrinsic",
-        "icon": "img/skills/Wind_Transform.png",
+        "icon": "img/skills/tensura/Wind_Transform.png",
         "infobox": {
             "type": "Intrinsic Skill",
             "cost": "100 MP",
@@ -1909,7 +1909,7 @@ const skillsData = [
         "en": "Coercion",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Coercion.png",
+        "icon": "img/skills/tensura/Coercion.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -1942,7 +1942,7 @@ const skillsData = [
         "en": "Corrosion",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Corrosion.png",
+        "icon": "img/skills/tensura/Corrosion.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -1963,7 +1963,7 @@ const skillsData = [
         "en": "Farsight",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Farsight.png",
+        "icon": "img/skills/tensura/Farsight.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -1984,7 +1984,7 @@ const skillsData = [
         "en": "Gravity Field",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Gravity_Field.png",
+        "icon": "img/skills/tensura/Gravity_Field.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2005,7 +2005,7 @@ const skillsData = [
         "en": "Gravity Flight",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Gravity_Flight.png",
+        "icon": "img/skills/tensura/Gravity_Flight.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2026,7 +2026,7 @@ const skillsData = [
         "en": "Hydraulic Propulsion",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Hydraulic_Propulsion.png",
+        "icon": "img/skills/tensura/Hydraulic_Propulsion.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2061,7 +2061,7 @@ const skillsData = [
         "en": "Paralysis",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Paralysis.png",
+        "icon": "img/skills/tensura/Paralysis.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2082,7 +2082,7 @@ const skillsData = [
         "en": "Poison",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Poison.png",
+        "icon": "img/skills/tensura/Poison.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2103,7 +2103,7 @@ const skillsData = [
         "en": "Ranged Barrier",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Ranged_Barrier.png",
+        "icon": "img/skills/tensura/Ranged_Barrier.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2131,7 +2131,7 @@ const skillsData = [
         "en": "Self Regeneration",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Self_Regeneration.png",
+        "icon": "img/skills/tensura/Self_Regeneration.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2159,7 +2159,7 @@ const skillsData = [
         "en": "Strength",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Strength.png",
+        "icon": "img/skills/tensura/Strength.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2180,7 +2180,7 @@ const skillsData = [
         "en": "Telepathy",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Telepathy.png",
+        "icon": "img/skills/tensura/Telepathy.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2208,7 +2208,7 @@ const skillsData = [
         "en": "Thought Communication",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Thought_Communication.png",
+        "icon": "img/skills/tensura/Thought_Communication.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2236,7 +2236,7 @@ const skillsData = [
         "en": "Voice Cannon",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Voice_Cannon.png",
+        "icon": "img/skills/tensura/Voice_Cannon.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2264,7 +2264,7 @@ const skillsData = [
         "en": "Water Blade",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Water_Blade.png",
+        "icon": "img/skills/tensura/Water_Blade.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2292,7 +2292,7 @@ const skillsData = [
         "en": "Water Current Control",
         "mod": "Tensura: Reincarnated",
         "tier": "common",
-        "icon": "img/skills/Water_Current_Control.png",
+        "icon": "img/skills/tensura/Water_Current_Control.png",
         "infobox": {
             "type": "Common Skill",
             "cost": "100 MP",
@@ -2320,7 +2320,7 @@ const skillsData = [
         "en": "All Seeing Eye",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/All_Seeing_Eye.png",
+        "icon": "img/skills/tensura/All_Seeing_Eye.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2341,7 +2341,7 @@ const skillsData = [
         "en": "Analytical Appraisal",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Analytical_Appraisal.png",
+        "icon": "img/skills/tensura/Analytical_Appraisal.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2362,7 +2362,7 @@ const skillsData = [
         "en": "Black Flame",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Black_Flame.png",
+        "icon": "img/skills/tensura/Black_Flame.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2383,7 +2383,7 @@ const skillsData = [
         "en": "Black Lightning",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Black_Lightning.png",
+        "icon": "img/skills/tensura/Black_Lightning.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2404,7 +2404,7 @@ const skillsData = [
         "en": "Body Double",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Body_Double.png",
+        "icon": "img/skills/tensura/Body_Double.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2425,7 +2425,7 @@ const skillsData = [
         "en": "Chant Annulment",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Chant_Annulment.png",
+        "icon": "img/skills/tensura/Chant_Annulment.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2446,7 +2446,7 @@ const skillsData = [
         "en": "Danger Sense",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Danger_Sense.png",
+        "icon": "img/skills/tensura/Danger_Sense.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2467,7 +2467,7 @@ const skillsData = [
         "en": "Demon Lord Haki",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Demon_Lord_Haki.png",
+        "icon": "img/skills/tensura/Demon_Lord_Haki.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2495,7 +2495,7 @@ const skillsData = [
         "en": "Earth Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Earth_Domination.png",
+        "icon": "img/skills/tensura/Earth_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2523,7 +2523,7 @@ const skillsData = [
         "en": "Earth Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Earth_Manipulation.png",
+        "icon": "img/skills/tensura/Earth_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2551,7 +2551,7 @@ const skillsData = [
         "en": "Flame Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Flame_Domination.png",
+        "icon": "img/skills/tensura/Flame_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2579,7 +2579,7 @@ const skillsData = [
         "en": "Flame Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Flame_Manipulation.png",
+        "icon": "img/skills/tensura/Flame_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2612,7 +2612,7 @@ const skillsData = [
         "en": "Godwolf Sense",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Godwolf_Sense.png",
+        "icon": "img/skills/tensura/Godwolf_Sense.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2633,7 +2633,7 @@ const skillsData = [
         "en": "Gravity Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Gravity_Domination.png",
+        "icon": "img/skills/tensura/Gravity_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2661,7 +2661,7 @@ const skillsData = [
         "en": "Gravity Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Gravity_Manipulation.png",
+        "icon": "img/skills/tensura/Gravity_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2689,7 +2689,7 @@ const skillsData = [
         "en": "Haki",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Haki.png",
+        "icon": "img/skills/tensura/Haki.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2734,7 +2734,7 @@ const skillsData = [
         "en": "Heat Wave",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Heat_Wave.png",
+        "icon": "img/skills/tensura/Heat_Wave.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2762,7 +2762,7 @@ const skillsData = [
         "en": "Heavenly Eye",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Heavenly_Eye.png",
+        "icon": "img/skills/tensura/Heavenly_Eye.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2783,7 +2783,7 @@ const skillsData = [
         "en": "Hero Haki",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Hero_Haki.png",
+        "icon": "img/skills/tensura/Hero_Haki.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2818,7 +2818,7 @@ const skillsData = [
         "en": "Infinite Regeneration",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Infinite_Regeneration.png",
+        "icon": "img/skills/tensura/Infinite_Regeneration.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2846,7 +2846,7 @@ const skillsData = [
         "en": "Law Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Law_Manipulation.png",
+        "icon": "img/skills/tensura/Law_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1,000 MP",
@@ -2874,7 +2874,7 @@ const skillsData = [
         "en": "Lightning Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Lightning_Domination.png",
+        "icon": "img/skills/tensura/Lightning_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2902,7 +2902,7 @@ const skillsData = [
         "en": "Lightning Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Lightning_Manipulation.png",
+        "icon": "img/skills/tensura/Lightning_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2930,7 +2930,7 @@ const skillsData = [
         "en": "Magic Aura",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Aura.png",
+        "icon": "img/skills/tensura/Magic_Aura.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2951,7 +2951,7 @@ const skillsData = [
         "en": "Magic Darkness Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Darkness_Transform.png",
+        "icon": "img/skills/tensura/Magic_Darkness_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -2979,7 +2979,7 @@ const skillsData = [
         "en": "Magic Earth Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Earth_Transform.png",
+        "icon": "img/skills/tensura/Magic_Earth_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3007,7 +3007,7 @@ const skillsData = [
         "en": "Magic Flame Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Flame_Transform.png",
+        "icon": "img/skills/tensura/Magic_Flame_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3035,7 +3035,7 @@ const skillsData = [
         "en": "Magic Jamming",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Jamming.png",
+        "icon": "img/skills/tensura/Magic_Jamming.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3056,7 +3056,7 @@ const skillsData = [
         "en": "Magic Light Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Light_Transform.png",
+        "icon": "img/skills/tensura/Magic_Light_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3084,7 +3084,7 @@ const skillsData = [
         "en": "Magic Sense",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Sense.png",
+        "icon": "img/skills/tensura/Magic_Sense.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3105,7 +3105,7 @@ const skillsData = [
         "en": "Magic Space Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Space_Transform.png",
+        "icon": "img/skills/tensura/Magic_Space_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3133,7 +3133,7 @@ const skillsData = [
         "en": "Magic Water Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Water_Transform.png",
+        "icon": "img/skills/tensura/Magic_Water_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3161,7 +3161,7 @@ const skillsData = [
         "en": "Magic Wind Transform",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Magic_Wind_Transform.png",
+        "icon": "img/skills/tensura/Magic_Wind_Transform.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3189,7 +3189,7 @@ const skillsData = [
         "en": "Majesty",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Majesty.png",
+        "icon": "img/skills/tensura/Majesty.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3210,7 +3210,7 @@ const skillsData = [
         "en": "Mana Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Mana_Manipulation.png",
+        "icon": "img/skills/tensura/Mana_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1,000 MP",
@@ -3238,7 +3238,7 @@ const skillsData = [
         "en": "Molecular Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Molecular_Manipulation.png",
+        "icon": "img/skills/tensura/Molecular_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3259,7 +3259,7 @@ const skillsData = [
         "en": "Mortal Fear",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Mortal_Fear.png",
+        "icon": "img/skills/tensura/Mortal_Fear.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3287,7 +3287,7 @@ const skillsData = [
         "en": "Multilayer Barrier",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Multilayer_Barrier.png",
+        "icon": "img/skills/tensura/Multilayer_Barrier.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3315,7 +3315,7 @@ const skillsData = [
         "en": "Sacred Haki",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sacred_Haki.png",
+        "icon": "img/skills/tensura/Sacred_Haki.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3343,7 +3343,7 @@ const skillsData = [
         "en": "Sage",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sage.png",
+        "icon": "img/skills/tensura/Sage.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3364,7 +3364,7 @@ const skillsData = [
         "en": "Sense Heat Source",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sense_Heat_Source.png",
+        "icon": "img/skills/tensura/Sense_Heat_Source.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3385,7 +3385,7 @@ const skillsData = [
         "en": "Sense Soundwave",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sense_Soundwave.png",
+        "icon": "img/skills/tensura/Sense_Soundwave.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3406,7 +3406,7 @@ const skillsData = [
         "en": "Shadow Motion",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Shadow_Motion.png",
+        "icon": "img/skills/tensura/Shadow_Motion.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3427,7 +3427,7 @@ const skillsData = [
         "en": "Snake Eye",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Snake_Eye.png",
+        "icon": "img/skills/tensura/Snake_Eye.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3448,7 +3448,7 @@ const skillsData = [
         "en": "Sound Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sound_Domination.png",
+        "icon": "img/skills/tensura/Sound_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3476,7 +3476,7 @@ const skillsData = [
         "en": "Sound Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sound_Manipulation.png",
+        "icon": "img/skills/tensura/Sound_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3504,7 +3504,7 @@ const skillsData = [
         "en": "Spatial Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Spatial_Domination.png",
+        "icon": "img/skills/tensura/Spatial_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3532,7 +3532,7 @@ const skillsData = [
         "en": "Spatial Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Spatial_Manipulation.png",
+        "icon": "img/skills/tensura/Spatial_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3560,7 +3560,7 @@ const skillsData = [
         "en": "Spatial Motion",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Spatial_Motion.png",
+        "icon": "img/skills/tensura/Spatial_Motion.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3581,7 +3581,7 @@ const skillsData = [
         "en": "Steel Strength",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Steel_Strength.png",
+        "icon": "img/skills/tensura/Steel_Strength.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3602,7 +3602,7 @@ const skillsData = [
         "en": "Sticky Steel Thread",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Sticky_Steel_Thread.png",
+        "icon": "img/skills/tensura/Sticky_Steel_Thread.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3623,7 +3623,7 @@ const skillsData = [
         "en": "Strengthen Body",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Strengthen_Body.png",
+        "icon": "img/skills/tensura/Strengthen_Body.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3644,7 +3644,7 @@ const skillsData = [
         "en": "Thought Acceleration",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Thought_Acceleration.png",
+        "icon": "img/skills/tensura/Thought_Acceleration.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3665,7 +3665,7 @@ const skillsData = [
         "en": "Ultra-Instinct",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Ultra-Instinct.png",
+        "icon": "img/skills/tensura/Ultra-Instinct.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3686,7 +3686,7 @@ const skillsData = [
         "en": "Ultraspeed Regeneration",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Ultraspeed_Regeneration.png",
+        "icon": "img/skills/tensura/Ultraspeed_Regeneration.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3721,7 +3721,7 @@ const skillsData = [
         "en": "Universal Perception",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Universal_Perception.png",
+        "icon": "img/skills/tensura/Universal_Perception.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3742,7 +3742,7 @@ const skillsData = [
         "en": "Water Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Water_Domination.png",
+        "icon": "img/skills/tensura/Water_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3770,7 +3770,7 @@ const skillsData = [
         "en": "Water Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Water_Manipulation.png",
+        "icon": "img/skills/tensura/Water_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3798,7 +3798,7 @@ const skillsData = [
         "en": "Weather Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Weather_Domination.png",
+        "icon": "img/skills/tensura/Weather_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3826,7 +3826,7 @@ const skillsData = [
         "en": "Weather Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Weather_Manipulation.png",
+        "icon": "img/skills/tensura/Weather_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3854,7 +3854,7 @@ const skillsData = [
         "en": "Wind Domination",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Wind_Domination.png",
+        "icon": "img/skills/tensura/Wind_Domination.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3882,7 +3882,7 @@ const skillsData = [
         "en": "Wind Manipulation",
         "mod": "Tensura: Reincarnated",
         "tier": "extra",
-        "icon": "img/skills/Wind_Manipulation.png",
+        "icon": "img/skills/tensura/Wind_Manipulation.png",
         "infobox": {
             "type": "Extra Skill",
             "cost": "1000 MP",
@@ -3910,7 +3910,7 @@ const skillsData = [
         "en": "Absolute Severance",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Absolute_Severance.png",
+        "icon": "img/skills/tensura/Absolute_Severance.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -3931,7 +3931,7 @@ const skillsData = [
         "en": "Analyst",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Analyst.png",
+        "icon": "img/skills/tensura/Analyst.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": null,
@@ -3952,7 +3952,7 @@ const skillsData = [
         "en": "Berserk",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Berserk.png",
+        "icon": "img/skills/tensura/Berserk.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "20000 MP",
@@ -3973,7 +3973,7 @@ const skillsData = [
         "en": "Berserker",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Berserker.png",
+        "icon": "img/skills/tensura/Berserker.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "40000 MP",
@@ -3994,7 +3994,7 @@ const skillsData = [
         "en": "Bewilder",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Bewilder.png",
+        "icon": "img/skills/tensura/Bewilder.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4015,7 +4015,7 @@ const skillsData = [
         "en": "Chef",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Chef.png",
+        "icon": "img/skills/tensura/Chef.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "10000 MP",
@@ -4036,7 +4036,7 @@ const skillsData = [
         "en": "Chosen One",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Chosen_One.png",
+        "icon": "img/skills/tensura/Chosen_One.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "90000 MP",
@@ -4057,7 +4057,7 @@ const skillsData = [
         "en": "Commander",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Commander.png",
+        "icon": "img/skills/tensura/Commander.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4078,7 +4078,7 @@ const skillsData = [
         "en": "Cook",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Cook.png",
+        "icon": "img/skills/tensura/Cook.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -4099,7 +4099,7 @@ const skillsData = [
         "en": "Creator",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Creator.png",
+        "icon": "img/skills/tensura/Creator.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "75000 MP",
@@ -4120,7 +4120,7 @@ const skillsData = [
         "en": "Degenerate",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Degenerate.png",
+        "icon": "img/skills/tensura/Degenerate.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4141,7 +4141,7 @@ const skillsData = [
         "en": "Divine Berserker",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Divine_Berserker.png",
+        "icon": "img/skills/tensura/Divine_Berserker.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -4162,7 +4162,7 @@ const skillsData = [
         "en": "Engorger",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Engorger.png",
+        "icon": "img/skills/tensura/Engorger.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "40000  MP",
@@ -4183,7 +4183,7 @@ const skillsData = [
         "en": "Envy",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Envy.png",
+        "icon": "img/skills/tensura/Envy.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 Mp",
@@ -4204,7 +4204,7 @@ const skillsData = [
         "en": "Falsifier",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Falsifier.png",
+        "icon": "img/skills/tensura/Falsifier.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "10000 MP",
@@ -4225,7 +4225,7 @@ const skillsData = [
         "en": "Fighter",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Fighter.png",
+        "icon": "img/skills/tensura/Fighter.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4246,7 +4246,7 @@ const skillsData = [
         "en": "Fusionist",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Fusionist.png",
+        "icon": "img/skills/tensura/Fusionist.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4267,7 +4267,7 @@ const skillsData = [
         "en": "Gluttony",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Gluttony.png",
+        "icon": "img/skills/tensura/Gluttony.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 MP",
@@ -4288,7 +4288,7 @@ const skillsData = [
         "en": "Godly Craftsman",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Godly_Craftsman.png",
+        "icon": "img/skills/tensura/Godly_Craftsman.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -4316,7 +4316,7 @@ const skillsData = [
         "en": "Gourmand",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Gourmand.png",
+        "icon": "img/skills/tensura/Gourmand.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "70000 MP",
@@ -4337,7 +4337,7 @@ const skillsData = [
         "en": "Gourmet",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Gourmet.png",
+        "icon": "img/skills/tensura/Gourmet.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "70000 MP",
@@ -4358,7 +4358,7 @@ const skillsData = [
         "en": "Great Sage",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Great_Sage.png",
+        "icon": "img/skills/tensura/Great_Sage.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "75000 MP",
@@ -4370,8 +4370,8 @@ const skillsData = [
             "passive_en": "Toggle · True",
             "cost_en": "75000 MP"
         },
-        "desc": "<p>Развивайте познавательные способности, чтобы быстрее изучать и применять заклинания, оценивать цели и использовать анализ для копирования навыков и обработки материалов с целью создания или копирования предметов и экипировки.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<p><br/>\n</p>\n<h3><span class=\"mw-headline\" id=\"Passive\">Пассивный</span></h3>\n<ul><li>[Пассивный — переключение] — <b>Параллельная обработка</b>: увеличивает на 9 количество очков изучения и мастерства, получаемых при изучении/использовании навыков, магии, боевого духа и искусств (всего 10).</li></ul>\n<ul><li>[Пассивный — переключение] — <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Chant_Annulment\" title=\"Abilities/Skills/Chant Annulment\"><b>Нейтрализация заклинаний</b></a>: для освоенной магии мгновенно полностью заполняет шкалу MP магического круга.</li></ul>\n<ul><li>[Пассивный — переключение] — <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Thought_Acceleration\" title=\"Abilities/Skills/Thought Acceleration\"><b>Ускорение мышления</b></a></li></ul>\n<h3><span class=\"mw-headline\" id=\"Active\">Активный</span></h3>\n<ul><li>[Активный — нажатие] — <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Analytical_Appraisal\" title=\"Abilities/Skills/Analytical Appraisal\"><b>Аналитическая оценка</b></a>: уровень анализа 2, дальность — 20 блоков (30 с мастерством). Если EP цели более чем в 5 раз (в 10 раз с мастерством) превышает EP игрока, отображаются только базовые характеристики (имя, HP, SHP, броня).</li></ul>\n<ul><li>[Активный] — <b>Анализ</b>: если использовать, глядя на моба, копирует одну магию или один навык цели (кроме уникальных навыков и сопротивлений). Можно копировать с расстояния до 20 блоков при прямой видимости существа или магического круга. Не работает с магией, связанной с духами. Не действует на обладателей высших навыков. Шанс успеха — 25%, с мастерством — 50%. Перезарядка — 10 секунд (5 секунд при неудаче).</li></ul>\n<ul><li>[Активный] — <b>Обработка</b>: открывает интерфейс для создания предметов, варки зелий и обработки магической руды.</li></ul>\n<ul><li><ul><li>Вкладка создания: работает как обычный верстак. Поместите предмет в слот копирования слева, чтобы создать такой же предмет, как на кузнечном столе, но без схем. Предмет можно скопировать, просто имея материалы в сетке создания. Справа есть кнопка автоматического создания выбранных предметов каждые 5 секунд.</li></ul></li></ul>\n<ul><li><ul><li>Вкладка обработки: варит любые зелья, как варочная стойка, но все сразу за 5 секунд. Если <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><img/skills alt=\"Invicon Hipokute Grass.png: Sprite image for Hipokute Grass in Minecraft linking to Hipokute Grass\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Grass.png?2a7d33\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><span class=\"sprite-text\">трава хипоку́те</span></a></span> помещена в слот вместе с любой бутылкой, она «сваривается» в <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><img/skills alt=\"Invicon High Potion.png: Sprite image for High Potion in Minecraft linking to High Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_High_Potion.png?683e1d\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><span class=\"sprite-text\">высшее зелье</span></a></span>. Если <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><img/skills alt=\"Invicon Hipokute Flower.png: Sprite image for Hipokute Flower in Minecraft linking to Hipokute Flower\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Flower.png?d2d832\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><span class=\"sprite-text\">цветок хипоку́те</span></a></span> помещён в слот с любой бутылкой, он превращается в <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><img/skills alt=\"Invicon Full Potion.png: Sprite image for Full Potion in Minecraft linking to Full Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Full_Potion.png?88d91c\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><span class=\"sprite-text\">полное зелье</span></a></span>. Если <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">магической руды</span></a></span> помещён в слот, он «переплавляется» в 2 единицы <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><img/skills alt=\"Pure Magisteel Nugget.gif: Sprite image for Pure Magisteel Nuggets in Minecraft linking to Pure Magisteel Nugget\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Pure_Magisteel_Nugget.gif?80785e\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><span class=\"sprite-text\">чистых самородков магистила</span></a></span>.</li></ul></li></ul>",
-        "desc_en": "<p>Improve your cognitive skills to learn and cast faster, become able to appraise targets and use analysis to copy skills and process materials to craft or replicate items or equipment.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<p><br/>\n</p>\n<h3><span class=\"mw-headline\" id=\"Passive\">Passive</span></h3>\n<ul><li>[Passive - Toggle] - <b>Parallel Processing</b>: Increases the amount of Learned Points and Mastery Points gained when learning/using Skills, Magic, Battlewill, and Arts by 9 (10 Total).</li></ul>\n<ul><li>[Passive - Toggle] - <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Chant_Annulment\" title=\"Abilities/Skills/Chant Annulment\"><b>Chant Annulment</b></a>: For Mastered Magic, completely fills up the Magic Circle's MP meter instantly.</li></ul>\n<ul><li>[Passive - Toggle] - <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Thought_Acceleration\" title=\"Abilities/Skills/Thought Acceleration\"><b>Thought Acceleration</b></a></li></ul>\n<h3><span class=\"mw-headline\" id=\"Active\">Active</span></h3>\n<ul><li>[Active - Press] - <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Analytical_Appraisal\" title=\"Abilities/Skills/Analytical Appraisal\"><b>Analytical Appraisal</b></a>: Analysis Level 2, distance 20 blocks (30 with Mastery), If a target has greater than 5x (10x with Mastery) the player's EP, then only its base stats are shown (Name, HP, SHP, Armor).</li></ul>\n<ul><li>[Active] - <b>Analysis</b>: When used while looking at a mob, copies 1 of the Magic, and Skills (Except Unique Skills &amp; Resistances) of a target. Can copy from up to 20 blocks away while in line of sight of entity or magic circle and won't work on any spirit related magic. Ineffective against Ultimate Skill Users. 25% Chance at Success, which raises to 50% with Mastery - 10s cooldown (5s if failed).</li></ul>\n<ul><li>[Active] - <b>Refining</b>: Opens a GUI that can be used to craft things, brew potions and process magic ore</li></ul>\n<ul><li><ul><li>Crafting tab: Works like a normal crafting table. Put an item in the replication slot on the left, to craft that item like a smithing bench without the need of Schematics, the user can replicate that item just by having the materials in the crafting grid. Has a button on the right to auto craft desired items in each 5 seconds.</li></ul></li></ul>\n<ul><li><ul><li>Refining tab:  Brewing any potions like brewing stand but all at once in 5 seconds. If a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><img/skills alt=\"Invicon Hipokute Grass.png: Sprite image for Hipokute Grass in Minecraft linking to Hipokute Grass\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Grass.png?2a7d33\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><span class=\"sprite-text\">Hipokute Grass</span></a></span> is placed into a slot with any bottle, it \"brews\" into a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><img/skills alt=\"Invicon High Potion.png: Sprite image for High Potion in Minecraft linking to High Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_High_Potion.png?683e1d\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><span class=\"sprite-text\">High Potion</span></a></span>. If a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><img/skills alt=\"Invicon Hipokute Flower.png: Sprite image for Hipokute Flower in Minecraft linking to Hipokute Flower\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Flower.png?d2d832\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><span class=\"sprite-text\">Hipokute Flower</span></a></span> is placed into a slot with any bottle, it brews into a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><img/skills alt=\"Invicon Full Potion.png: Sprite image for Full Potion in Minecraft linking to Full Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Full_Potion.png?88d91c\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><span class=\"sprite-text\">Full Potion</span></a></span>. If a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">Magic Ore</span></a></span> is placed into a slot, \"brews\" into 2 <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><img/skills alt=\"Pure Magisteel Nugget.gif: Sprite image for Pure Magisteel Nuggets in Minecraft linking to Pure Magisteel Nugget\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Pure_Magisteel_Nugget.gif?80785e\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><span class=\"sprite-text\">Pure Magisteel Nuggets</span></a></span>.</li></ul></li></ul>"
+        "desc": "<p>Развивайте познавательные способности, чтобы быстрее изучать и применять заклинания, оценивать цели и использовать анализ для копирования навыков и обработки материалов с целью создания или копирования предметов и экипировки.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<p><br/>\n</p>\n<h3><span class=\"mw-headline\" id=\"Passive\">Пассивный</span></h3>\n<ul><li>[Пассивный — переключение] — <b>Параллельная обработка</b>: увеличивает на 9 количество очков изучения и мастерства, получаемых при изучении/использовании навыков, магии, боевого духа и искусств (всего 10).</li></ul>\n<ul><li>[Пассивный — переключение] — <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Chant_Annulment\" title=\"Abilities/Skills/Chant Annulment\"><b>Нейтрализация заклинаний</b></a>: для освоенной магии мгновенно полностью заполняет шкалу MP магического круга.</li></ul>\n<ul><li>[Пассивный — переключение] — <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Thought_Acceleration\" title=\"Abilities/Skills/Thought Acceleration\"><b>Ускорение мышления</b></a></li></ul>\n<h3><span class=\"mw-headline\" id=\"Active\">Активный</span></h3>\n<ul><li>[Активный — нажатие] — <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Analytical_Appraisal\" title=\"Abilities/Skills/Analytical Appraisal\"><b>Аналитическая оценка</b></a>: уровень анализа 2, дальность — 20 блоков (30 с мастерством). Если EP цели более чем в 5 раз (в 10 раз с мастерством) превышает EP игрока, отображаются только базовые характеристики (имя, HP, SHP, броня).</li></ul>\n<ul><li>[Активный] — <b>Анализ</b>: если использовать, глядя на моба, копирует одну магию или один навык цели (кроме уникальных навыков и сопротивлений). Можно копировать с расстояния до 20 блоков при прямой видимости существа или магического круга. Не работает с магией, связанной с духами. Не действует на обладателей высших навыков. Шанс успеха — 25%, с мастерством — 50%. Перезарядка — 10 секунд (5 секунд при неудаче).</li></ul>\n<ul><li>[Активный] — <b>Обработка</b>: открывает интерфейс для создания предметов, варки зелий и обработки магической руды.</li></ul>\n<ul><li><ul><li>Вкладка создания: работает как обычный верстак. Поместите предмет в слот копирования слева, чтобы создать такой же предмет, как на кузнечном столе, но без схем. Предмет можно скопировать, просто имея материалы в сетке создания. Справа есть кнопка автоматического создания выбранных предметов каждые 5 секунд.</li></ul></li></ul>\n<ul><li><ul><li>Вкладка обработки: варит любые зелья, как варочная стойка, но все сразу за 5 секунд. Если <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><img/skills/tensura alt=\"Invicon Hipokute Grass.png: Sprite image for Hipokute Grass in Minecraft linking to Hipokute Grass\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Grass.png?2a7d33\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><span class=\"sprite-text\">трава хипоку́те</span></a></span> помещена в слот вместе с любой бутылкой, она «сваривается» в <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><img/skills/tensura alt=\"Invicon High Potion.png: Sprite image for High Potion in Minecraft linking to High Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_High_Potion.png?683e1d\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><span class=\"sprite-text\">высшее зелье</span></a></span>. Если <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><img/skills/tensura alt=\"Invicon Hipokute Flower.png: Sprite image for Hipokute Flower in Minecraft linking to Hipokute Flower\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Flower.png?d2d832\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><span class=\"sprite-text\">цветок хипоку́те</span></a></span> помещён в слот с любой бутылкой, он превращается в <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><img/skills/tensura alt=\"Invicon Full Potion.png: Sprite image for Full Potion in Minecraft linking to Full Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Full_Potion.png?88d91c\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><span class=\"sprite-text\">полное зелье</span></a></span>. Если <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills/tensura alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">магической руды</span></a></span> помещён в слот, он «переплавляется» в 2 единицы <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><img/skills/tensura alt=\"Pure Magisteel Nugget.gif: Sprite image for Pure Magisteel Nuggets in Minecraft linking to Pure Magisteel Nugget\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Pure_Magisteel_Nugget.gif?80785e\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><span class=\"sprite-text\">чистых самородков магистила</span></a></span>.</li></ul></li></ul>",
+        "desc_en": "<p>Improve your cognitive skills to learn and cast faster, become able to appraise targets and use analysis to copy skills and process materials to craft or replicate items or equipment.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<p><br/>\n</p>\n<h3><span class=\"mw-headline\" id=\"Passive\">Passive</span></h3>\n<ul><li>[Passive - Toggle] - <b>Parallel Processing</b>: Increases the amount of Learned Points and Mastery Points gained when learning/using Skills, Magic, Battlewill, and Arts by 9 (10 Total).</li></ul>\n<ul><li>[Passive - Toggle] - <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Chant_Annulment\" title=\"Abilities/Skills/Chant Annulment\"><b>Chant Annulment</b></a>: For Mastered Magic, completely fills up the Magic Circle's MP meter instantly.</li></ul>\n<ul><li>[Passive - Toggle] - <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Thought_Acceleration\" title=\"Abilities/Skills/Thought Acceleration\"><b>Thought Acceleration</b></a></li></ul>\n<h3><span class=\"mw-headline\" id=\"Active\">Active</span></h3>\n<ul><li>[Active - Press] - <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Analytical_Appraisal\" title=\"Abilities/Skills/Analytical Appraisal\"><b>Analytical Appraisal</b></a>: Analysis Level 2, distance 20 blocks (30 with Mastery), If a target has greater than 5x (10x with Mastery) the player's EP, then only its base stats are shown (Name, HP, SHP, Armor).</li></ul>\n<ul><li>[Active] - <b>Analysis</b>: When used while looking at a mob, copies 1 of the Magic, and Skills (Except Unique Skills &amp; Resistances) of a target. Can copy from up to 20 blocks away while in line of sight of entity or magic circle and won't work on any spirit related magic. Ineffective against Ultimate Skill Users. 25% Chance at Success, which raises to 50% with Mastery - 10s cooldown (5s if failed).</li></ul>\n<ul><li>[Active] - <b>Refining</b>: Opens a GUI that can be used to craft things, brew potions and process magic ore</li></ul>\n<ul><li><ul><li>Crafting tab: Works like a normal crafting table. Put an item in the replication slot on the left, to craft that item like a smithing bench without the need of Schematics, the user can replicate that item just by having the materials in the crafting grid. Has a button on the right to auto craft desired items in each 5 seconds.</li></ul></li></ul>\n<ul><li><ul><li>Refining tab:  Brewing any potions like brewing stand but all at once in 5 seconds. If a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><img/skills/tensura alt=\"Invicon Hipokute Grass.png: Sprite image for Hipokute Grass in Minecraft linking to Hipokute Grass\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Grass.png?2a7d33\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Grass\" title=\"Hipokute Grass\"><span class=\"sprite-text\">Hipokute Grass</span></a></span> is placed into a slot with any bottle, it \"brews\" into a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><img/skills/tensura alt=\"Invicon High Potion.png: Sprite image for High Potion in Minecraft linking to High Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_High_Potion.png?683e1d\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/High_Potion\" title=\"High Potion\"><span class=\"sprite-text\">High Potion</span></a></span>. If a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><img/skills/tensura alt=\"Invicon Hipokute Flower.png: Sprite image for Hipokute Flower in Minecraft linking to Hipokute Flower\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Hipokute_Flower.png?d2d832\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Hipokute_Flower\" title=\"Hipokute Flower\"><span class=\"sprite-text\">Hipokute Flower</span></a></span> is placed into a slot with any bottle, it brews into a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><img/skills/tensura alt=\"Invicon Full Potion.png: Sprite image for Full Potion in Minecraft linking to Full Potion\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Invicon_Full_Potion.png?88d91c\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Full_Potion\" title=\"Full Potion\"><span class=\"sprite-text\">Full Potion</span></a></span>. If a <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><img/skills/tensura alt=\"Magic Ore Shard.gif: Sprite image for Magic Ore in Minecraft linking to Magic Ore Shard\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Magic_Ore_Shard.gif?79e9d8\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Magic_Ore_Shard\" title=\"Magic Ore Shard\"><span class=\"sprite-text\">Magic Ore</span></a></span> is placed into a slot, \"brews\" into 2 <span class=\"nowrap\"><span class=\"sprite-file\" style=\"\"><a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><img/skills/tensura alt=\"Pure Magisteel Nugget.gif: Sprite image for Pure Magisteel Nuggets in Minecraft linking to Pure Magisteel Nugget\" class=\"pixel-image\" data-file-height=\"16\" data-file-width=\"16\" decoding=\"async\" height=\"16\" loading=\"lazy\" src=\"/images/Pure_Magisteel_Nugget.gif?80785e\" width=\"16\"/></a></span> <a href=\"https://tensura.wiki.gg/wiki/Pure_Magisteel_Nugget\" title=\"Pure Magisteel Nugget\"><span class=\"sprite-text\">Pure Magisteel Nuggets</span></a></span>.</li></ul></li></ul>"
     },
     {
         "id": "greed",
@@ -4379,7 +4379,7 @@ const skillsData = [
         "en": "Greed",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Greed.png",
+        "icon": "img/skills/tensura/Greed.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 MP",
@@ -4400,7 +4400,7 @@ const skillsData = [
         "en": "Guardian",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Guardian.png",
+        "icon": "img/skills/tensura/Guardian.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4421,7 +4421,7 @@ const skillsData = [
         "en": "Healer",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Healer.png",
+        "icon": "img/skills/tensura/Healer.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4442,7 +4442,7 @@ const skillsData = [
         "en": "Infinity Prison",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Infinity_Prison.png",
+        "icon": "img/skills/tensura/Infinity_Prison.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "90000 MP",
@@ -4463,7 +4463,7 @@ const skillsData = [
         "en": "Lust",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Lust.png",
+        "icon": "img/skills/tensura/Lust.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 MP",
@@ -4484,7 +4484,7 @@ const skillsData = [
         "en": "Martial Master",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Martial_Master.png",
+        "icon": "img/skills/tensura/Martial_Master.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "40000 MP",
@@ -4505,7 +4505,7 @@ const skillsData = [
         "en": "Mathematician",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Mathematician.png",
+        "icon": "img/skills/tensura/Mathematician.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "40000 MP",
@@ -4526,7 +4526,7 @@ const skillsData = [
         "en": "Merciless",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Merciless.png",
+        "icon": "img/skills/tensura/Merciless.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "70000 MP",
@@ -4547,7 +4547,7 @@ const skillsData = [
         "en": "Murderer",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Murderer.png",
+        "icon": "img/skills/tensura/Murderer.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4568,7 +4568,7 @@ const skillsData = [
         "en": "Musician",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Musician.png",
+        "icon": "img/skills/tensura/Musician.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "70000 MP",
@@ -4589,7 +4589,7 @@ const skillsData = [
         "en": "Observer",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Observer.png",
+        "icon": "img/skills/tensura/Observer.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4610,7 +4610,7 @@ const skillsData = [
         "en": "Oppressor",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Oppressor.png",
+        "icon": "img/skills/tensura/Oppressor.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4631,7 +4631,7 @@ const skillsData = [
         "en": "Predator",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Predator.png",
+        "icon": "img/skills/tensura/Predator.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4652,7 +4652,7 @@ const skillsData = [
         "en": "Pride",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Pride.png",
+        "icon": "img/skills/tensura/Pride.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 MP",
@@ -4673,7 +4673,7 @@ const skillsData = [
         "en": "Reaper",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Reaper.png",
+        "icon": "img/skills/tensura/Reaper.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -4694,7 +4694,7 @@ const skillsData = [
         "en": "Reflector",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Reflector.png",
+        "icon": "img/skills/tensura/Reflector.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4715,7 +4715,7 @@ const skillsData = [
         "en": "Researcher",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Researcher.png",
+        "icon": "img/skills/tensura/Researcher.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4734,8 +4734,8 @@ const skillsData = [
             "passive_en": null,
             "cost_en": "30000 MP"
         },
-        "desc": "<p>Изучайте древние магические фолианты, анализируйте их устройство и создавайте чудеса за пределами воображения.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<p><br/>\n</p>\n<ul><li>Открывает интерфейс с доступом к пространственному хранилищу. Складываемые предметы в нём помещаются по 128 штук.</li>\n<li>Имеет слот, который мгновенно переплавляет целые стаки предметов.</li>\n<li>Содержит встроенный верстак и специальный стол зачарования, позволяющий свободно добавлять любые зачарования из списка проанализированных зачарований.</li>\n<li>Эффекты зачарованных книг сохраняются, чтобы их можно было выбирать в меню зачарований.</li>\n<li>Максимальный бонусный уровень — 1\n<ul><li><b>Мастерство повышается при зачаровании или изучении зачарований (для освоения навыка потребуется около 800 зачарований/зачарованных предметов без навыков, увеличивающих получаемое мастерство).</b></li></ul></li></ul>\n<p>После освоения пользователь автоматически получает навык <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Godly_Craftsman\" title=\"Abilities/Skills/Godly Craftsman\">Божественный ремесленник</a>, соответствующим образом расходуя магикулы.\n</p>\n<ul class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:21.5px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_1.png\" title=\"The first tab of the skill menu.\"><img/skills alt=\"The first tab of the skill menu.\" data-file-height=\"693\" data-file-width=\"779\" decoding=\"async\" height=\"107\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/120px-Researcher%26godlyartisan_menu_1.png?12712e\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/180px-Researcher%26godlyartisan_menu_1.png?12712e 1.5x, /images/thumb/Researcher%26godlyartisan_menu_1.png/240px-Researcher%26godlyartisan_menu_1.png?12712e 2x\" width=\"120\"/></a></div></div>\n<div class=\"gallerytext\">Первая вкладка меню навыка.</div>\n</div></li>\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:15px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_2.png\" title=\"The second tab of the skill menu.\"><img/skills alt=\"The second tab of the skill menu.\" data-file-height=\"691\" data-file-width=\"537\" decoding=\"async\" height=\"120\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/93px-Researcher%26godlyartisan_menu_2.png?b16641\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/140px-Researcher%26godlyartisan_menu_2.png?b16641 1.5x, /images/thumb/Researcher%26godlyartisan_menu_2.png/186px-Researcher%26godlyartisan_menu_2.png?b16641 2x\" width=\"93\"/></a></div></div>\n<div class=\"gallerytext\">Вторая вкладка меню навыка.</div>\n</div></li>\n</ul>",
-        "desc_en": "<p>Study ancient magic tomes, reverse engineer them, and create wonders beyond imagination.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<p><br/>\n</p>\n<ul><li>Opens a GUI with access to a Spatial Storage. Stackable items in here stack to 128.</li>\n<li>Has a slot that instantly smelts entire stacks of objects.</li>\n<li>Has a built in crafting table and a custom enchanting table allowing the player to freely add whatever they wish from the list of analyzed enchantments.</li>\n<li>Enchanted books have their effects stored to be selected in the enchantment menu.</li>\n<li>Maximum bonus level is 1\n<ul><li><b>Gain Mastery by Enchanting or Learning Enchants (Should take 800 enchants/enchanted items to master, without skills that increase mastery gained)</b></li></ul></li></ul>\n<p>Once mastered, the user automatically gains <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Godly_Craftsman\" title=\"Abilities/Skills/Godly Craftsman\">Godly Craftsman</a>, reducing their magicules accordingly.\n</p>\n<ul class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:21.5px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_1.png\" title=\"The first tab of the skill menu.\"><img/skills alt=\"The first tab of the skill menu.\" data-file-height=\"693\" data-file-width=\"779\" decoding=\"async\" height=\"107\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/120px-Researcher%26godlyartisan_menu_1.png?12712e\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/180px-Researcher%26godlyartisan_menu_1.png?12712e 1.5x, /images/thumb/Researcher%26godlyartisan_menu_1.png/240px-Researcher%26godlyartisan_menu_1.png?12712e 2x\" width=\"120\"/></a></div></div>\n<div class=\"gallerytext\">The first tab of the skill menu.</div>\n</div></li>\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:15px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_2.png\" title=\"The second tab of the skill menu.\"><img/skills alt=\"The second tab of the skill menu.\" data-file-height=\"691\" data-file-width=\"537\" decoding=\"async\" height=\"120\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/93px-Researcher%26godlyartisan_menu_2.png?b16641\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/140px-Researcher%26godlyartisan_menu_2.png?b16641 1.5x, /images/thumb/Researcher%26godlyartisan_menu_2.png/186px-Researcher%26godlyartisan_menu_2.png?b16641 2x\" width=\"93\"/></a></div></div>\n<div class=\"gallerytext\">The second tab of the skill menu.</div>\n</div></li>\n</ul>"
+        "desc": "<p>Изучайте древние магические фолианты, анализируйте их устройство и создавайте чудеса за пределами воображения.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<p><br/>\n</p>\n<ul><li>Открывает интерфейс с доступом к пространственному хранилищу. Складываемые предметы в нём помещаются по 128 штук.</li>\n<li>Имеет слот, который мгновенно переплавляет целые стаки предметов.</li>\n<li>Содержит встроенный верстак и специальный стол зачарования, позволяющий свободно добавлять любые зачарования из списка проанализированных зачарований.</li>\n<li>Эффекты зачарованных книг сохраняются, чтобы их можно было выбирать в меню зачарований.</li>\n<li>Максимальный бонусный уровень — 1\n<ul><li><b>Мастерство повышается при зачаровании или изучении зачарований (для освоения навыка потребуется около 800 зачарований/зачарованных предметов без навыков, увеличивающих получаемое мастерство).</b></li></ul></li></ul>\n<p>После освоения пользователь автоматически получает навык <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Godly_Craftsman\" title=\"Abilities/Skills/Godly Craftsman\">Божественный ремесленник</a>, соответствующим образом расходуя магикулы.\n</p>\n<ul class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:21.5px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_1.png\" title=\"The first tab of the skill menu.\"><img/skills/tensura alt=\"The first tab of the skill menu.\" data-file-height=\"693\" data-file-width=\"779\" decoding=\"async\" height=\"107\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/120px-Researcher%26godlyartisan_menu_1.png?12712e\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/180px-Researcher%26godlyartisan_menu_1.png?12712e 1.5x, /images/thumb/Researcher%26godlyartisan_menu_1.png/240px-Researcher%26godlyartisan_menu_1.png?12712e 2x\" width=\"120\"/></a></div></div>\n<div class=\"gallerytext\">Первая вкладка меню навыка.</div>\n</div></li>\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:15px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_2.png\" title=\"The second tab of the skill menu.\"><img/skills/tensura alt=\"The second tab of the skill menu.\" data-file-height=\"691\" data-file-width=\"537\" decoding=\"async\" height=\"120\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/93px-Researcher%26godlyartisan_menu_2.png?b16641\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/140px-Researcher%26godlyartisan_menu_2.png?b16641 1.5x, /images/thumb/Researcher%26godlyartisan_menu_2.png/186px-Researcher%26godlyartisan_menu_2.png?b16641 2x\" width=\"93\"/></a></div></div>\n<div class=\"gallerytext\">Вторая вкладка меню навыка.</div>\n</div></li>\n</ul>",
+        "desc_en": "<p>Study ancient magic tomes, reverse engineer them, and create wonders beyond imagination.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<p><br/>\n</p>\n<ul><li>Opens a GUI with access to a Spatial Storage. Stackable items in here stack to 128.</li>\n<li>Has a slot that instantly smelts entire stacks of objects.</li>\n<li>Has a built in crafting table and a custom enchanting table allowing the player to freely add whatever they wish from the list of analyzed enchantments.</li>\n<li>Enchanted books have their effects stored to be selected in the enchantment menu.</li>\n<li>Maximum bonus level is 1\n<ul><li><b>Gain Mastery by Enchanting or Learning Enchants (Should take 800 enchants/enchanted items to master, without skills that increase mastery gained)</b></li></ul></li></ul>\n<p>Once mastered, the user automatically gains <a class=\"mw-redirect\" href=\"https://tensura.wiki.gg/wiki/Abilities/Skills/Godly_Craftsman\" title=\"Abilities/Skills/Godly Craftsman\">Godly Craftsman</a>, reducing their magicules accordingly.\n</p>\n<ul class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:21.5px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_1.png\" title=\"The first tab of the skill menu.\"><img/skills/tensura alt=\"The first tab of the skill menu.\" data-file-height=\"693\" data-file-width=\"779\" decoding=\"async\" height=\"107\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/120px-Researcher%26godlyartisan_menu_1.png?12712e\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_1.png/180px-Researcher%26godlyartisan_menu_1.png?12712e 1.5x, /images/thumb/Researcher%26godlyartisan_menu_1.png/240px-Researcher%26godlyartisan_menu_1.png?12712e 2x\" width=\"120\"/></a></div></div>\n<div class=\"gallerytext\">The first tab of the skill menu.</div>\n</div></li>\n<li class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:15px auto;\"><a class=\"image\" href=\"https://tensura.wiki.gg/wiki/File:Researcher%26godlyartisan_menu_2.png\" title=\"The second tab of the skill menu.\"><img/skills/tensura alt=\"The second tab of the skill menu.\" data-file-height=\"691\" data-file-width=\"537\" decoding=\"async\" height=\"120\" loading=\"lazy\" src=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/93px-Researcher%26godlyartisan_menu_2.png?b16641\" srcset=\"/images/thumb/Researcher%26godlyartisan_menu_2.png/140px-Researcher%26godlyartisan_menu_2.png?b16641 1.5x, /images/thumb/Researcher%26godlyartisan_menu_2.png/186px-Researcher%26godlyartisan_menu_2.png?b16641 2x\" width=\"93\"/></a></div></div>\n<div class=\"gallerytext\">The second tab of the skill menu.</div>\n</div></li>\n</ul>"
     },
     {
         "id": "reverser",
@@ -4743,7 +4743,7 @@ const skillsData = [
         "en": "Reverser",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Reverser.png",
+        "icon": "img/skills/tensura/Reverser.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4764,7 +4764,7 @@ const skillsData = [
         "en": "Royal Beast",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Royal_Beast.png",
+        "icon": "img/skills/tensura/Royal_Beast.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4785,7 +4785,7 @@ const skillsData = [
         "en": "Seeker",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Seeker.png",
+        "icon": "img/skills/tensura/Seeker.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": null,
@@ -4806,7 +4806,7 @@ const skillsData = [
         "en": "Seer",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Seer.png",
+        "icon": "img/skills/tensura/Seer.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "20000 MP",
@@ -4827,7 +4827,7 @@ const skillsData = [
         "en": "Severer",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Severer.png",
+        "icon": "img/skills/tensura/Severer.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4848,7 +4848,7 @@ const skillsData = [
         "en": "Shadow Striker",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Shadow_Striker.png",
+        "icon": "img/skills/tensura/Shadow_Striker.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -4869,7 +4869,7 @@ const skillsData = [
         "en": "Sloth",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Sloth.png",
+        "icon": "img/skills/tensura/Sloth.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 MP",
@@ -4890,7 +4890,7 @@ const skillsData = [
         "en": "Sniper",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Sniper.png",
+        "icon": "img/skills/tensura/Sniper.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4911,7 +4911,7 @@ const skillsData = [
         "en": "Spearhead",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Spearhead.png",
+        "icon": "img/skills/tensura/Spearhead.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -4932,7 +4932,7 @@ const skillsData = [
         "en": "Starved",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Starved.png",
+        "icon": "img/skills/tensura/Starved.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -4953,7 +4953,7 @@ const skillsData = [
         "en": "Suppressor",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Suppressor.png",
+        "icon": "img/skills/tensura/Suppressor.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -4974,7 +4974,7 @@ const skillsData = [
         "en": "Survivor",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Survivor.png",
+        "icon": "img/skills/tensura/Survivor.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "40000 MP",
@@ -4995,7 +4995,7 @@ const skillsData = [
         "en": "Thrower",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Thrower.png",
+        "icon": "img/skills/tensura/Thrower.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "30000 MP",
@@ -5016,7 +5016,7 @@ const skillsData = [
         "en": "Traveler",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Traveler.png",
+        "icon": "img/skills/tensura/Traveler.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -5037,7 +5037,7 @@ const skillsData = [
         "en": "Tuner",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Tuner.png",
+        "icon": "img/skills/tensura/Tuner.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -5058,7 +5058,7 @@ const skillsData = [
         "en": "Unyielding",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Unyielding.png",
+        "icon": "img/skills/tensura/Unyielding.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -5079,7 +5079,7 @@ const skillsData = [
         "en": "Usurper",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Usurper.png",
+        "icon": "img/skills/tensura/Usurper.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "50000 MP",
@@ -5100,7 +5100,7 @@ const skillsData = [
         "en": "Villain",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Villain.png",
+        "icon": "img/skills/tensura/Villain.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "60000 MP",
@@ -5121,7 +5121,7 @@ const skillsData = [
         "en": "Wrath",
         "mod": "Tensura: Reincarnated",
         "tier": "unique",
-        "icon": "img/skills/Wrath.png",
+        "icon": "img/skills/tensura/Wrath.png",
         "infobox": {
             "type": "Unique Skill",
             "cost": "100000 MP",
@@ -5135,567 +5135,5 @@ const skillsData = [
         },
         "desc": "<p>Высвобождайте чистую ярость и становитесь бесконечно сильнее, чем дольше длится гнев. Остерегайтесь разрушительных побочных эффектов.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Использование</span></h2>\n<p><br/>\n</p>\n<h3><span class=\"mw-headline\" id=\"Active\">Активный</span></h3>\n<ul><li>[Активный — удерживание] — <b>Реактор-размножитель</b>: Пока навык удерживается, каждые 5 секунд восстанавливает игроку MP в размере 2% от максимума. Каждое применение с вероятностью 3% добавляет 1 уровень эффекта <a href=\"https://tensura.wiki.gg/wiki/Effects/Rampage\" title=\"Effects/Rampage\">Неистовство</a> ; эффект действует 30 секунд, а если MP игрока превышает естественный максимум, шанс возрастает до 7%. За каждое попадание по врагу длительность «Буйства» увеличивается на 3 секунды. Максимальный уровень «Буйства» — 10 (20 с мастерством) [настраивается]. С мастерством навык становится переключаемым вместо требующего удерживания.</li></ul>\n<ul><li><ul><li>Эффект «Буйство» — +5 к броне, +30 к атаке, +0,02 к скорости атаки, +0,01 к скорости передвижения, +0,01 к скорости плавания и +0,1 к сопротивлению отбрасыванию за каждый уровень «Буйства».</li></ul></li></ul>\n<ul><li>[Активный — удерживание] — <b>Воспламенение ярости</b>: Пока навык удерживается, накладывает эффект «Буйство» на всех мобов в радиусе 15×15 блоков на 20 секунд (уровень повышается на 1 каждые 10 секунд). При наличии сопротивления духовным атакам шанс срабатывания снижается до 25%. Стоимость — 100 MP в секунду.</li></ul>",
         "desc_en": "<p>Unleash pure rage and use it to get infinitely stronger the longer your anger persists. Beware of the devastating drawbacks.\n</p>\n<h2><span class=\"mw-headline\" id=\"Usage\">Usage</span></h2>\n<p><br/>\n</p>\n<h3><span class=\"mw-headline\" id=\"Active\">Active</span></h3>\n<ul><li>[Active - Hold] - <b>Breeder Reactor</b>: While held down, gives the player MP equal to 2% of their maximum every 5 seconds. Each usage has a 3% chance to add 1 level of <a href=\"https://tensura.wiki.gg/wiki/Effects/Rampage\" title=\"Effects/Rampage\">Rampage</a> which lasts for 30 seconds, which rises to 7% if the player's MP is past their natural maximum. Duration of Rampage increases by 3 seconds upon hitting an enemy. Rampage can only reach level 10 (20 with Mastery)[Configurable]. With Mastery, becomes a toggle ability instead of hold.</li></ul>\n<ul><li><ul><li>Rampage Effect - +5 Armor, +30 Atk, +0.02 Atk Speed, +0.01 Speed, +0.01 Swim Speed, + 0.1 Knockback Resist per Rampage level</li></ul></li></ul>\n<ul><li>[Acitve - Hold] - <b>Enrage</b>: While held down, gives every mob in a 15x15 radius Rampage effect (+1 level each 10 seconds) for 20 seconds. With Spiritual Attack Resistance, reduced to a 25% chance. Costs 100 MP a second.</li></ul>"
-    },
-        {
-        "id": "raphael",
-        "ru": "Король Мудрости Рафаил",
-        "en": "Lord of Wisdom Raphael",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "👁️",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Переключение / Пассивный",
-            "passive_en": "Toggle / Passive",
-            "obtain": "Слияние навыков: Великий Мудрец + Дегенерат. Требования: Мастерство обоих навыков, раса (Яйцо Героя, Истинный Герой, Семя Владыки Демонов или Истинный Владыка Демонов). Только 1 игрок на сервере по умолчанию.",
-            "obtain_en": "Skill Fusion: Great Sage + Degenerate. Prerequisites: Mastered both, Race (Hero Egg, True Hero, Demon Lord Seed, or True Demon Lord). Only 1 player per server by default."
-        },
-        "desc": `<p>«Внемли всем явлениям, отслеживай поток причинности и направляй хаос к единственно верному ответу».</p>
-<h2>Пассивный</h2>
-<ul>
-<li><b>[Пассивный — привязан к слоту] Универсальное усиление:</b> Улучшает передвижение, скорость атаки, скорость чтения заклинаний, уклонение, скорость обучения, получение мастерства, восприятие присутствия и награды за убийство врагов. Бонусы усиливаются после мастерства. Работает только если навык активен.</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Активный — нажатие] Аналитическая оценка (Режим 0):</b> Показывает информацию о ближайших целях (сущности, блоки или всё вместе). Без затрат магии и перезарядки.</li>
-<li><b>[Активный — нажатие] Анализ (Режим 1):</b> Анализирует и копирует навыки. Если вы смотрите на снаряд с магией — копирует магию. Если нет — анализирует ближайшую цель и копирует один из её навыков. Владелец не теряет навык. Некоторые мощные/защищенные навыки скопировать нельзя.</li>
-<li><b>[Активный — нажатие] Очистка (Режим 2):</b> Открывает функции очистки предметов и повторного крафта (наследует функции Великого Мудреца).</li>
-<li><b>[Активный — нажатие] Крафт (Режим 3):</b> Открывает интерфейс крафта и разбора предметов.</li>
-<li><b>[Активный — нажатие] Синтез (Режим 4):</b> Открывает интерфейс синтеза для объединения двух предметов в новый результат (наследует функции Дегенерата).</li>
-<li><b>[Активный — нажатие] Разделение (Режим 5):</b> Открывает интерфейс разделения для разбора сложных предметов на исходные части.</li>
-</ul>
-<h2>Правила сервера</h2>
-<p>По умолчанию Рафаил может быть только у одного игрока на сервере. Это можно отключить в настройках.</p>`,
-        "desc_en": `<p>"Listen to all phenomena, trace the flow of causality, and guide chaos toward the one true answer."</p>
-<h2>Passive</h2>
-<ul>
-<li><b>[Passive - Slot Bound] Universal Empowerment:</b> Improves movement, attack speed, casting speed, dodging ability, learning speed, mastery gain, presence sensing, and rewards. Bonuses become stronger after mastery. Only applies while active.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Active - Press] Analytical Appraisal (Mode 0):</b> Displays information about nearby targets (entities, blocks, or both). No cost, no cooldown.</li>
-<li><b>[Active - Press] Analysis (Mode 1):</b> Analyzes and copies skills from other sources. Prioritizes magic projectiles, otherwise targets nearby living entities. The original owner does not lose their skill. Some skills cannot be copied.</li>
-<li><b>[Active - Press] Refine (Mode 2):</b> Opens refining functions for items or repeating crafting actions.</li>
-<li><b>[Active - Press] Crafting (Mode 3):</b> Opens crafting and uncrafting functions.</li>
-<li><b>[Active - Press] Synthesise (Mode 4):</b> Combine two items into a new result.</li>
-<li><b>[Active - Press] Separate (Mode 5):</b> Break down combined items back into their original parts.</li>
-</ul>
-<h2>Server Rules</h2>
-<p>By default, only one player on a server can own Raphael. Can be changed in server settings.</p>`
-    },
-    {
-        "id": "beelzebub",
-        "ru": "Король Обжорства Вельзевул",
-        "en": "Gluttony King Beelzebub",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "🍽️",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Переключение / Пассивный",
-            "passive_en": "Toggle / Passive",
-            "obtain": "Слияние навыков: Обжорство + Безжалостность. Требования: Мастерство обоих, раса (Яйцо Героя, Истинный Герой, Яйцо Владыки Демонов или Истинный Владыка Демонов).",
-            "obtain_en": "Skill Fusion: Gluttony + Merciless. Prerequisites: Mastered both, Race (Hero Egg, True Hero, Demon Lord Egg, or True Demon Lord)."
-        },
-        "desc": `<p>«Поглоти форму всех вещей, низвергни каждую душу в глубины воображаемого пространства и обрати всё сущее в свою силу».</p>
-<h2>Пассивный</h2>
-<ul>
-<li><b>[Пассивный — сразу при получении] Бесконечный желудок:</b> Навсегда увеличивает вместимость хранилища воды и лавы.</li>
-<li><b>[Пассивный — привязан к слоту] Поглощение душ:</b> Атаки накладывают эффект «Похищение души» на живые цели при наличии магии. Не увеличивает прямой урон, но добавляет эффект истощения души.</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Активный — удерживание] Хищничество (Режим 0):</b> Усиленная версия поглощения. Пожирает врагов, блоки, предметы, EP и навыки перед вами. Радиус увеличивается с ростом мастерства.</li>
-<li><b>[Активный — нажатие] Воображаемое пространство (Режим 1):</b> Открывает огромное личное хранилище. Shift + Нажатие пытается захватить существо в виде предмета (кроме игроков, боссов, жителей).</li>
-<li><b>[Активный — нажатие] Изоляция (Режим 2):</b> Снимает вредные эффекты (Яд, Слабость, Иссушение, Замедление), если рука пуста. Если в руке растворяемый предмет — пожирает его, восстанавливая MP и здоровье.</li>
-<li><b>[Активный — удерживание] Коррозия (Режим 3):</b> Окружает аурой растворения, нанося постоянный урон врагам и давая вам скорость передвижения.</li>
-<li><b>[Активный — нажатие] Получение (Режим 4):</b> Копирует освоенные навыки у одного из подчиненных. Временные и защищенные навыки не передаются.</li>
-<li><b>[Активный — удерживание] Кража душ (Режим 5):</b> Усиленная версия Безжалостности. Поглощает ослабленных врагов или врагов с низким EP вокруг, нанося огромный урон душе (обычно убивая мгновенно).</li>
-</ul>`,
-        "desc_en": `<p>"Devour the form of all things, cast every soul into the depths of imaginary space, and turn all existence into your own power."</p>
-<h2>Passive</h2>
-<ul>
-<li><b>[Passive - Immediate] Endless Stomach:</b> Permanently increases water and lava storage capacity.</li>
-<li><b>[Passive - Slot Bound] Soul Consume:</b> Attacks apply Soul Drain to living targets if enough Magicules are available. Does not increase direct damage.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Active - Hold] Predation (Mode 0):</b> Devours enemies, blocks, items, EP, and skills in front. Range increases with mastery.</li>
-<li><b>[Active - Press] Imaginary Space (Mode 1):</b> Opens exclusive imaginary storage. Shift + Press captures living creatures (not players/bosses).</li>
-<li><b>[Active - Press] Isolation (Mode 2):</b> Cleanses negative effects if main hand is empty. If holding a dissolvable item, devours it into Magicules and health.</li>
-<li><b>[Active - Hold] Corrosion (Mode 3):</b> Dissolving aura deals continuous damage and increases movement speed.</li>
-<li><b>[Active - Press] Receive (Mode 4):</b> Copies mastered skills from one subordinate. Cannot copy temporary/protected skills.</li>
-<li><b>[Active - Hold] Soul Steal (Mode 5):</b> Releases soul-draining power. Consumes weakened enemies or those with lower EP, dealing massive soul damage.</li>
-</ul>`
-    },
-    {
-        "id": "uriel",
-        "ru": "Король Завета Уриил",
-        "en": "Covenant King Uriel",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "🛡️",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Переключение / Пассивный",
-            "passive_en": "Toggle / Passive",
-            "obtain": "Эволюция в режиме Синтеза Рафаила. Требование: Освоенная Бесконечная Тюрьма.",
-            "obtain_en": "Raphael Synthesis Mode evolution. Prerequisite: Mastered Infinity Prison."
-        },
-        "desc": `<p>«С невидимой клятвой в качестве кольца, вера многих собирается воедино, становясь безмолвным и непреодолимым порядком».</p>
-<h2>Пассивный</h2>
-<ul>
-<li><b>[Пассивный — сразу] Увеличение вместимости:</b> Навсегда увеличивает вместимость воды на 30 и лавы на 20.</li>
-<li><b>[Пассивный — сразу] Пространственный бонус:</b> Навсегда увеличивает пространственный бонус на +0.5.</li>
-<li><b>[Пассивный — привязан к слоту] Хранитель клятвы:</b> Любой урон от атакующего, чей максимальный показатель существования ниже, чем у вас ×1.5 (после мастерства ×2.25), поглощается магией. Каждое 1 HP урона стоит 8 MP.</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Активный — нажатие] Тюремное заключение (Режим 0):</b> Заточает живую цель в радиусе 12 блоков на 10 секунд (15 с мастерством). Стоимость 800 MP. Не работает на целях с слишком высоким показателем существования.</li>
-<li><b>[Активный — нажатие] Воображаемое пространство (Режим 1):</b> Открывает личное хранилище на 90 слотов с лимитом стопки 999.</li>
-<li><b>[Активный — нажатие] Очищение аномалий (Режим 2):</b> Снимает негативные эффекты и магические помехи с себя. Shift + Нажатие нацеливается на союзника в радиусе 8 блоков.</li>
-<li><b>[Активный — нажатие] Захват закона (Режим 3, только после мастерства):</b> Перехватывает вражеские магические снаряды в радиусе 32 блоков. Если это магический круг — разрушает его и отправляет навык врага на перезарядку (600 тиков).</li>
-<li><b>[Активный — нажатие] Многослойный барьер (Режим 4):</b> Устанавливает барьер, равный максимальному HP ×4.5 (×6.75 с мастерством). Урон ниже барьера компенсируется MP. Shift + Нажатие накладывает барьер на союзника.</li>
-<li><b>[Активный — удерживание] Пространственный луч (Режим 5):</b> Тратит 15 MP за тик, выпускает луч длиной 24 блока, нанося 8 урона за тик (12 с мастерством).</li>
-<li><b>[Активный — нажатие] Пространственный шторм (Режим 6):</b> Призывает 12 пространственных лучей, сходящихся на цели в радиусе 32 блоков (24 луча с мастерством). Каждый луч наносит 25 урона (37.5 с мастерством) и наносит урон по площади.</li>
-</ul>`,
-        "desc_en": `<p>"With an invisible oath as the ring, the faith of many is gathered into one, becoming a silent and insurmountable order."</p>
-<h2>Passive</h2>
-<ul>
-<li><b>[Passive - Immediate]:</b> Permanently increases water capacity by 30, lava by 20, and Spatial Bonus by +0.5.</li>
-<li><b>[Passive - Slot Bound] Oath Guardian:</b> Damage from attackers with lower Existence Value is absorbed by Magicules. Threshold is ×1.5 (×2.25 mastered). 1 HP = 8 MP.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Active - Press] Imprisonment (Mode 0):</b> Traps a living entity within 12 blocks. Costs 800 MP.</li>
-<li><b>[Active - Press] Imaginary Space (Mode 1):</b> Opens exclusive storage (90 slots, 999 stack limit).</li>
-<li><b>[Active - Press] Abnormality Cleanse (Mode 2):</b> Removes negative effects and magical interference. Shift + Press targets ally.</li>
-<li><b>[Active - Press] Law Seizure (Mode 3, mastered only):</b> Seizes enemy projectiles within 32 blocks. Destroys magic circles and forces cooldowns.</li>
-<li><b>[Active - Press] Multi-Layer Barrier (Mode 4):</b> Sets Barrier Points to max HP ×4.5 (×6.75 mastered). Shift + Press applies to ally.</li>
-<li><b>[Active - Hold] Dimensional Ray (Mode 5):</b> 15 MP per tick. Fires a 24-block beam dealing 8 damage per tick.</li>
-<li><b>[Active - Press] Dimensional Storm (Mode 6):</b> Summons 12 spatial rays (24 mastered) dealing 25 damage each (37.5 mastered).</li>
-</ul>`
-    },
-    {
-        "id": "veldora",
-        "ru": "Штормовой дракон Вельдора",
-        "en": "Storm Dragon Veldora",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "🐉",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Переключение / Пассивный",
-            "passive_en": "Toggle / Passive",
-            "obtain": "Убить Дракона Края, освоить Управление/Господство Ветра, иметь 400,000 магии.",
-            "obtain_en": "Kill Ender Dragon, Master Wind Manipulation/Domination, 400,000 magicules."
-        },
-        "desc": `<h2>Пассивный</h2>
-<ul>
-<li><b>[Пассивный — переключение] Господство Шторма:</b> Увеличивает урон от ветра на 50% и от молний на 60%. Снижает получаемый урон от ветра и молний на 35%.</li>
-<li><b>[Пассивный — привязан к слоту] Штормовой страж:</b> При получении удара в ближнем бою есть 20% шанс отбросить атакующего давлением ветра.</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Активный — удерживание] Дыхание Шторма:</b> Непрерывно выпускает дыхание с уроном молнией (18-28 ед.) и отбрасыванием впереди себя. Радиус 15 блоков. Тратит 350 магии в секунду.</li>
-<li><b>[Активный — нажатие] Штормовая молния:</b> Призывает черную молнию по цели (45-70 ед. урона + урон по площади). Радиус 30 блоков. Стоимость 2000 магии.</li>
-<li><b>[Активный — нажатие] Штормовой домен:</b> Создает вокруг вас зону шторма (радиус 16-32 блока, длится 32 сек). Внутри зоны враги замедляются, отбрасываются и поражаются молниями/лезвиями ветра. Стоимость 10,000 магии.</li>
-<li><b>[Активный — нажатие] Штормовой удар черной магии:</b> Выпускает вперед смешанное лезвие шторма и молнии (65-95 ед. урона). На мастерстве добавляет боковые лезвия ветра и молнии. Стоимость 2300 магии.</li>
-</ul>`,
-        "desc_en": `<h2>Passive</h2>
-<ul>
-<li><b>[Passive - Toggle] Storm Domination:</b> Increases wind damage by 50% and lightning damage by 60%. Reduces wind/lightning damage taken by 35%.</li>
-<li><b>[Passive - Slot Bound] Storm Guard:</b> 20% chance to knock back attackers with wind pressure.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Active - Hold] Storm Breath:</b> Releases continuous lightning breath (18-28 dmg) and knockback. Range: 15 blocks.</li>
-<li><b>[Active - Press] Storm Lightning:</b> Summons black lightning at target (45-70 dmg) with area damage. Range: 30 blocks.</li>
-<li><b>[Active - Press] Storm Domain:</b> Unleashes a storm domain (radius 16-32 blocks, 32s duration) slowing and striking enemies.</li>
-<li><b>[Active - Press] Storm Black Magic Slash:</b> Releases a forward storm-and-lightning lance (65-95 dmg).</li>
-</ul>`
-    },
-    {
-        "id": "satanael",
-        "ru": "Гневный Король Сатанаил",
-        "en": "Wrathful King Satanael",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "👹",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Переключение / Пассивный",
-            "passive_en": "Toggle / Passive",
-            "obtain": "Освоить Гнев, дать имя существу и дать ему умереть от рук другого, иметь 25,000 Очков Души.",
-            "obtain_en": "Master Wrathful, have a named creature killed by another entity, 25,000 Soul Points."
-        },
-        "desc": `<h2>Пассивный</h2>
-<ul>
-<li><b>[Пассивный — переключение] Власть Гнева:</b> При атаке или получении урона вы вступаете в бой на 10 секунд.</li>
-<li><b>Реактор-размножитель:</b> Активируется в бою. Восстанавливает 2% от макс. магии каждые 2.5 сек. Каждый доминируемый враг в радиусе 30 блоков повышает эффективность на 10%.</li>
-<li><b>Ярость Сатанаила:</b> Дает +20 к броне, +100 к урону, +0.6 к скорости атаки и др. за уровень. Максимум 10 уровней. Шанс получить уровень при восстановлении магии.</li>
-<li><b>Шкала Гнева:</b> Заполняется, когда враги находятся под доминированием. При 100% можно использовать сокрушительную атаку.</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Активный — удерживание] Доминирование Гнева:</b> Тратит 100 магии в секунду. Накладывает Ярость Сатанаила на врагов в радиусе 30 блоков. Сводит их с ума, заставляя атаковать своих.</li>
-<li><b>[Активный — нажатие] Освобождение Ярости:</b> Тратит всю шкалу Гнева. Превращает вас в истинную форму Сатанаила на 30 секунд. Реактор переходит в режим полной мощности (восстановление каждые 0.5 сек с множителем ×5). Вы получаете огромные баффы к урону, броне и скорости каждую секунду. По окончании вы получаете Слабость II на 2 минуты.</li>
-</ul>`,
-        "desc_en": `<h2>Passive</h2>
-<ul>
-<li><b>[Passive - Toggle] Authority of Wrath:</b> Enter combat for 10s upon attacking or being hit.</li>
-<li><b>Magicule Breeder Reactor:</b> Restores 2% max magicules every 2.5s. Dominated enemies increase efficiency by 10%.</li>
-<li><b>Satanael's Rage:</b> +20 Armor, +100 Attack Damage, etc., per level. Max level 10.</li>
-<li><b>Wrath Gauge:</b> Generated by dominated enemies. At 100%, Rampage can be activated.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Active - Hold] Wrath Domination:</b> Inflicts Satanael's Rage on enemies within 30 blocks, forcing them to attack each other.</li>
-<li><b>[Active - Press] Rampage Release:</b> Consumes Wrath to transform into Satanael's true form for 30s. Massively boosts reactor efficiency, damage, armor, and speed. Causes Weakness II after ending.</li>
-</ul>`
-    },
-    {
-        "id": "shub_niggurath",
-        "ru": "Король Урожая Шуб-Ниггурат",
-        "en": "Harvest King Shub-Niggurath",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "🌾",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "1,000,000 магии",
-            "points": "—",
-            "passive": "Пассивный",
-            "passive_en": "Passive",
-            "obtain": "Эволюция во время Интеграции Рафаила. Нужно: Истинный Владыка Демонов, мастерство Рафаила, Уриила, Вельзевула, 20 освоенных навыков, макс. EP 2,000,000 и 1,000,000 магии.",
-            "obtain_en": "Evolve during Raphael Integration. Requires: True Demon Lord, Mastered Raphael/Uriel/Beelzebub, 20 mastered skills, Max EP 2,000,000, 1,000,000 Magicules."
-        },
-        "desc": `<h2>Активный</h2>
-<ul>
-<li><b>[Активный — нажатие] Хранилище Изобилия:</b> Открывает независимое хранилище навыков. Сохраняет информацию о Врожденных, Обычных и Дополнительных навыках. Позволяет создавать новые навыки по рецептам, дублировать их или дарить союзникам.</li>
-<li><b>[Активный — нажатие] Синтез:</b> Поместите две информации о навыках в область синтеза, чтобы создать новый навык. Тратит 5% от базового максимального EP (навсегда) и оба навыка (информация остается в хранилище).</li>
-</ul>
-
-<details style="margin-top: 15px; background: rgba(0,0,0,0.2); border: 1px solid #444; padding: 10px; border-radius: 5px; cursor: pointer;">
-<summary style="color: var(--accent); font-weight: bold; font-size: 16px; outline: none;">📜 Показать все рецепты синтеза</summary>
-<ul style="margin-top: 10px; font-size: 14px; line-height: 1.6;">
-<li>Самовосстановление + Укрепление тела = Сверхскоростная регенерация</li>
-<li>Самовосстановление + Сверхскоростная регенерация = Бесконечная регенерация</li>
-<li>Дальний барьер + Броня тела = Многослойный барьер</li>
-<li>Сила + Укрепление тела = Стальная сила</li>
-<li>Ускорение мысли + Аналитическая оценка = Мудрец</li>
-<li>Телепатия + Голосовая пушка = Мысленная связь</li>
-<li>Принуждение + Магическая аура = Хаки</li>
-<li>Принуждение + Хаки = Смертельный страх</li>
-<li>Преобразование земли + Магическое преобразование земли = Управление землей</li>
-<li>Преобразование пламени + Магическое преобразование пламени = Управление пламенем</li>
-<li>Преобразование воды + Магическое преобразование воды = Управление водой</li>
-<li>Преобразование ветра + Магическое преобразование ветра = Управление ветром</li>
-<li>Преобразование пространства + Магическое преобразование пространства = Управление пространством</li>
-<li>Гравитационное поле + Гравитационный полет = Управление гравитацией</li>
-<li>Голосовая пушка + Ультразвуковые волны = Управление звуком</li>
-<li>Дыхание грома + Черная молния = Управление молнией</li>
-<li>Управление землей + Магическое преобразование земли = Господство над землей</li>
-<li>Управление пламенем + Магическое преобразование пламени = Господство над пламенем</li>
-<li>Управление водой + Магическое преобразование воды = Господство над водой</li>
-<li>Управление ветром + Магическое преобразование ветра = Господство над ветром</li>
-<li>Управление пространством + Магическое преобразование пространства = Господство над пространством</li>
-<li>Управление гравитацией + Гравитационное поле = Господство над гравитацией</li>
-<li>Управление молнией + Черная молния = Господство над молнией</li>
-<li>Управление звуком + Восприятие звуковой волны = Господство над звуком</li>
-<li>Управление пламенем + Восприятие источника тепла = Господство над пламенем</li>
-<li>Пространственное движение + Многослойный барьер = Господство над пространством</li>
-</ul>
-</details>`,
-        "desc_en": `<h2>Active</h2>
-<ul>
-<li><b>[Active - Press] Abundance Storage:</b> Opens independent skill storage. Saves info of Intrinsic, Common, and Extra skills. Allows synthesizing new skills, duplicating skills, or gifting them to allies.</li>
-<li><b>[Active - Press] Synthesis:</b> Place two skill infos in the synthesis area to create a new skill. Consumes 5% base max EP permanently and both skills.</li>
-</ul>
-
-<details style="margin-top: 15px; background: rgba(0,0,0,0.2); border: 1px solid #444; padding: 10px; border-radius: 5px; cursor: pointer;">
-<summary style="color: var(--accent); font-weight: bold; font-size: 16px; outline: none;">📜 Show all Synthesis Recipes</summary>
-<ul style="margin-top: 10px; font-size: 14px; line-height: 1.6;">
-<li>Self-Regeneration + Strengthen Body = Ultraspeed Regeneration</li>
-<li>Self-Regeneration + Ultraspeed Regeneration = Infinite Regeneration</li>
-<li>Ranged Barrier + Body Armor = Multilayer Barrier</li>
-<li>Strength + Strengthen Body = Steel Strength</li>
-<li>Thought Acceleration + Analytical Appraisal = Sage</li>
-<li>Telepathy + Voice Cannon = Thought Communication</li>
-<li>Coercion + Magic Aura = Haki</li>
-<li>Coercion + Haki = Mortal Fear</li>
-<li>Earth Transform + Magic Earth Transform = Earth Manipulation</li>
-<li>Flame Transform + Magic Flame Transform = Flame Manipulation</li>
-<li>Water Transform + Magic Water Transform = Water Manipulation</li>
-<li>Wind Transform + Magic Wind Transform = Wind Manipulation</li>
-<li>Space Transform + Magic Space Transform = Spatial Manipulation</li>
-<li>Gravity Field + Gravity Flight = Gravity Manipulation</li>
-<li>Voice Cannon + Ultrasonic Waves = Sound Manipulation</li>
-<li>Thunder Breath + Black Lightning = Lightning Manipulation</li>
-<li>Earth Manipulation + Magic Earth Transform = Earth Domination</li>
-<li>Flame Manipulation + Magic Flame Transform = Flame Domination</li>
-<li>Water Manipulation + Magic Water Transform = Water Domination</li>
-<li>Wind Manipulation + Magic Wind Transform = Wind Domination</li>
-<li>Spatial Manipulation + Magic Space Transform = Spatial Domination</li>
-<li>Gravity Manipulation + Gravity Field = Gravity Domination</li>
-<li>Lightning Manipulation + Black Lightning = Lightning Domination</li>
-<li>Sound Manipulation + Sense Soundwave = Sound Domination</li>
-<li>Flame Manipulation + Sense Heat Source = Flame Domination</li>
-<li>Spatial Motion + Multilayer Barrier = Spatial Domination</li>
-</ul>
-</details>`
-    },
-    {
-        "id": "ciel",
-        "ru": "Сиэль",
-        "en": "Ciel",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "💠",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Пассивный / Активный",
-            "passive_en": "Passive / Active",
-            "obtain": "Мастерство Рафаила, стать Истинным Владыкой Демонов/Героем, поглотить 5 Ядер Харибды через Синтез, создать 64 предмета через Очистку, упасть ниже 25% HP в бою.",
-            "obtain_en": "Master Raphael, True Demon Lord/Hero, Absorb 5 Charybdis Cores, Produce 64 items via Refinement, Fall below 25% HP in combat."
-        },
-        "desc": `<h2>Пассивный</h2>
-<ul>
-<li>Скорость чтения заклинаний +10.</li>
-<li>Уровень Аналитической оценки +10.</li>
-<li>Получение опыта и мастерства навыков +30.</li>
-<li>Шанс уклонения от атак и снарядов увеличен как минимум до 90%.</li>
-<li>Все перезарядки навыков сокращены до 70% от исходного времени.</li>
-<li>Все затраты магии на навыки сокращены до 70%.</li>
-<li>Мгновенно изучает все чертежи.</li>
-<li>Скорость передвижения +20%. Скорость атаки +1.</li>
-<li>Магия может применяться мгновенно независимо от уровня мастерства.</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Нажатие] Аналитическая оценка:</b> Открывает интерфейс оценки (Shift + Нажатие переключает режимы).</li>
-<li><b>[Нажатие] Анализ:</b> Анализирует существо или снаряд и случайным образом изучает один разрешенный навык.</li>
-<li><b>[Нажатие] Очистка:</b> Открывает интерфейс повторного крафта (Shift + Нажатие — интерфейс очистки).</li>
-<li><b>[Нажатие] Крафт:</b> Открывает интерфейс разбора (Shift + Нажатие — Синтез и Разделение).</li>
-<li><b>[Нажатие] Синтез:</b> Использование на Ядре Харибды позволяет получить навык внутри. Стоимость 300 магии.</li>
-<li><b>[Нажатие] Разделение:</b> Открывает интерфейс разделения. Стоимость 200 магии.</li>
-<li><b>[Нажатие] Управление полномочиями:</b> Переключает режимы «Обычная помощь» и «Экстренный захват». В режиме захвата ИИ берет управление персонажем на себя, атакуя врагов в радиусе 32 блоков (тратит 1% магии в секунду).</li>
-</ul>`,
-        "desc_en": `<h2>Passive</h2>
-<ul>
-<li>Chant Speed +10.</li>
-<li>Analytical Appraisal Level +10.</li>
-<li>Skill Learning & Mastery Gain +30.</li>
-<li>Auto-dodge chance increased to at least 90%.</li>
-<li>All skill cooldowns reduced to 70%.</li>
-<li>All Magicule costs reduced to 70%.</li>
-<li>Immediately learns all schematics.</li>
-<li>Movement Speed +20%, Attack Speed +1.</li>
-<li>Magic casts instantly regardless of mastery.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Press] Analytical Appraisal:</b> Opens appraisal interface.</li>
-<li><b>[Press] Analysis:</b> Analyzes a creature/projectile and learns a permitted skill.</li>
-<li><b>[Press] Refinement / Crafting:</b> Opens Repeat Crafting / Uncrafting interfaces.</li>
-<li><b>[Press] Synthesis:</b> Use on Charybdis Core to obtain skills. Costs 300 MP.</li>
-<li><b>[Press] Separation:</b> Opens Separation interface. Costs 200 MP.</li>
-<li><b>[Press] Authority Management:</b> Toggles Emergency Takeover (AI controls player, costs 1% MP/sec).</li>
-</ul>`
-    },
-    {
-        "id": "fortuna",
-        "ru": "Фортуна",
-        "en": "Fortuna",
-        "mod": "FoxAblaze Ultimate",
-        "tier": "ultimate",
-        "icon": "🎲",
-        "infobox": {
-            "type": "Ultimate Skill",
-            "type_en": "Ultimate Skill",
-            "cost": "—",
-            "points": "—",
-            "passive": "Пассивный / Активный",
-            "passive_en": "Passive / Active",
-            "obtain": "Иметь освоенные навыки Математик и Узурпатор, стать Истинным Героем/Владыкой Демонов, иметь 500,000 магии.",
-            "obtain_en": "Master Mathematician and Usurper, True Hero/Demon Lord, 500,000 Magicules."
-        },
-        "desc": `<h2>Пассивный</h2>
-<ul>
-<li><b>Предсказание будущего:</b> Увеличивает шанс уклонения в ближнем бою и от снарядов на 70%.</li>
-<li><b>Ускорение мысли:</b> +0.04 к скорости передвижения, +0.8 к скорости атаки, +4 к скорости чтения, +2 к неуязвимости при уклонении.</li>
-<li><b>Универсальное восприятие:</b> Усиливает сенсорные способности (уровень восприятия присутствия +3, радиус +20 и т.д.).</li>
-<li><b>Усиление пространственного урона:</b> Пространственный урон умножается на 6 (не складывается с Господством Пространства).</li>
-<li><b>Искаженный выстрел:</b> При стрельбе из лука/арбалета/огнестрела автоматически телепортирует вас за спину цели. Тратит 30 магии (Shift подавляет эффект).</li>
-</ul>
-<h2>Активный</h2>
-<ul>
-<li><b>[Нажатие] Операция Пространство-Время:</b> Телепортирует вас за спину цели в радиусе 40 блоков (ищет безопасное место). Перезарядка 5 сек.</li>
-<li><b>[Нажатие — переключение] Многомерный барьер:</b> Тратит 2000 магии в секунду. Адаптируется к каждому типу урона отдельно (1-3 удара -10% урона, 4-6 ударов -11% и т.д., максимум 80% снижения).</li>
-<li><b>[Удерживание] Священное Хаки:</b> Наносит Страх и отбрасывание врагам с низким EP в радиусе 15 блоков. Снимает негативные эффекты и лечит союзников.</li>
-<li><b>[Нажатие] Покров Хаки:</b> Тратит 100 магии, дает бафф «Покров Хаки» на 120 сек. Дает +1 к снижению физического сопротивления.</li>
-</ul>`,
-        "desc_en": `<h2>Passive</h2>
-<ul>
-<li><b>Future Prediction:</b> Increases auto-dodge chance by 70 percentage points.</li>
-<li><b>Thought Acceleration:</b> Grants Movement Speed, Attack Speed, Chant Speed, and Dodge Invulnerability buffs.</li>
-<li><b>Universal Perception:</b> Enhances sensory abilities.</li>
-<li><b>Spatial Damage Amplification:</b> Multiplies spatial damage by 6.</li>
-<li><b>Warp Shot:</b> Projectiles teleport behind the target. Costs 30 Magicules.</li>
-</ul>
-<h2>Active</h2>
-<ul>
-<li><b>[Press] Spacetime Operation:</b> Teleports user behind a target within 40 blocks.</li>
-<li><b>[Press - Toggle] Multidimensional Barrier:</b> Adapts to damage types, reducing damage up to 80%. Costs 2000 MP/sec.</li>
-<li><b>[Hold] Sacred Haki:</b> Inflicts Fear and knockback on low EP enemies, cleanses and heals allies.</li>
-<li><b>[Press] Haki Coat:</b> Applies Haki Coat buff, granting Physical Resistance Reduction +1.</li>
-</ul>`
-    },
-    {
-        "id": "umweg",
-        "ru": "Обходной путь",
-        "en": "Umweg",
-        "mod": "Tensura:No Game No Life",
-        "tier": "extra",
-        "icon": "img/skills/Umweg.png",
-        "infobox": {
-            "type": "Дополнительный навык",
-            "type_en": "Extra Skill"
-        },
-        "desc": "<p><em>«Не позволяй существам добраться до тебя и заставь их стоять на месте!»</em></p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие:</strong> навык «Умвег» воздействует на живую сущность в поле зрения пользователя, накладывая <strong>Замедление</strong> и <strong>Утомление от добычи (Mining Fatigue)</strong>, фактически лишая цель возможности двигаться и совершать действия.</li>\n<li>Если цель не найдена, эффект контроля не применяется.</li>\n</ul>",
-        "desc_en": "<p><em>“Stops creatures from reaching you and makes them stand still!”</em></p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press:</strong> Umweg targets a living entity in the user's line of sight, inflicting <strong>Slowness</strong> and <strong>Mining Fatigue</strong>, effectively preventing movement and actions.</li>\n<li>If no target is found, no control effect is applied.</li>\n</ul>"
-    },
-    {
-        "id": "black_arrow_technique",
-        "ru": "Техника чёрной стрелы",
-        "en": "Black Arrow Technique",
-        "mod": "Tensura:No Game No Life",
-        "tier": "extra",
-        "icon": "img/skills/Black Arrow Technique.png",
-        "infobox": {
-            "type": "Дополнительный навык",
-            "type_en": "Extra Skill"
-        },
-        "desc": "<p>Выпускает Чёрную стрелу с отложенным взрывом. Быстрые последовательные выстрелы приводят к перезарядке.</p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие, «Чёрная стрела»:</strong> выпускает одну Чёрную стрелу, которая взрывается через 4 секунды.</li>\n<li>Если выпустить 6 Чёрных стрел в течение 5 секунд, навык уходит на перезарядку длительностью 5 секунд.</li>\n</ul>",
-        "desc_en": "<p>Fires a delayed explosive Black Arrow. Rapid consecutive shots trigger a cooldown.</p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press, Black Arrow:</strong> fires one Black Arrow that explodes after 4 seconds.</li>\n<li>Firing 6 Black Arrows within 5 seconds places the skill on a 5-second cooldown.</li>\n</ul>"
-    },
-    {
-        "id": "heavenly_shift_technique",
-        "ru": "Техника небесного перемещения",
-        "en": "Heavenly Shift Technique",
-        "mod": "Tensura:No Game No Life",
-        "tier": "extra",
-        "icon": "img/skills/Heavenly Shift Technique.png",
-        "infobox": {
-            "type": "Дополнительный навык",
-            "type_en": "Extra Skill",
-            "obtain": "Открывается для ветки Флюгелей, когда максимальный запас магикул превышает 5 000.",
-            "obtain_en": "Unlocked for the Flügel series when maximum Magicules exceed 5,000."
-        },
-        "desc": "<p><em>«Расстояние — оправдание, которое слабые используют для мест, которых не могут достичь».</em></p>\n<p>Управляет пространством, позволяя мгновенно перемещаться и возвращаться между измерениями к запечатанным координатам.</p>\n<h2>Получение</h2>\n<p>Открывается для ветки Флюгелей, когда максимальный запас магикул превышает 5 000.</p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие, режим 1:</strong> мгновенно перемещает пользователя на 24 блока.</li>\n<li><strong>Активный — нажатие, режим 2 — координаты:</strong> использует выбранный подрежим координат. Нажмите Shift + клавишу навыка, чтобы переключаться между «Запечатлением координат» и «Возвратом к координатам». Возврат требует 2-секундной зарядки и работает между измерениями.</li>\n</ul>",
-        "desc_en": "<p><em>“Distance is the excuse the weak give to places they cannot reach.”</em></p>\n<p>Manipulates space for instant shifting and cross-dimensional return to an imprinted coordinate.</p>\n<h2>Acquisition</h2>\n<p>Unlocked for the Flügel series when maximum Magicules exceed 5,000.</p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press, Mode 1:</strong> instantly shifts the user 24 blocks.</li>\n<li><strong>Active — Press, Mode 2 — Coordinates:</strong> uses the currently selected coordinate sub-mode. Press Shift + Skill Key to switch between Coordinate Imprint and Coordinate Return. Returning requires a 2-second charge and works across dimensions.</li>\n</ul>"
-    },
-    {
-        "id": "eternal_fourth_protection",
-        "ru": "Вечная четвёртая защита",
-        "en": "Eternal Fourth Protection",
-        "mod": "Tensura:No Game No Life",
-        "tier": "intrinsic",
-        "icon": "img/skills/Eternal Fourth Protection.png",
-        "infobox": {
-            "type": "Врождённый навык",
-            "type_en": "Intrinsic Skill"
-        },
-        "desc": "<p><em>«Защитная формула, которую когда-то ценили эльфы, но затем флюгели вырезали в своей памяти как трофей войны».</em></p>\n<p>Создаёт полностью замкнутый сферический барьер, изолирующий внутреннее пространство от внешнего мира и выдерживающий взрывы, магию и физические воздействия.</p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие, без выбранной сущности («Личный барьер»):</strong> создаёт полностью замкнутый сферический барьер вокруг пользователя, в том числе под землёй. Радиус составляет 5 блоков и увеличивается до 8 блоков при освоении навыка. Прочность барьера позволяет выдерживать разрушительное воздействие вплоть до уровня Тэнгэки.</li>\n<li><strong>Активный — нажатие, выбрана сущность («Барьер цели»):</strong> создаёт вокруг выбранной сущности сферический барьер радиусом 3 блока, изолируя его внутреннее пространство от внешнего мира. Прочность барьера позволяет выдерживать разрушительное воздействие вплоть до уровня Тэнгэки.</li>\n</ul>",
-        "desc_en": "<p><em>“The guardian formula once prized by the Elves, only to be carved into Flügel memory as a trophy of war.”</em></p>\n<p>Creates a fully enclosed spherical barrier that isolates its interior from the outside world and withstands explosions, magic, and physical impacts.</p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press, No Entity Target (Self Barrier):</strong> creates a fully enclosed spherical barrier around the user, including beneath the ground. Its radius is 5 blocks, increased to 8 blocks with Mastery. Its defensive strength can withstand destruction up to the level of Tengeki.</li>\n<li><strong>Active — Press, Entity Target (Target Barrier):</strong> creates a spherical barrier with a 3-block radius around the targeted entity, isolating the interior from the outside world. Its defensive strength can withstand destruction up to the level of Tengeki.</li>\n</ul>"
-    },
-    {
-        "id": "spirit_circuit_overload",
-        "ru": "Перегрузка духовного контура",
-        "en": "Spirit Circuit Overload",
-        "mod": "Tensura:No Game No Life",
-        "tier": "intrinsic",
-        "icon": "img/skills/Spirit Circuit Overload.png",
-        "infobox": {
-            "type": "Врождённый навык",
-            "type_en": "Intrinsic Skill"
-        },
-        "desc": "<p><em>«Когда контур превышает пределы, которые может выдержать его носитель, крылья, нимб и даже душа становятся топливом, раскрывая…»</em></p>\n<p>Перегружает Духовный контур, усиливая навыки, полёт и барьеры, но автоматически отключается, когда Перегрузка достигает своего предела.</p>\n<h2>Пассивные эффекты</h2>\n<ul>\n<li><strong>Усиление урона и заклинаний:</strong> увеличивает урон навыков на 20% и скорость произнесения заклинаний на 25%, но повышает расход магикул на 20%. Добавляет 3 единицы Перегрузки в секунду.</li>\n<li><strong>Усиление полёта:</strong> увеличивает скорость полёта на 35%, улучшает манёвренность в воздухе и даёт невосприимчивость к урону от падения. Добавляет 2 единицы Перегрузки в секунду.</li>\n<li><strong>Физические и магические барьеры:</strong> предоставляет физический и магический барьеры. Они расходуют магикулы в зависимости от полученного урона. При разрушении барьера добавляется 20 единиц Перегрузки; кроме того, добавляется 1 единица Перегрузки в секунду.</li>\n<li><strong>Предел Перегрузки:</strong> при достижении 100 единиц Перегрузки навык автоматически отключается и накладывает эффект «Выгорание контура» на 15 секунд. Во время «Выгорания контура» скоростное парение недоступно, а скорость полёта снижается.</li>\n</ul>",
-        "desc_en": "<p><em>“When the circuit exceeds the limits its vessel can bear, wings, halo, and even soul become fuel—revealing...”</em></p>\n<p>Overloads the Spirit Circuit to strengthen skills, flight, and barriers, but automatically shuts down when Overload reaches its limit.</p>\n<h2>Passive Effects</h2>\n<ul>\n<li><strong>Damage and Chant Enhancement:</strong> increases skill damage by 20% and chant speed by 25%, but increases Magicule consumption by 20%. Adds 3 Overload per second.</li>\n<li><strong>Flight Enhancement:</strong> increases flight speed by 35%, improves aerial turning, and grants immunity to fall damage. Adds 2 Overload per second.</li>\n<li><strong>Physical and Magic Barriers:</strong> grants physical and magic barriers. The barriers consume Magicules based on damage taken. When a barrier breaks, it adds 20 Overload. Adds 1 Overload per second.</li>\n<li><strong>Overload Limit:</strong> at 100 Overload, the skill automatically shuts down and applies Circuit Burnout for 15 seconds. During Circuit Burnout, high-speed cruising is disabled and flight speed is reduced.</li>\n</ul>"
-    },
-    {
-        "id": "magic_beads",
-        "ru": "Магические бусины",
-        "en": "Magic Beads",
-        "mod": "Tensura:No Game No Life",
-        "tier": "unique",
-        "icon": "img/skills/Magic Beads.png",
-        "infobox": {
-            "type": "Уникальный навык",
-            "type_en": "Unique Skill"
-        },
-        "desc": "<p><em>«Извлеки и сожми собственные магикулы в бусину».</em></p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие («Магические бусины»):</strong> расходует 5 магикул и добавляет одну Магическую бусину в инвентарь игрока.</li>\n<li>Если у пользователя недостаточно магикул, предмет не создаётся.</li>\n</ul>",
-        "desc_en": "<p><em>“Extract and compress your own Magicules into a bead.”</em></p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press (Magic Beads):</strong> consumes 5 Magicules and adds one Magic Bead to the player's inventory.</li>\n<li>If the user does not have enough Magicules, no item is created.</li>\n</ul>"
-    },
-    {
-        "id": "far_cry",
-        "ru": "Далёкий крик",
-        "en": "Far Cry",
-        "mod": "Tensura:No Game No Life",
-        "tier": "ultimate",
-        "icon": "img/skills/Far Cry.png",
-        "infobox": {
-            "type": "Высший навык",
-            "type_en": "Ultimate Skill"
-        },
-        "desc": "<p><em>«Из последнего рёва дракона!»</em></p>\n<p>Заряжает сокрушительный взрыв, который создаёт огромный кратер и заражает окружающую местность.</p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие («Зарядка Far Cry»):</strong> начинает зарядку. Если отпустить способность до завершения зарядки, полноценная атака не будет выпущена.</li>\n<li><strong>Активный — отпускание («Far Cry»):</strong> после зарядки выпускает атаку, создающую кратер диаметром 40 блоков и заражающую окружающую местность.</li>\n</ul>",
-        "desc_en": "<p><em>“From the last roar of the dragon!”</em></p>\n<p>Charges a devastating explosion that creates a massive crater and contaminates the surrounding land.</p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press (Far Cry Charge):</strong> starts charging. Releasing before the charge is complete will not fire the full attack.</li>\n<li><strong>Active — Release (Far Cry):</strong> releases after charging, creating a crater 40 blocks in diameter and contaminating the surrounding land.</li>\n</ul>"
-    },
-    {
-        "id": "losen_resen",
-        "ru": "Лёзен: Резен",
-        "en": "Lösen: Rēsen",
-        "mod": "Tensura:No Game No Life",
-        "tier": "ultimate",
-        "icon": "img/skills/Losen Resen.png",
-        "infobox": {
-            "type": "Высший навык",
-            "type_en": "Ultimate Skill"
-        },
-        "desc": "<p><em>«Скопируй высший навык цели на короткое время».</em></p>\n<p>Навык позволяет копировать высший навык цели либо использовать Пушку машины для выпуска «Fseudo-Code Dragon Roar» (название приведено как в исходном документе).</p>\n<h2>Режимы</h2>\n<ul>\n<li><strong>Режим — Lösen: Copy («Копирование»):</strong> нацеливается на игрока перед пользователем. Если у цели есть высшие навыки, один из них случайным образом копируется пользователю. При копировании нового навыка ранее скопированный навык удаляется.</li>\n<li><strong>Режим — Fseudo-Code Dragon Roar:</strong> требует, чтобы Пушка машины находилась в основной руке. Нажмите, чтобы записать позицию цели, удерживайте для зарядки, затем отпустите после завершения зарядки. Сначала атака вызывает небольшой взрыв, за которым следует большая расширяющаяся взрывная волна.</li>\n</ul>",
-        "desc_en": "<p><em>“Copy the ultimate skill of the target for a short duration.”</em></p>\n<p>Copies the target's Ultimate Skill, or uses a Machine Cannon to release Fseudo-Code Dragon Roar (the name is reproduced as written in the source document).</p>\n<h2>Modes</h2>\n<ul>\n<li><strong>Mode — Lösen: Copy:</strong> targets a player in front of the user. If the target has any Ultimate Skills, one is randomly copied to the user. Copying a new skill removes the previously copied skill.</li>\n<li><strong>Mode — Fseudo-Code Dragon Roar:</strong> requires a Machine Cannon in the main hand. Press to record a target position, hold to charge, then release after the charge is complete. The attack causes a small explosion first, followed by a large expanding wave explosion.</li>\n</ul>"
-    },
-    {
-        "id": "flugel_tengeki",
-        "ru": "Флюгель: Тэнгэки",
-        "en": "Flügel: Tengeki",
-        "mod": "Tensura:No Game No Life",
-        "tier": "ultimate",
-        "icon": "img/skills/Flugel Tengeki.png",
-        "infobox": {
-            "type": "Высший навык",
-            "type_en": "Ultimate Skill"
-        },
-        "desc": "<p><em>«Это магия, которую флюгели использовали во время Великой войны: их единственный именной приём и самая мощная атака».</em></p>\n<p>Заклинание, применявшееся флюгелями во время Великой войны; их единственный именной приём и сильнейший метод атаки.</p>\n<h2>Использование</h2>\n<ul>\n<li><strong>Активный — нажатие («Зарядка Тэнгэки»):</strong> начинает зарядку и записывает точку, на которую смотрит пользователь, в качестве цели.</li>\n<li><strong>Активный — удержание («Поддержание зарядки»):</strong> удерживание зарядки увеличивает радиус взрыва и итоговый урон. Слишком долгая зарядка постоянно расходует магикулы; если пользователь не может оплатить расход, зарядка прерывается.</li>\n<li><strong>Активный — отпускание («Тэнгэки»):</strong> после достаточной зарядки выпускает мощный взрыв в указанной точке и наносит магический урон всем находящимся в радиусе живым существам, не являющимся союзниками.</li>\n</ul>\n<h2>Эффект зарядки</h2>\n<p>Чем дольше длится зарядка, тем больше радиус взрыва и урон. Отпускание после слишком долгой зарядки ослабляет пользователя.</p>",
-        "desc_en": "<p><em>“It is a magic used by the Flügel during the Great War, their only named move, and also their most powerful attack.”</em></p>\n<p>A spell used by the Flügel during the Great War, their only named move and their strongest attack method.</p>\n<h2>Usage</h2>\n<ul>\n<li><strong>Active — Press (Tengeki Charge):</strong> starts charging and records the point the user is looking at as the target.</li>\n<li><strong>Active — Hold (Maintain Charge):</strong> holding the charge increases explosion radius and final damage. Charging too long continuously consumes Magicules; if the user cannot pay, the charge is interrupted.</li>\n<li><strong>Active — Release (Tengeki):</strong> after charging long enough, releases a massive explosion at the target point and deals magic damage to non-allied living entities in range.</li>\n</ul>\n<h2>Charge Effect</h2>\n<p>Longer charge time increases both explosion range and damage. Releasing after an extended charge weakens the user.</p>"
     }
 ];
