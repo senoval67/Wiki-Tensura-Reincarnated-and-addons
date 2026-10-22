@@ -31,7 +31,6 @@ window.addEventListener('languageChanged', () => {
     }
 });
 
-// Обработка кнопок "Назад/Вперед" в браузере
 window.addEventListener('popstate', () => {
     if (!document.getElementById('bosses-container')) return;
     const urlParams = new URLSearchParams(window.location.search);
@@ -194,22 +193,43 @@ function drawBossSVGLines(currentId) {
                 if (targetEl) {
                     const startRect = wrapperNode.getBoundingClientRect();
                     const endRect = targetEl.getBoundingClientRect();
-                    let x1, y1, x2, y2;
+                    let x1, y1, x2, y2, pathD;
+                    
                     if (evoDirection === 'horizontal') {
                         x1 = startRect.right - wrapperRect.left + scrollLeft;
                         y1 = startRect.top + startRect.height / 2 - wrapperRect.top + scrollTop;
                         x2 = endRect.left - wrapperRect.left + scrollLeft;
                         y2 = endRect.top + endRect.height / 2 - wrapperRect.top + scrollTop;
+                        
+                        let midX = x1 + 25;
+                        if (x2 < x1) midX = x1 + 40;
+
+                        pathD = `M ${x1} ${y1} L ${midX} ${y1} L ${midX} ${y2} L ${x2} ${y2}`;
                     } else {
                         x1 = startRect.left + startRect.width / 2 - wrapperRect.left + scrollLeft;
                         y1 = startRect.bottom - wrapperRect.top + scrollTop;
                         x2 = endRect.left + endRect.width / 2 - wrapperRect.left + scrollLeft;
                         y2 = endRect.top - wrapperRect.top + scrollTop;
+                        
+                        let midY = y1 + 25;
+                        if (y2 < y1) midY = y1 + 40;
+
+                        pathD = `M ${x1} ${y1} L ${x1} ${midY} L ${x2} ${midY} L ${x2} ${y2}`;
                     }
-                    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                    line.setAttribute('x1', x1); line.setAttribute('y1', y1); line.setAttribute('x2', x2); line.setAttribute('y2', y2);
-                    line.setAttribute('stroke', '#888'); line.setAttribute('stroke-width', '2'); line.setAttribute('marker-end', 'url(#arrowhead)');
-                    svg.appendChild(line);
+                    
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttribute('d', pathD);
+                    path.setAttribute('fill', 'none');
+                    path.setAttribute('stroke', '#777');
+                    path.setAttribute('stroke-width', '2');
+                    path.setAttribute('stroke-linejoin', 'round');
+                    
+                    if (Math.abs(y2 - y1) > 80 && evoDirection === 'horizontal' || Math.abs(x2 - x1) > 80 && evoDirection === 'vertical') {
+                        path.setAttribute('stroke-dasharray', '6, 4');
+                    }
+
+                    path.setAttribute('marker-end', 'url(#arrowhead)');
+                    svg.appendChild(path);
                 }
             });
         }

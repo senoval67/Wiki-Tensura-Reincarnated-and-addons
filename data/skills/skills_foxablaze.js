@@ -222,7 +222,7 @@ const skillsDataFoxAblaze = [
         "ru": "Адский Снайпер",
         "en": "Hell Sniper",
         "mod": "FoxAblaze Ultimate",
-        "tier": "unique",
+        "tier": "ultimate",
         "icon": "img/skills/foxablaze/Hell sniper.png",
         "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/foxablaze-ultimate",
         "infobox": {

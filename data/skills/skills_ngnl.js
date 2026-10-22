@@ -6,6 +6,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "extra",
         "icon": "img/skills/ngnl/Umweg.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Дополнительный навык",
             "type_en": "Extra Skill"
@@ -20,6 +21,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "extra",
         "icon": "img/skills/ngnl/Black Arrow Technique.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Дополнительный навык",
             "type_en": "Extra Skill"
@@ -34,6 +36,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "extra",
         "icon": "img/skills/ngnl/Heavenly Shift Technique.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Дополнительный навык",
             "type_en": "Extra Skill",
@@ -50,6 +53,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "intrinsic",
         "icon": "img/skills/ngnl/Eternal Fourth Protection.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Врождённый навык",
             "type_en": "Intrinsic Skill"
@@ -64,6 +68,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "intrinsic",
         "icon": "img/skills/ngnl/Spirit Circuit Overload.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Врождённый навык",
             "type_en": "Intrinsic Skill"
@@ -78,6 +83,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "unique",
         "icon": "img/skills/ngnl/Magic Beads.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Уникальный навык",
             "type_en": "Unique Skill"
@@ -92,6 +98,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "ultimate",
         "icon": "img/skills/ngnl/Far Cry.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Высший навык",
             "type_en": "Ultimate Skill"
@@ -106,6 +113,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "ultimate",
         "icon": "img/skills/ngnl/Losen Resen.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Высший навык",
             "type_en": "Ultimate Skill"
@@ -120,6 +128,7 @@ const skillsDataNGNL = [
         "mod": "Tensura:No Game No Life",
         "tier": "ultimate",
         "icon": "img/skills/ngnl/Flugel Tengeki.png",
+        "wiki_url": "https://www.curseforge.com/minecraft/mc-mods/tensura-no-game-no-life",
         "infobox": {
             "type": "Высший навык",
             "type_en": "Ultimate Skill"

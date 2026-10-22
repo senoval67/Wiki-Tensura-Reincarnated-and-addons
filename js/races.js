@@ -7,12 +7,49 @@ const STARTER_IDS = [
     "human", "slime", "ogre", "goblin", "orc",
     "lizardman", "elf", "dwarf", "merfolk",
     "beastfolk", "beastman", "harpy", "ghoul",
-    "wight", "giant", "lesser_daemon", "lesser_demon"
+    "wight", "giant", "lesser_daemon", "lesser_demon",
+    "flugel"
 ];
+
+function resolveRaceLinks() {
+    if (typeof racesData === 'undefined') return;
+    
+    racesData.forEach(race => {
+        if (!race.infobox) race.infobox = {};
+        
+        if (race.infobox.next) {
+            race.infobox.next.forEach(nextRef => {
+                const target = racesData.find(s => s.id === nextRef.id);
+                if (target) {
+                    if (!target.infobox) target.infobox = {};
+                    if (!target.infobox.prev) target.infobox.prev = [];
+                    if (!target.infobox.prev.some(p => p.id === race.id)) {
+                        target.infobox.prev.push({ id: race.id, ru: race.ru || race.id, tier: race.tier || 'other' });
+                    }
+                }
+            });
+        }
+        
+        if (race.infobox.prev) {
+            race.infobox.prev.forEach(prevRef => {
+                const target = racesData.find(s => s.id === prevRef.id);
+                if (target) {
+                    if (!target.infobox) target.infobox = {};
+                    if (!target.infobox.next) target.infobox.next = [];
+                    if (!target.infobox.next.some(n => n.id === race.id)) {
+                        target.infobox.next.push({ id: race.id, ru: race.ru || race.id, tier: race.tier || 'other' });
+                    }
+                }
+            });
+        }
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('races-container');
     if (!container) return;
+
+    resolveRaceLinks();
 
     const pageTitle = document.querySelector('#races-list-view h2');
     if (pageTitle) pageTitle.textContent = t('race_list_title');
@@ -28,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('languageChanged', () => {
     if (document.getElementById('races-container')) {
+        resolveRaceLinks();
+
         const pageTitle = document.querySelector('#races-list-view h2');
         if (pageTitle) pageTitle.textContent = t('race_list_title');
 
@@ -38,7 +77,6 @@ window.addEventListener('languageChanged', () => {
     }
 });
 
-// Обработка кнопок "Назад/Вперед" в браузере
 window.addEventListener('popstate', () => {
     if (!document.getElementById('races-container')) return;
     const urlParams = new URLSearchParams(window.location.search);
@@ -63,32 +101,54 @@ function getRaceIconHTML(race) {
 function renderRaces() {
     const container = document.getElementById('races-container');
     if (!container || typeof racesData === 'undefined') return;
+    
+    container.classList.remove('skills-grid');
     container.innerHTML = '';
 
     let list = racesData.filter(r => r.starter || STARTER_IDS.includes(r.id.toLowerCase()));
     if (list.length === 0) list = racesData;
 
-    list.sort((a, b) => {
-        const nameA = currentLang === 'en' ? (a.en || '') : (a.ru || a.en || '');
-        const nameB = currentLang === 'en' ? (b.en || '') : (b.ru || b.en || '');
-        return nameA.localeCompare(nameB);
+    const groupedByMod = {};
+    list.forEach(race => {
+        const modName = race.mod || "Tensura: Reincarnated";
+        if (!groupedByMod[modName]) groupedByMod[modName] = [];
+        groupedByMod[modName].push(race);
     });
 
-    list.forEach(race => {
-        const card = document.createElement('div');
-        card.className = `skill-card ${race.tier || 'other'}`;
-        card.onclick = () => showRaceDetail(race.id);
+    const sortedMods = Object.keys(groupedByMod).sort((a, b) => a.localeCompare(b));
 
-        const displayName = currentLang === 'en' ? (race.en || race.id) : (race.ru || race.en || race.id);
+    sortedMods.forEach(mod => {
+        const modHeader = document.createElement('h3');
+        modHeader.className = 'mod-header';
+        modHeader.textContent = mod;
+        container.appendChild(modHeader);
 
-        card.innerHTML = `
-            <div class="skill-icon">${getRaceIconHTML(race)}</div>
-            <div class="skill-info">
-                <span class="skill-ru">${displayName}</span>
-                ${currentLang === 'ru' && race.en ? `<span class="skill-en">${race.en}</span>` : ''}
-            </div>
-        `;
-        container.appendChild(card);
+        const grid = document.createElement('div');
+        grid.className = 'skills-grid';
+
+        const sortedRaces = groupedByMod[mod].sort((a, b) => {
+            const nameA = currentLang === 'en' ? (a.en || '') : (a.ru || a.en || '');
+            const nameB = currentLang === 'en' ? (b.en || '') : (b.ru || b.en || '');
+            return nameA.localeCompare(nameB);
+        });
+
+        sortedRaces.forEach(race => {
+            const card = document.createElement('div');
+            card.className = `skill-card ${race.tier || 'other'}`;
+            card.onclick = () => showRaceDetail(race.id);
+
+            const displayName = currentLang === 'en' ? (race.en || race.id) : (race.ru || race.en || race.id);
+
+            card.innerHTML = `
+                <div class="skill-icon">${getRaceIconHTML(race)}</div>
+                <div class="skill-info">
+                    <span class="skill-ru">${displayName}</span>
+                    ${currentLang === 'ru' && race.en ? `<span class="skill-en">${race.en}</span>` : ''}
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+        container.appendChild(grid);
     });
 }
 
@@ -419,22 +479,43 @@ function drawRaceSVGLines(currentId) {
             if (targetEl) {
                 const startRect = wrapperNode.getBoundingClientRect();
                 const endRect = targetEl.getBoundingClientRect();
-                let x1, y1, x2, y2;
+                let x1, y1, x2, y2, pathD;
+
                 if (raceEvoDirection === 'horizontal') {
                     x1 = startRect.right - wrapperRect.left + scrollLeft;
                     y1 = startRect.top + startRect.height / 2 - wrapperRect.top + scrollTop;
                     x2 = endRect.left - wrapperRect.left + scrollLeft;
                     y2 = endRect.top + endRect.height / 2 - wrapperRect.top + scrollTop;
+                    
+                    let midX = x1 + 25;
+                    if (x2 < x1) midX = x1 + 40;
+
+                    pathD = `M ${x1} ${y1} L ${midX} ${y1} L ${midX} ${y2} L ${x2} ${y2}`;
                 } else {
                     x1 = startRect.left + startRect.width / 2 - wrapperRect.left + scrollLeft;
                     y1 = startRect.bottom - wrapperRect.top + scrollTop;
                     x2 = endRect.left + endRect.width / 2 - wrapperRect.left + scrollLeft;
                     y2 = endRect.top - wrapperRect.top + scrollTop;
+                    
+                    let midY = y1 + 25;
+                    if (y2 < y1) midY = y1 + 40;
+
+                    pathD = `M ${x1} ${y1} L ${x1} ${midY} L ${x2} ${midY} L ${x2} ${y2}`;
                 }
-                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                line.setAttribute('x1', x1); line.setAttribute('y1', y1); line.setAttribute('x2', x2); line.setAttribute('y2', y2);
-                line.setAttribute('stroke', '#888'); line.setAttribute('stroke-width', '2'); line.setAttribute('marker-end', 'url(#arrowhead)');
-                svg.appendChild(line);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', pathD);
+                path.setAttribute('fill', 'none');
+                path.setAttribute('stroke', '#777');
+                path.setAttribute('stroke-width', '2');
+                path.setAttribute('stroke-linejoin', 'round');
+                
+                if (Math.abs(y2 - y1) > 80 && raceEvoDirection === 'horizontal' || Math.abs(x2 - x1) > 80 && raceEvoDirection === 'vertical') {
+                    path.setAttribute('stroke-dasharray', '6, 4');
+                }
+
+                path.setAttribute('marker-end', 'url(#arrowhead)');
+                svg.appendChild(path);
             }
         });
     });
@@ -535,7 +616,7 @@ function showRaceDetail(raceId, keepScroll = false) {
 
                 tooltipHTML = `
                     <div class="tooltip-card" style="bottom: auto; top: 120%;">
-                        <div class="tooltip-title">${tooltipIcon} ${currentLang === 'en' ? matched.en : matched.ru}</div>
+                        <div class="tooltip-title">${tooltipIcon} ${currentLang === 'en' ? (matched.en || matched.id) : (matched.ru || matched.id)}</div>
                         <span class="tooltip-type">${matched.tier || 'Skill'}</span>
                         <p class="tooltip-desc">${shortDesc}</p>
                     </div>
@@ -543,7 +624,7 @@ function showRaceDetail(raceId, keepScroll = false) {
             }
 
             if (matched) {
-                const label = currentLang === 'en' ? matched.en : matched.ru;
+                const label = currentLang === 'en' ? (matched.en || matched.id) : (matched.ru || matched.id);
                 return `<span class="tooltip-container" style="display:block; width:100%;">
                     <a href="skills.html?skill=${matched.id}&lang=${currentLang}" style="display:flex; align-items:center; gap:10px; padding: 6px 0; color: #4da6ff; text-decoration: none; border-bottom: 1px dashed #2a2a3a; transition: color 0.2s;" onmouseover="this.style.color='#80bfff'" onmouseout="this.style.color='#4da6ff'">
                         ${iconHTML}
@@ -568,7 +649,7 @@ function showRaceDetail(raceId, keepScroll = false) {
 
     const infoboxHTML = `
         <div class="skill-infobox" style="border-color: ${color};">
-            <div class="infobox-header" style="background-color: ${color}22; border-color: ${color};">${race.en}</div>
+            <div class="infobox-header" style="background-color: ${color}22; border-color: ${color};">${race.en || race.ru || race.id}</div>
             <div class="infobox-image-container" style="border-color: ${color};">
                 ${getRaceIconHTML(race)}
             </div>
@@ -578,7 +659,7 @@ function showRaceDetail(raceId, keepScroll = false) {
             ${abilitiesHTML}
             ${info.obtain ? `
                 <div class="infobox-section-title" style="background-color: ${color}44; border-color:${color};">${t('obtaining')}</div>
-                <div class="infobox-row"><div class="infobox-label">${t('method')}</div><div class="infobox-value">${info.obtain}</div></div>
+                <div class="infobox-row"><div class="infobox-label">${t('method')}</div><div class="infobox-value">${getLocalized(info, 'obtain') || info.obtain}</div></div>
             ` : ''}
         </div>
     `;

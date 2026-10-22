@@ -27,11 +27,7 @@ function resolveSkillLinks() {
                     if (!target.infobox) target.infobox = {};
                     if (!target.infobox.prev) target.infobox.prev = [];
                     if (!target.infobox.prev.some(p => p.id === skill.id)) {
-                        target.infobox.prev.push({ 
-                            id: skill.id, 
-                            ru: skill.ru || skill.id, 
-                            tier: skill.tier || 'other' 
-                        });
+                        target.infobox.prev.push({ id: skill.id, ru: skill.ru || skill.id, tier: skill.tier || 'other' });
                     }
                 }
             });
@@ -44,11 +40,7 @@ function resolveSkillLinks() {
                     if (!target.infobox) target.infobox = {};
                     if (!target.infobox.next) target.infobox.next = [];
                     if (!target.infobox.next.some(n => n.id === skill.id)) {
-                        target.infobox.next.push({ 
-                            id: skill.id, 
-                            ru: skill.ru || skill.id, 
-                            tier: skill.tier || 'other' 
-                        });
+                        target.infobox.next.push({ id: skill.id, ru: skill.ru || skill.id, tier: skill.tier || 'other' });
                     }
                 }
             });
@@ -352,8 +344,7 @@ function drawSVGLines(currentId) {
             if (targetEl) {
                 const startRect = wrapperNode.getBoundingClientRect();
                 const endRect = targetEl.getBoundingClientRect();
-                let x1, y1, x2, y2;
-                let pathD = '';
+                let x1, y1, x2, y2, pathD;
 
                 if (evoDirection === 'horizontal') {
                     x1 = startRect.right - wrapperRect.left + scrollLeft;
@@ -361,23 +352,37 @@ function drawSVGLines(currentId) {
                     x2 = endRect.left - wrapperRect.left + scrollLeft;
                     y2 = endRect.top + endRect.height / 2 - wrapperRect.top + scrollTop;
                     
-                    let midX = (x1 + x2) / 2;
-                    pathD = `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`;
+                    // Отступаем от исходной карточки на 25px, чтобы не резать соседей
+                    let midX = x1 + 25;
+                    // Если цель находится сзади (бывает при сложных ветвлениях), уводим линию вправо
+                    if (x2 < x1) midX = x1 + 40;
+
+                    pathD = `M ${x1} ${y1} L ${midX} ${y1} L ${midX} ${y2} L ${x2} ${y2}`;
                 } else {
                     x1 = startRect.left + startRect.width / 2 - wrapperRect.left + scrollLeft;
                     y1 = startRect.bottom - wrapperRect.top + scrollTop;
                     x2 = endRect.left + endRect.width / 2 - wrapperRect.left + scrollLeft;
                     y2 = endRect.top - wrapperRect.top + scrollTop;
                     
-                    let midY = (y1 + y2) / 2;
-                    pathD = `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}`;
+                    // Отступаем вниз на 25px
+                    let midY = y1 + 25;
+                    if (y2 < y1) midY = y1 + 40;
+
+                    pathD = `M ${x1} ${y1} L ${x1} ${midY} L ${x2} ${midY} L ${x2} ${y2}`;
                 }
                 
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 path.setAttribute('d', pathD);
                 path.setAttribute('fill', 'none');
-                path.setAttribute('stroke', '#888');
+                path.setAttribute('stroke', '#777');
                 path.setAttribute('stroke-width', '2');
+                path.setAttribute('stroke-linejoin', 'round');
+                
+                // Если связь "прыгает" через ряд, делаем её пунктирной
+                if (Math.abs(y2 - y1) > 80 && evoDirection === 'horizontal' || Math.abs(x2 - x1) > 80 && evoDirection === 'vertical') {
+                    path.setAttribute('stroke-dasharray', '6, 4');
+                }
+
                 path.setAttribute('marker-end', 'url(#arrowhead)');
                 svg.appendChild(path);
             }
@@ -522,7 +527,6 @@ function showDetail(skillId, keepScroll = false) {
     const displayDesc = currentLang === 'en' ? (skill.desc_en || skill.desc || '') : (skill.desc || '');
     let processedDesc = replaceWikiLinks(displayDesc);
     
-    // ИСПРАВЛЕНИЕ: Сначала ищем ссылку в данных (wiki_url), иначе ведем на тенсура вики
     let externalWikiUrl = skill.wiki_url || `https://tensura.wiki.gg/wiki/${(skill.en || skill.ru || skill.id).replace(/ /g, '_')}`;
     const displayRu = currentLang === 'en' ? (skill.en || skill.id) : (skill.ru || skill.en || skill.id); 
 
