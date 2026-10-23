@@ -275,6 +275,46 @@ main { max-width: 1200px; margin: 30px auto; padding: 0 20px; flex: 1; margin-bo
 .tooltip-type { font-size: 12px; color: var(--accent); margin-bottom: 8px; display: block; text-transform: uppercase; }
 .tooltip-desc { font-size: 12px; color: var(--text-muted); line-height: 1.4; margin: 0; }
 
+/* --- ПОЛНОЭКРАННЫЙ РЕЖИМ ДЛЯ ГРАФОВ --- */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.fullscreen-close-btn {
+    position: absolute;
+    top: 20px; right: 30px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s, transform 0.3s;
+}
+.fullscreen-close-btn:hover { 
+    color: var(--accent); 
+    transform: scale(1.1);
+}
+
+/* Стили для самого графа в полноэкранном режиме */
+.evo-graph-wrapper.fullscreen-mode {
+    width: 90vw !important;
+    height: 90vh !important;
+    background-color: var(--panel-bg);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(157, 0, 255, 0.4);
+    padding: 60px; /* Отступы, чтобы не прилипало к краям */
+}
+
+
 /* --- КНОПКИ И ПОДВАЛ --- */
 .back-btn { display: inline-block; margin-bottom: 20px; background-color: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: all 0.3s; text-decoration: none; }
 .back-btn:hover { background-color: var(--accent); color: #fff; }

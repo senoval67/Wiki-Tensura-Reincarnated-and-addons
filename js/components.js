@@ -69,12 +69,10 @@ function toggleLanguage() {
     currentLang = currentLang === 'ru' ? 'en' : 'ru';
     localStorage.setItem('tensura_lang', currentLang);
     
-    // Меняем URL без перезагрузки страницы
     const newUrl = new URL(window.location.href);
     newUrl.searchParams.set('lang', currentLang);
     window.history.pushState({}, '', newUrl);
     
-    // Обновляем меню и отправляем сигнал странице
     renderLayout();
     window.dispatchEvent(new Event('languageChanged')); 
 }
@@ -124,26 +122,79 @@ function renderLayout() {
 
 function highlightActiveNav() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-    // Снимаем активный класс со всех ссылок (на всякий случай)
     document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
 
-    // Включаем нужную кнопку
-    if (currentPage === 'index.html' || currentPage === '') {
-        document.getElementById('nav-home')?.classList.add('active');
-    }
-    if (currentPage === 'guide.html') {
-        document.getElementById('nav-guide')?.classList.add('active');
-    }
-    if (currentPage === 'skills.html') {
-        document.getElementById('nav-skills')?.classList.add('active');
-    }
-    if (currentPage === 'races.html') {
-        document.getElementById('nav-races')?.classList.add('active');
-    }
-    if (currentPage === 'bosses.html') {
-        document.getElementById('nav-bosses')?.classList.add('active');
-    }
+    if (currentPage === 'index.html' || currentPage === '') document.getElementById('nav-home')?.classList.add('active');
+    if (currentPage === 'guide.html') document.getElementById('nav-guide')?.classList.add('active');
+    if (currentPage === 'skills.html') document.getElementById('nav-skills')?.classList.add('active');
+    if (currentPage === 'races.html') document.getElementById('nav-races')?.classList.add('active');
+    if (currentPage === 'bosses.html') document.getElementById('nav-bosses')?.classList.add('active');
 }
 
 document.addEventListener('DOMContentLoaded', renderLayout);
+
+// --- ЛОГИКА ПОЛНОЭКРАННОГО РЕЖИМА ---
+function toggleFullscreenGraph(graphId) {
+    const originalGraph = document.getElementById(graphId);
+    if (!originalGraph) return;
+
+    if (document.getElementById('fullscreen-graph-overlay')) {
+        closeFullscreenGraph();
+        return;
+    }
+
+    window._originalGraphParent = originalGraph.parentNode;
+    window._originalGraphSibling = originalGraph.nextSibling;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'fullscreen-graph-overlay';
+    overlay.className = 'fullscreen-overlay';
+    
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '✖';
+    closeBtn.className = 'fullscreen-close-btn';
+    closeBtn.onclick = closeFullscreenGraph;
+    
+    overlay.appendChild(originalGraph);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+
+    originalGraph.classList.add('fullscreen-mode');
+
+    overlay.onclick = (e) => {
+        if (e.target === overlay) closeFullscreenGraph();
+    };
+
+    window._escListener = (e) => {
+        if (e.key === 'Escape') closeFullscreenGraph();
+    };
+    document.addEventListener('keydown', window._escListener);
+
+    setTimeout(() => redrawCurrentGraph(graphId), 100);
+}
+
+function closeFullscreenGraph() {
+    const overlay = document.getElementById('fullscreen-graph-overlay');
+    if (!overlay) return;
+
+    const graph = overlay.querySelector('.evo-graph-wrapper');
+    
+    if (window._originalGraphSibling) {
+        window._originalGraphParent.insertBefore(graph, window._originalGraphSibling);
+    } else {
+        window._originalGraphParent.appendChild(graph);
+    }
+
+    graph.classList.remove('fullscreen-mode');
+    overlay.remove();
+
+    document.removeEventListener('keydown', window._escListener);
+    setTimeout(() => redrawCurrentGraph(graph.id), 100);
+}
+
+function redrawCurrentGraph(graphId) {
+    const id = graphId.replace('evo-graph-', '');
+    if (typeof drawSVGLines === 'function') drawSVGLines(id);
+    else if (typeof drawRaceSVGLines === 'function') drawRaceSVGLines(id);
+    else if (typeof drawBossSVGLines === 'function') drawBossSVGLines(id);
+}

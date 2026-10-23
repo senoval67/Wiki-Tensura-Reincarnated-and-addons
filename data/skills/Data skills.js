@@ -3,5 +3,6 @@
 const skillsData = [
     ...(typeof skillsDataTensura !== 'undefined' ? skillsDataTensura : []),
     ...(typeof skillsDataFoxAblaze !== 'undefined' ? skillsDataFoxAblaze : []),
-    ...(typeof skillsDataNGNL !== 'undefined' ? skillsDataNGNL : [])
+    ...(typeof skillsDataNGNL !== 'undefined' ? skillsDataNGNL : []),
+    ...(typeof skillsDataKumodesu !== 'undefined' ? skillsDataKumodesu : [])
 ];
